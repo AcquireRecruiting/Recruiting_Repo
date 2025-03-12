@@ -16,7 +16,7 @@ import '@aws-amplify/ui-react/styles.css';
 import awsExports from './aws-exports';
 
 // Imports the Quiz component from Quiz.js for use in this file.
-import Landingpage01 from "./ui-components/Landingpage01";
+import Auth from "./ui-components/Auth";
 
 
 // Configures the Amplify library with the settings from aws-exports.js, which includes all the AWS service configurations for this project.
@@ -25,14 +25,14 @@ Amplify.configure(awsExports);
 function App() {
   return (
     <div className="App">
+       <div className="App h-screen flex flex-col items-center justify-center overflow-hidden"></div>
       <Authenticator>
         {({ signOut }) => (
           <main>
+             <main className="w-full max-w-screen-lg px-4"></main>
             <header className='App-header'>
-              {/* Quiz Component */}
-             <Landingpage01 />
-
-
+              {/* Home Page */}
+             <Auth />
               {/* Sign Out Button */}
               <button 
                 onClick={signOut} 
