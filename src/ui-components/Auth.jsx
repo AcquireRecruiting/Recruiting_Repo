@@ -8,8 +8,26 @@
 import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
+
+import { OpenAIAssistant } from "./OpenAI/OpenAIAssistant";
+
 export default function Auth(props) {
   const { overrides, ...rest } = props;
+
+  const aiAssistant = React.useRef(null);
+
+  React.useEffect(() => {
+    aiAssistant.current = new OpenAIAssistant();
+    aiAssistant.current.init().then(() => {
+      aiAssistant.current.startSession
+    });
+
+    return () => {
+      aiAssistant.current.stopSession();
+      aiAssistant.current = null;
+    };
+  }, []);
+
   return (
     <View
       width="1480px"
