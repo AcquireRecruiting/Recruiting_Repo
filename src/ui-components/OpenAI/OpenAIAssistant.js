@@ -1,6 +1,7 @@
 // OpenAIAssistant.js
 // import { toast } from 'react-toastify';
-import { OPENAI_API_KEY, SYSTEM_DIRECTIVE, VOICE } from './Prompts.js';
+import { SYSTEM_DIRECTIVE, VOICE } from './Prompts.js';
+import { OPENAI_API_KEY } from './APIKey.js';
 
 export class OpenAIAssistant {
   constructor() {
@@ -20,8 +21,8 @@ export class OpenAIAssistant {
     // this.toolsRegistry = new ToolsRegistry();
 
     // Bind addTools and removeTools to the instance
-    this.addTools = this.addTools.bind(this);
-    this.removeTools = this.removeTools.bind(this);
+    // this.addTools = this.addTools.bind(this);
+    // this.removeTools = this.removeTools.bind(this);
   }
 
   /**
@@ -79,6 +80,7 @@ export class OpenAIAssistant {
     try {
       this.mediaStream = await navigator.mediaDevices.getUserMedia({
         audio: true,
+        channel
       });
     } catch (error) {
       console.error('Error accessing microphone:', error);
@@ -137,6 +139,7 @@ export class OpenAIAssistant {
    * Unmutes the audio track so that the microphone audio is sent to the connection.
    */
   async startListening() {
+
     if (this.mediaStream) {
       const audioTrack = this.mediaStream.getAudioTracks()[0];
       audioTrack.enabled = true;
