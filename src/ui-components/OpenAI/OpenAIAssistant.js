@@ -79,8 +79,7 @@ export class OpenAIAssistant {
     // Get audio from the user's microphone
     try {
       this.mediaStream = await navigator.mediaDevices.getUserMedia({
-        audio: true,
-        channel
+        audio: true
       });
     } catch (error) {
       console.error('Error accessing microphone:', error);
