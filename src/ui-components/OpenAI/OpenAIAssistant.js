@@ -1,7 +1,7 @@
 // OpenAIAssistant.js
 // import { toast } from 'react-toastify';
-import { SYSTEM_DIRECTIVE, VOICE } from './Prompts.js';
-import { OPENAI_API_KEY } from './APIKey.js';
+//import { SYSTEM_DIRECTIVE, VOICE } from './Prompts.js';
+//import { OPENAI_API_KEY } from './APIKey.js';
 
 export class OpenAIAssistant {
   constructor() {
