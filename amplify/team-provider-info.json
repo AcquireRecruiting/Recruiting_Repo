@@ -17,6 +17,9 @@
       },
       "api": {
         "recruitingappcloud": {}
+      },
+      "storage": {
+        "s3acquirestorages3": {}
       }
     }
   }

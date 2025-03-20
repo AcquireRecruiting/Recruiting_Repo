@@ -17,7 +17,7 @@ import awsExports from './aws-exports';
 
 // Imports the Quiz component from Quiz.js for use in this file.
 import Dashboard from "./ui-components/Dashboard";
-
+import PrivateProfile from "./ui-components/PrivateProfile";
 
 // Configures the Amplify library with the settings from aws-exports.js, which includes all the AWS service configurations for this project.
 Amplify.configure(awsExports);
@@ -32,7 +32,7 @@ function App() {
              <main className="w-full max-w-screen-lg px-4"></main>
             <header className='App-header'>
               {/* Home Page */}
-             <Dashboard />
+             <PrivateProfile width = "100%"/>
               {/* Sign Out Button */}
               <button 
                 onClick={signOut} 

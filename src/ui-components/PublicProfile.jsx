@@ -6,10 +6,14 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function PublicProfile(props) {
   const { overrides, ...rest } = props;
+  const myPageOnClick = useNavigateAction({
+    type: "url",
+    url: "https://www.figma.com/design/DeCW9YGQwz5THuejOVYFlV/AcquireRecruitUI?node-id=33-554",
+  });
   return (
     <View
       width="1440px"
@@ -1628,6 +1632,9 @@ export default function PublicProfile(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="My Page"
+            onClick={() => {
+              myPageOnClick();
+            }}
             {...getOverrideProps(overrides, "My Page")}
           ></Text>
           <Text
