@@ -10,6 +10,7 @@ import { getOverrideProps, useAuth } from "./utils";
 import { generateClient } from "aws-amplify/api";
 import { createPersonalInfo } from "../graphql/mutations";
 import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
+import { createPersonalInfo } from '../graphql/mutations';
 const client = generateClient();
 export default function Portfolio(props) {
   const { overrides, ...rest } = props;
