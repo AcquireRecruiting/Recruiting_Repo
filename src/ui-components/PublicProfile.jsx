@@ -8,7 +8,7 @@
 import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
-export default function Portfolio(props) {
+export default function PublicProfile(props) {
   const { overrides, ...rest } = props;
   return (
     <View
@@ -22,7 +22,7 @@ export default function Portfolio(props) {
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
-      {...getOverrideProps(overrides, "Portfolio")}
+      {...getOverrideProps(overrides, "PublicProfile")}
       {...rest}
     >
       <Flex
@@ -36,7 +36,7 @@ export default function Portfolio(props) {
         top="740px"
         left="300px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Card338")}
+        {...getOverrideProps(overrides, "Card33556")}
       >
         <View
           width="266px"
@@ -48,66 +48,8 @@ export default function Portfolio(props) {
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "paperclip 1339")}
+          {...getOverrideProps(overrides, "paperclip 133557")}
         ></View>
-      </Flex>
-      <Flex
-        gap="4px"
-        direction="column"
-        width="359px"
-        height="unset"
-        justifyContent="center"
-        alignItems="flex-start"
-        position="absolute"
-        top="554px"
-        left="278px"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Copy3310")}
-      >
-        <Text
-          fontFamily="Inter"
-          fontSize="24px"
-          fontWeight="400"
-          color="rgba(86,101,135,1)"
-          lineHeight="36px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          shrink="0"
-          alignSelf="stretch"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Professional Achievements"
-          {...getOverrideProps(overrides, "Professional Achievements")}
-        ></Text>
-        <Text
-          fontFamily="Inter"
-          fontSize="20px"
-          fontWeight="500"
-          color="rgba(130,130,130,1)"
-          lineHeight="30px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          shrink="0"
-          alignSelf="stretch"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Fill in here"
-          {...getOverrideProps(overrides, "Fill in here3312")}
-        ></Text>
       </Flex>
       <Flex
         gap="4px"
@@ -120,7 +62,7 @@ export default function Portfolio(props) {
         top="554px"
         left="752px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Copy33156")}
+        {...getOverrideProps(overrides, "Copy33558")}
       >
         <Text
           fontFamily="Inter"
@@ -132,17 +74,19 @@ export default function Portfolio(props) {
           display="block"
           direction="column"
           justifyContent="unset"
-          width="unset"
+          width="401px"
           height="unset"
           gap="unset"
           alignItems="unset"
           shrink="0"
-          alignSelf="stretch"
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Interests/Hobbies"
-          {...getOverrideProps(overrides, "Interests/Hobbies")}
+          children="What the Company is looking for"
+          {...getOverrideProps(
+            overrides,
+            "What the Company is looking for33559"
+          )}
         ></Text>
         <Text
           fontFamily="Inter"
@@ -164,7 +108,7 @@ export default function Portfolio(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Fill in here"
-          {...getOverrideProps(overrides, "Fill in here33158")}
+          {...getOverrideProps(overrides, "Fill in here33560")}
         ></Text>
       </Flex>
       <Flex
@@ -175,10 +119,67 @@ export default function Portfolio(props) {
         justifyContent="center"
         alignItems="flex-start"
         position="absolute"
-        top="908px"
-        left="284px"
+        top="554px"
+        left="292px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Copy3313")}
+        {...getOverrideProps(overrides, "Copy33561")}
+      >
+        <Text
+          fontFamily="Inter"
+          fontSize="24px"
+          fontWeight="400"
+          color="rgba(86,101,135,1)"
+          lineHeight="36px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="401px"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Salary Range"
+          {...getOverrideProps(overrides, "Salary Range")}
+        ></Text>
+        <Text
+          fontFamily="Inter"
+          fontSize="20px"
+          fontWeight="500"
+          color="rgba(130,130,130,1)"
+          lineHeight="30px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="unset"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          shrink="0"
+          alignSelf="stretch"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Fill in here"
+          {...getOverrideProps(overrides, "Fill in here33563")}
+        ></Text>
+      </Flex>
+      <Flex
+        gap="4px"
+        direction="column"
+        width="359px"
+        height="unset"
+        justifyContent="center"
+        alignItems="flex-start"
+        position="absolute"
+        top="893px"
+        left="752px"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "Copy33564")}
       >
         <Text
           fontFamily="Inter"
@@ -199,8 +200,8 @@ export default function Portfolio(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Work History"
-          {...getOverrideProps(overrides, "Work History")}
+          children="Benefits"
+          {...getOverrideProps(overrides, "Benefits33565")}
         ></Text>
         <Text
           fontFamily="Inter"
@@ -222,34 +223,8 @@ export default function Portfolio(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Fill in Here"
-          {...getOverrideProps(overrides, "Fill in Here")}
+          {...getOverrideProps(overrides, "Fill in Here33566")}
         ></Text>
-      </Flex>
-      <Flex
-        gap="24px"
-        direction="column"
-        width="359px"
-        height="50px"
-        justifyContent="flex-start"
-        alignItems="flex-start"
-        position="absolute"
-        top="1457px"
-        left="845px"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Card3319")}
-      >
-        <View
-          width="266px"
-          height="183px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "paperclip 13320")}
-        ></View>
       </Flex>
       <Flex
         gap="4px"
@@ -259,10 +234,10 @@ export default function Portfolio(props) {
         justifyContent="center"
         alignItems="flex-start"
         position="absolute"
-        top="900px"
+        top="893px"
         left="752px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Copy3321")}
+        {...getOverrideProps(overrides, "Copy33567")}
       >
         <Text
           fontFamily="Inter"
@@ -283,8 +258,8 @@ export default function Portfolio(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Education"
-          {...getOverrideProps(overrides, "Education")}
+          children="Benefits"
+          {...getOverrideProps(overrides, "Benefits33568")}
         ></Text>
         <Text
           fontFamily="Inter"
@@ -305,9 +280,93 @@ export default function Portfolio(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Fill in here"
-          {...getOverrideProps(overrides, "Fill in here3323")}
+          children="Fill in Here"
+          {...getOverrideProps(overrides, "Fill in Here33569")}
         ></Text>
+      </Flex>
+      <Flex
+        gap="4px"
+        direction="column"
+        width="359px"
+        height="unset"
+        justifyContent="center"
+        alignItems="flex-start"
+        position="absolute"
+        top="890px"
+        left="299px"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "Copy33570")}
+      >
+        <Text
+          fontFamily="Inter"
+          fontSize="24px"
+          fontWeight="400"
+          color="rgba(86,101,135,1)"
+          lineHeight="36px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="unset"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          shrink="0"
+          alignSelf="stretch"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Other Info"
+          {...getOverrideProps(overrides, "Other Info")}
+        ></Text>
+        <Text
+          fontFamily="Inter"
+          fontSize="20px"
+          fontWeight="500"
+          color="rgba(130,130,130,1)"
+          lineHeight="30px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="unset"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          shrink="0"
+          alignSelf="stretch"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Fill in Here"
+          {...getOverrideProps(overrides, "Fill in Here33572")}
+        ></Text>
+      </Flex>
+      <Flex
+        gap="24px"
+        direction="column"
+        width="359px"
+        height="50px"
+        justifyContent="flex-start"
+        alignItems="flex-start"
+        position="absolute"
+        top="1457px"
+        left="845px"
+        padding="0px 0px 0px 0px"
+        {...getOverrideProps(overrides, "Card33573")}
+      >
+        <View
+          width="266px"
+          height="183px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          {...getOverrideProps(overrides, "paperclip 133574")}
+        ></View>
       </Flex>
       <Flex
         gap="24px"
@@ -320,7 +379,7 @@ export default function Portfolio(props) {
         top="170px"
         left="434px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Copy3324")}
+        {...getOverrideProps(overrides, "Copy33575")}
       >
         <Text
           fontFamily="Inter"
@@ -333,17 +392,16 @@ export default function Portfolio(props) {
           direction="column"
           justifyContent="unset"
           letterSpacing="-1.13px"
-          width="unset"
+          width="628px"
           height="unset"
           gap="unset"
           alignItems="unset"
           shrink="0"
-          alignSelf="stretch"
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Jane Doe"
-          {...getOverrideProps(overrides, "Jane Doe")}
+          children="Johnson & Johnson"
+          {...getOverrideProps(overrides, "Johnson & Johnson")}
         ></Text>
         <Text
           fontFamily="Inter"
@@ -386,12 +444,12 @@ export default function Portfolio(props) {
         gap="unset"
         alignItems="unset"
         position="absolute"
-        top="447px"
-        left="23px"
+        top="416px"
+        left="27px"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Professional Focus"
-        {...getOverrideProps(overrides, "Professional Focus")}
+        children="Location "
+        {...getOverrideProps(overrides, "Location")}
       ></Text>
       <Flex
         gap="8px"
@@ -404,7 +462,7 @@ export default function Portfolio(props) {
         top="365px"
         left="431px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Social Icons3328")}
+        {...getOverrideProps(overrides, "Social Icons33579")}
       >
         <View
           width="40px"
@@ -417,7 +475,7 @@ export default function Portfolio(props) {
           position="relative"
           borderRadius="4px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Buttons / Icon3329")}
+          {...getOverrideProps(overrides, "Buttons / Icon33580")}
         >
           <View
             width="24px"
@@ -430,7 +488,7 @@ export default function Portfolio(props) {
             top="8px"
             left="8px"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Icon3330")}
+            {...getOverrideProps(overrides, "Icon33581")}
           >
             <Icon
               width="20px"
@@ -455,7 +513,7 @@ export default function Portfolio(props) {
               position="absolute"
               top="2.04px"
               left="2px"
-              {...getOverrideProps(overrides, "Icon3331")}
+              {...getOverrideProps(overrides, "Icon33582")}
             >
               <View
                 width="24px"
@@ -473,7 +531,7 @@ export default function Portfolio(props) {
                 padding="0px 0px 0px 0px"
                 {...getOverrideProps(
                   overrides,
-                  "Icons / Social / facebook3332"
+                  "Icons / Social / facebook33583"
                 )}
               >
                 <Icon
@@ -501,7 +559,7 @@ export default function Portfolio(props) {
                   bottom="8.5%"
                   left="8.33%"
                   right="8.33%"
-                  {...getOverrideProps(overrides, "Vector3333")}
+                  {...getOverrideProps(overrides, "Vector33584")}
                 ></Icon>
               </View>
             </Icon>
@@ -518,7 +576,7 @@ export default function Portfolio(props) {
           position="relative"
           borderRadius="4px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Buttons / Icon3334")}
+          {...getOverrideProps(overrides, "Buttons / Icon33585")}
         >
           <View
             width="24px"
@@ -531,7 +589,7 @@ export default function Portfolio(props) {
             top="8px"
             left="8px"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Icon3335")}
+            {...getOverrideProps(overrides, "Icon33586")}
           >
             <Icon
               width="18px"
@@ -551,7 +609,7 @@ export default function Portfolio(props) {
               position="absolute"
               top="3px"
               left="3px"
-              {...getOverrideProps(overrides, "Icon3336")}
+              {...getOverrideProps(overrides, "Icon33587")}
             >
               <View
                 width="24px"
@@ -569,7 +627,7 @@ export default function Portfolio(props) {
                 padding="0px 0px 0px 0px"
                 {...getOverrideProps(
                   overrides,
-                  "Icons / Social / linkedin3337"
+                  "Icons / Social / linkedin33588"
                 )}
               >
                 <Icon
@@ -592,7 +650,7 @@ export default function Portfolio(props) {
                   bottom="12.5%"
                   left="12.5%"
                   right="12.5%"
-                  {...getOverrideProps(overrides, "Vector3338")}
+                  {...getOverrideProps(overrides, "Vector33589")}
                 ></Icon>
               </View>
             </Icon>
@@ -609,7 +667,7 @@ export default function Portfolio(props) {
           position="relative"
           borderRadius="4px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Buttons / Icon3339")}
+          {...getOverrideProps(overrides, "Buttons / Icon33590")}
         >
           <View
             width="24px"
@@ -622,7 +680,7 @@ export default function Portfolio(props) {
             top="8px"
             left="8px"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Icon3340")}
+            {...getOverrideProps(overrides, "Icon33591")}
           >
             <Icon
               width="20px"
@@ -642,7 +700,7 @@ export default function Portfolio(props) {
               position="absolute"
               top="5px"
               left="2px"
-              {...getOverrideProps(overrides, "Icon3341")}
+              {...getOverrideProps(overrides, "Icon33592")}
             >
               <View
                 width="24px"
@@ -658,7 +716,10 @@ export default function Portfolio(props) {
                 left="-8.33%"
                 right="8.33%"
                 padding="0px 0px 0px 0px"
-                {...getOverrideProps(overrides, "Icons / Social / youtube3342")}
+                {...getOverrideProps(
+                  overrides,
+                  "Icons / Social / youtube33593"
+                )}
               >
                 <Icon
                   width="20px"
@@ -680,7 +741,7 @@ export default function Portfolio(props) {
                   bottom="20.83%"
                   left="8.33%"
                   right="8.33%"
-                  {...getOverrideProps(overrides, "Vector3343")}
+                  {...getOverrideProps(overrides, "Vector33594")}
                 ></Icon>
               </View>
             </Icon>
@@ -697,7 +758,7 @@ export default function Portfolio(props) {
           position="relative"
           borderRadius="4px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Buttons / Icon3344")}
+          {...getOverrideProps(overrides, "Buttons / Icon33595")}
         >
           <View
             width="24px"
@@ -710,7 +771,7 @@ export default function Portfolio(props) {
             top="8px"
             left="8px"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Icon3345")}
+            {...getOverrideProps(overrides, "Icon33596")}
           >
             <Icon
               width="20px"
@@ -730,7 +791,7 @@ export default function Portfolio(props) {
               position="absolute"
               top="2px"
               left="2px"
-              {...getOverrideProps(overrides, "Icon3346")}
+              {...getOverrideProps(overrides, "Icon33597")}
             >
               <View
                 width="24px"
@@ -748,7 +809,7 @@ export default function Portfolio(props) {
                 padding="0px 0px 0px 0px"
                 {...getOverrideProps(
                   overrides,
-                  "Icons / Social / instagram3347"
+                  "Icons / Social / instagram33598"
                 )}
               >
                 <Icon
@@ -771,7 +832,7 @@ export default function Portfolio(props) {
                   bottom="8.33%"
                   left="8.33%"
                   right="8.33%"
-                  {...getOverrideProps(overrides, "Vector3348")}
+                  {...getOverrideProps(overrides, "Vector33599")}
                 ></Icon>
               </View>
             </Icon>
@@ -786,12 +847,12 @@ export default function Portfolio(props) {
         justifyContent="center"
         alignItems="center"
         position="absolute"
-        top="155px"
-        left="1060px"
+        top="167px"
+        left="1104px"
         borderRadius="8px"
         padding="0px 16px 0px 16px"
         backgroundColor="rgba(86,101,135,1)"
-        {...getOverrideProps(overrides, "00 Primary button")}
+        {...getOverrideProps(overrides, "00 Primary button33600")}
       >
         <Text
           fontFamily="Inter"
@@ -803,7 +864,7 @@ export default function Portfolio(props) {
           display="block"
           direction="column"
           justifyContent="unset"
-          width="284px"
+          width="184px"
           height="42px"
           gap="unset"
           alignItems="unset"
@@ -811,513 +872,10 @@ export default function Portfolio(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="UPLOAD YOUR RESUME"
-          {...getOverrideProps(overrides, "UPLOAD YOUR RESUME")}
+          children="VIEW WEBSITE"
+          {...getOverrideProps(overrides, "VIEW WEBSITE")}
         ></Text>
       </Flex>
-      <View
-        width="280px"
-        height="311px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        overflow="hidden"
-        position="absolute"
-        top="526px"
-        bottom="930px"
-        left="-2px"
-        padding="0px 0px 0px 0px"
-        backgroundColor="rgba(255,255,255,1)"
-        {...getOverrideProps(overrides, "Left sidebar")}
-      >
-        <Flex
-          gap="0"
-          direction="column"
-          width="240px"
-          height="unset"
-          justifyContent="flex-start"
-          alignItems="flex-start"
-          position="absolute"
-          top="78px"
-          left="8px"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "List3352")}
-        >
-          <Flex
-            gap="16px"
-            direction="row"
-            width="unset"
-            height="40px"
-            justifyContent="flex-start"
-            alignItems="center"
-            shrink="0"
-            alignSelf="stretch"
-            position="relative"
-            borderRadius="8px"
-            padding="0px 16px 0px 16px"
-            backgroundColor="rgba(247,247,247,1)"
-            {...getOverrideProps(overrides, "Menu item3353")}
-          >
-            <View
-              width="24px"
-              height="24px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              overflow="hidden"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "home")}
-            >
-              <Icon
-                width="18px"
-                height="20px"
-                viewBox={{ minX: 0, minY: 0, width: 18, height: 20 }}
-                paths={[
-                  {
-                    d: "M0 7L-0.613941 6.21065C-0.857527 6.4001 -1 6.69141 -1 7L0 7ZM9 0L9.61394 -0.789352C9.25283 -1.07022 8.74717 -1.07022 8.38606 -0.789352L9 0ZM18 7L19 7C19 6.69141 18.8575 6.4001 18.6139 6.21065L18 7ZM0 18L-1 18L0 18ZM0.613941 7.78935L9.61394 0.789352L8.38606 -0.789352L-0.613941 6.21065L0.613941 7.78935ZM8.38606 0.789352L17.3861 7.78935L18.6139 6.21065L9.61394 -0.789352L8.38606 0.789352ZM17 7L17 18L19 18L19 7L17 7ZM17 18C17 18.2652 16.8946 18.5196 16.7071 18.7071L18.1213 20.1213C18.6839 19.5587 19 18.7957 19 18L17 18ZM16.7071 18.7071C16.5196 18.8946 16.2652 19 16 19L16 21C16.7957 21 17.5587 20.6839 18.1213 20.1213L16.7071 18.7071ZM16 19L2 19L2 21L16 21L16 19ZM2 19C1.73478 19 1.48043 18.8946 1.29289 18.7071L-0.12132 20.1213C0.441288 20.6839 1.20435 21 2 21L2 19ZM1.29289 18.7071C1.10536 18.5196 1 18.2652 1 18L-1 18C-1 18.7957 -0.68393 19.5587 -0.12132 20.1213L1.29289 18.7071ZM1 18L1 7L-1 7L-1 18L1 18Z",
-                    stroke: "rgba(86,101,135,1)",
-                    fillRule: "nonzero",
-                    strokeLinejoin: "round",
-                    strokeWidth: 2,
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="8.33%"
-                bottom="8.33%"
-                left="12.5%"
-                right="12.5%"
-                {...getOverrideProps(overrides, "Vector3355")}
-              ></Icon>
-              <Icon
-                width="6px"
-                height="10px"
-                viewBox={{ minX: 0, minY: 0, width: 6, height: 10 }}
-                paths={[
-                  {
-                    d: "M-1 10C-1 10.5523 -0.552285 11 0 11C0.552285 11 1 10.5523 1 10L-1 10ZM0 0L0 -1C-0.552285 -1 -1 -0.552285 -1 2.22045e-16L0 0ZM6 0L7 0C7 -0.552285 6.55228 -1 6 -1L6 0ZM5 10C5 10.5523 5.44772 11 6 11C6.55228 11 7 10.5523 7 10L5 10ZM1 10L1 0L-1 0L-1 10L1 10ZM0 1L6 1L6 -1L0 -1L0 1ZM5 0L5 10L7 10L7 0L5 0Z",
-                    stroke: "rgba(86,101,135,1)",
-                    fillRule: "nonzero",
-                    strokeLinejoin: "round",
-                    strokeWidth: 2,
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="50%"
-                bottom="8.33%"
-                left="37.5%"
-                right="37.5%"
-                {...getOverrideProps(overrides, "Vector3356")}
-              ></Icon>
-            </View>
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="500"
-              color="rgba(86,101,135,1)"
-              lineHeight="24px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              grow="1"
-              shrink="1"
-              basis="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Home"
-              {...getOverrideProps(overrides, "Home")}
-            ></Text>
-          </Flex>
-          <Flex
-            gap="16px"
-            direction="row"
-            width="unset"
-            height="40px"
-            justifyContent="flex-start"
-            alignItems="center"
-            shrink="0"
-            alignSelf="stretch"
-            position="relative"
-            borderRadius="8px"
-            padding="0px 16px 0px 16px"
-            backgroundColor="rgba(255,255,255,1)"
-            {...getOverrideProps(overrides, "Menu item3358")}
-          >
-            <View
-              width="24px"
-              height="24px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              overflow="hidden"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "search")}
-            >
-              <Icon
-                width="16px"
-                height="16px"
-                viewBox={{ minX: 0, minY: 0, width: 16, height: 16 }}
-                paths={[
-                  {
-                    d: "M15 8C15 11.866 11.866 15 8 15L8 17C12.9706 17 17 12.9706 17 8L15 8ZM8 15C4.13401 15 1 11.866 1 8L-1 8C-1 12.9706 3.02944 17 8 17L8 15ZM1 8C1 4.13401 4.13401 1 8 1L8 -1C3.02944 -1 -1 3.02944 -1 8L1 8ZM8 1C11.866 1 15 4.13401 15 8L17 8C17 3.02944 12.9706 -1 8 -1L8 1Z",
-                    stroke: "rgba(86,101,135,1)",
-                    fillRule: "nonzero",
-                    strokeLinejoin: "round",
-                    strokeWidth: 2,
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="12.5%"
-                bottom="20.83%"
-                left="12.5%"
-                right="20.83%"
-                {...getOverrideProps(overrides, "Vector3360")}
-              ></Icon>
-              <Icon
-                width="4.35px"
-                height="4.35px"
-                viewBox={{
-                  minX: 0,
-                  minY: 0,
-                  width: 4.350000381469727,
-                  height: 4.350000381469727,
-                }}
-                paths={[
-                  {
-                    d: "M3.64289 5.05711C4.03342 5.44763 4.66658 5.44763 5.05711 5.05711C5.44763 4.66658 5.44763 4.03342 5.05711 3.64289L3.64289 5.05711ZM0.707107 -0.707107C0.316583 -1.09763 -0.316583 -1.09763 -0.707107 -0.707107C-1.09763 -0.316583 -1.09763 0.316583 -0.707107 0.707107L0.707107 -0.707107ZM5.05711 3.64289L0.707107 -0.707107L-0.707107 0.707107L3.64289 5.05711L5.05711 3.64289Z",
-                    stroke: "rgba(86,101,135,1)",
-                    fillRule: "nonzero",
-                    strokeLinejoin: "round",
-                    strokeWidth: 2,
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="69.37%"
-                bottom="12.5%"
-                left="69.37%"
-                right="12.5%"
-                {...getOverrideProps(overrides, "Vector3361")}
-              ></Icon>
-            </View>
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="500"
-              color="rgba(86,101,135,1)"
-              lineHeight="24px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              grow="1"
-              shrink="1"
-              basis="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Search"
-              {...getOverrideProps(overrides, "Search")}
-            ></Text>
-          </Flex>
-          <Flex
-            gap="16px"
-            direction="row"
-            width="unset"
-            height="40px"
-            justifyContent="flex-start"
-            alignItems="center"
-            shrink="0"
-            alignSelf="stretch"
-            position="relative"
-            borderRadius="8px"
-            padding="0px 16px 0px 16px"
-            backgroundColor="rgba(255,255,255,1)"
-            {...getOverrideProps(overrides, "Menu item3363")}
-          >
-            <View
-              width="24px"
-              height="24px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              overflow="hidden"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "bell")}
-            >
-              <Icon
-                width="18px"
-                height="15px"
-                viewBox={{ minX: 0, minY: 0, width: 18, height: 15 }}
-                paths={[
-                  {
-                    d: "M9 0L9 -1L9 0ZM3 6L2 6L3 6ZM0 15L-0.5547 14.1679C-0.921357 14.4124 -1.08479 14.868 -0.957092 15.2898C-0.829394 15.7115 -0.440667 16 0 16L0 15ZM18 15L18 16C18.4407 16 18.8294 15.7115 18.9571 15.2898C19.0848 14.868 18.9214 14.4124 18.5547 14.1679L18 15ZM16 6C16 4.14349 15.2625 2.36301 13.9497 1.05025L12.5355 2.46447C13.4732 3.40215 14 4.67392 14 6L16 6ZM13.9497 1.05025C12.637 -0.262502 10.8565 -1 9 -1L9 1C10.3261 1 11.5979 1.52678 12.5355 2.46447L13.9497 1.05025ZM9 -1C7.14348 -1 5.36301 -0.262502 4.05025 1.05025L5.46447 2.46447C6.40215 1.52678 7.67392 1 9 1L9 -1ZM4.05025 1.05025C2.7375 2.36301 2 4.14348 2 6L4 6C4 4.67392 4.52678 3.40215 5.46447 2.46447L4.05025 1.05025ZM2 6C2 9.35266 1.28293 11.4346 0.622104 12.6461C0.290309 13.2544 -0.0327743 13.6535 -0.257203 13.8904C-0.369678 14.0091 -0.458062 14.0878 -0.511278 14.1322C-0.5379 14.1544 -0.555753 14.168 -0.563453 14.1737C-0.567303 14.1766 -0.568614 14.1775 -0.567214 14.1765C-0.566514 14.176 -0.565135 14.175 -0.563057 14.1736C-0.562018 14.1729 -0.560804 14.1721 -0.559412 14.1711C-0.558716 14.1706 -0.557975 14.1701 -0.55719 14.1696C-0.556798 14.1694 -0.556175 14.1689 -0.555979 14.1688C-0.555345 14.1684 -0.5547 14.1679 0 15C0.5547 15.8321 0.555368 15.8316 0.556048 15.8312C0.556289 15.831 0.556981 15.8305 0.557464 15.8302C0.558432 15.8296 0.559445 15.8289 0.560505 15.8282C0.562623 15.8267 0.564925 15.8252 0.567406 15.8235C0.572368 15.8201 0.578049 15.8161 0.584426 15.8116C0.597179 15.8026 0.612713 15.7915 0.630836 15.778C0.667081 15.751 0.713681 15.7148 0.769091 15.6686C0.879937 15.5762 1.02593 15.444 1.1947 15.2659C1.53277 14.909 1.95969 14.3706 2.3779 13.6039C3.21707 12.0654 4 9.64734 4 6L2 6ZM0 16L18 16L18 14L0 14L0 16ZM18 15C18.5547 14.1679 18.5553 14.1684 18.556 14.1688C18.5562 14.1689 18.5568 14.1694 18.5572 14.1696C18.558 14.1701 18.5587 14.1706 18.5594 14.1711C18.5608 14.1721 18.562 14.1729 18.5631 14.1736C18.5651 14.175 18.5665 14.176 18.5672 14.1765C18.5686 14.1775 18.5673 14.1766 18.5635 14.1737C18.5558 14.168 18.5379 14.1544 18.5113 14.1322C18.4581 14.0878 18.3697 14.0091 18.2572 13.8904C18.0328 13.6535 17.7097 13.2544 17.3779 12.6461C16.7171 11.4346 16 9.35266 16 6L14 6C14 9.64734 14.7829 12.0654 15.6221 13.6039C16.0403 14.3706 16.4672 14.909 16.8053 15.2659C16.9741 15.444 17.1201 15.5762 17.2309 15.6686C17.2863 15.7148 17.3329 15.751 17.3692 15.778C17.3873 15.7915 17.4028 15.8026 17.4156 15.8116C17.422 15.8161 17.4276 15.8201 17.4326 15.8235C17.4351 15.8252 17.4374 15.8267 17.4395 15.8282C17.4406 15.8289 17.4416 15.8296 17.4425 15.8302C17.443 15.8305 17.4437 15.831 17.444 15.8312C17.4446 15.8316 17.4453 15.8321 18 15Z",
-                    stroke: "rgba(86,101,135,1)",
-                    fillRule: "nonzero",
-                    strokeLinejoin: "round",
-                    strokeWidth: 2,
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="8.33%"
-                bottom="29.17%"
-                left="12.5%"
-                right="12.5%"
-                {...getOverrideProps(overrides, "Vector3365")}
-              ></Icon>
-              <Icon
-                width="3.46px"
-                height="1px"
-                viewBox={{
-                  minX: 0,
-                  minY: 0,
-                  width: 3.4599990844726562,
-                  height: 0.9964561462402344,
-                }}
-                paths={[
-                  {
-                    d: "M4.325 0.501772C4.60212 0.0240456 4.4395 -0.587879 3.96177 -0.865C3.48404 -1.14212 2.87212 -0.979498 2.595 -0.501772L4.325 0.501772ZM0.865 -0.501772C0.587879 -0.979498 -0.0240456 -1.14212 -0.501772 -0.865C-0.979498 -0.587879 -1.14212 0.0240456 -0.865 0.501772L0.865 -0.501772ZM2.595 -0.501772C2.50709 -0.350232 2.38092 -0.224445 2.22911 -0.137006L3.22734 1.59607C3.68276 1.33375 4.06128 0.956388 4.325 0.501772L2.595 -0.501772ZM2.22911 -0.137006C2.07731 -0.0495675 1.90519 -0.00354385 1.73 -0.00354385L1.73 1.99646C2.25557 1.99646 2.77191 1.85839 3.22734 1.59607L2.22911 -0.137006ZM1.73 -0.00354385C1.55481 -0.00354385 1.38269 -0.0495675 1.23089 -0.137006L0.23266 1.59607C0.688086 1.85839 1.20443 1.99646 1.73 1.99646L1.73 -0.00354385ZM1.23089 -0.137006C1.07908 -0.224445 0.952906 -0.350232 0.865 -0.501772L-0.865 0.501772C-0.601285 0.956388 -0.222765 1.33375 0.23266 1.59607L1.23089 -0.137006Z",
-                    stroke: "rgba(86,101,135,1)",
-                    fillRule: "nonzero",
-                    strokeLinejoin: "round",
-                    strokeWidth: 2,
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="87.5%"
-                bottom="8.35%"
-                left="42.79%"
-                right="42.79%"
-                {...getOverrideProps(overrides, "Vector3366")}
-              ></Icon>
-            </View>
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="500"
-              color="rgba(86,101,135,1)"
-              lineHeight="24px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              grow="1"
-              shrink="1"
-              basis="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Notifications"
-              {...getOverrideProps(overrides, "Notifications")}
-            ></Text>
-          </Flex>
-          <Flex
-            gap="16px"
-            direction="row"
-            width="unset"
-            height="40px"
-            justifyContent="flex-start"
-            alignItems="center"
-            shrink="0"
-            alignSelf="stretch"
-            position="relative"
-            borderRadius="8px"
-            padding="0px 16px 0px 16px"
-            backgroundColor="rgba(255,255,255,1)"
-            {...getOverrideProps(overrides, "Menu item3368")}
-          >
-            <View
-              width="24px"
-              height="24px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              overflow="hidden"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "bookmark")}
-            >
-              <Icon
-                width="14px"
-                height="18px"
-                viewBox={{ minX: 0, minY: 0, width: 14, height: 18 }}
-                paths={[
-                  {
-                    d: "M14 18L13.4188 18.8137C13.7236 19.0315 14.1245 19.0606 14.4576 18.8892C14.7907 18.7178 15 18.3746 15 18L14 18ZM7 13L7.58124 12.1863C7.23354 11.9379 6.76646 11.9379 6.41876 12.1863L7 13ZM0 18L-1 18C-1 18.3746 -0.790653 18.7178 -0.457582 18.8892C-0.124511 19.0606 0.276424 19.0315 0.581238 18.8137L0 18ZM2 0L2 -1L2 0ZM12 0L12 -1L12 0ZM14.5812 17.1863L7.58124 12.1863L6.41876 13.8137L13.4188 18.8137L14.5812 17.1863ZM6.41876 12.1863L-0.581238 17.1863L0.581238 18.8137L7.58124 13.8137L6.41876 12.1863ZM1 18L1 2L-1 2L-1 18L1 18ZM1 2C1 1.73478 1.10536 1.48043 1.29289 1.29289L-0.12132 -0.12132C-0.68393 0.441289 -1 1.20435 -1 2L1 2ZM1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1L2 -1C1.20435 -1 0.441289 -0.68393 -0.12132 -0.12132L1.29289 1.29289ZM2 1L12 1L12 -1L2 -1L2 1ZM12 1C12.2652 1 12.5196 1.10536 12.7071 1.29289L14.1213 -0.12132C13.5587 -0.68393 12.7956 -1 12 -1L12 1ZM12.7071 1.29289C12.8946 1.48043 13 1.73478 13 2L15 2C15 1.20435 14.6839 0.441288 14.1213 -0.12132L12.7071 1.29289ZM13 2L13 18L15 18L15 2L13 2Z",
-                    stroke: "rgba(86,101,135,1)",
-                    fillRule: "nonzero",
-                    strokeLinejoin: "round",
-                    strokeWidth: 2,
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="12.5%"
-                bottom="12.5%"
-                left="20.83%"
-                right="20.83%"
-                {...getOverrideProps(overrides, "Vector3370")}
-              ></Icon>
-            </View>
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="500"
-              color="rgba(86,101,135,1)"
-              lineHeight="24px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              grow="1"
-              shrink="1"
-              basis="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Activity&#xA;"
-              {...getOverrideProps(overrides, "Activity")}
-            ></Text>
-          </Flex>
-          <Flex
-            gap="16px"
-            direction="row"
-            width="unset"
-            height="40px"
-            justifyContent="flex-start"
-            alignItems="center"
-            shrink="0"
-            alignSelf="stretch"
-            position="relative"
-            borderRadius="8px"
-            padding="0px 16px 0px 16px"
-            backgroundColor="rgba(255,255,255,1)"
-            {...getOverrideProps(overrides, "Menu item3372")}
-          >
-            <View
-              width="24px"
-              height="24px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              overflow="hidden"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "message-circle")}
-            >
-              <Icon
-                width="18px"
-                height="18px"
-                viewBox={{
-                  minX: 0,
-                  minY: 0,
-                  width: 18.000028610229492,
-                  height: 18.000028610229492,
-                }}
-                paths={[
-                  {
-                    d: "M18 8.50003L17 8.50003L17 8.50264L18 8.50003ZM17.1 12.3L16.2074 11.8492L16.2055 11.853L17.1 12.3ZM9.5 17L9.49961 16L9.49739 16L9.5 17ZM5.7 16.1L6.15085 15.2074C5.91286 15.0872 5.63672 15.067 5.38377 15.1513L5.7 16.1ZM0 18L-0.948683 17.6838C-1.06846 18.0431 -0.974939 18.4393 -0.707107 18.7071C-0.439275 18.975 -0.043107 19.0685 0.316228 18.9487L0 18ZM1.9 12.3L2.84868 12.6163C2.933 12.3633 2.91281 12.0872 2.7926 11.8492L1.9 12.3ZM1 8.50003L2 8.50264L2 8.50042L1 8.50003ZM5.7 0.900029L6.14706 1.79454L6.15085 1.79263L5.7 0.900029ZM9.5 2.84881e-05L9.49739 1.00003L9.5 1.00003L9.5 2.84881e-05ZM10 2.84881e-05L10.0551 -0.998453C10.0367 -0.999465 10.0184 -0.999972 10 -0.999972L10 2.84881e-05ZM18 8.00003L19 8.00003C19 7.98166 18.9995 7.96329 18.9985 7.94494L18 8.00003ZM17 8.50264C17.003 9.665 16.7315 10.8116 16.2074 11.8492L17.9926 12.7509C18.6587 11.4322 19.0038 9.97479 19 8.49742L17 8.50264ZM16.2055 11.853C15.5829 13.0986 14.6259 14.1464 13.4415 14.8788L14.4934 16.5798C15.9936 15.652 17.2059 14.3249 17.9945 12.7471L16.2055 11.853ZM13.4415 14.8788C12.2571 15.6113 10.8922 15.9995 9.49961 16L9.50039 18C11.2643 17.9993 12.9932 17.5076 14.4934 16.5798L13.4415 14.8788ZM9.49739 16C8.33503 16.0031 7.18838 15.7315 6.15085 15.2074L5.24915 16.9926C6.56785 17.6587 8.02524 18.0039 9.50261 18L9.49739 16ZM5.38377 15.1513L-0.316228 17.0513L0.316228 18.9487L6.01623 17.0487L5.38377 15.1513ZM0.948683 18.3163L2.84868 12.6163L0.951317 11.9838L-0.948683 17.6838L0.948683 18.3163ZM2.7926 11.8492C2.26854 10.8116 1.99697 9.665 2 8.50264L3.39891e-06 8.49742C-0.0038485 9.97479 0.341323 11.4322 1.0074 12.7509L2.7926 11.8492ZM2 8.50042C2.00054 7.10785 2.38878 5.74293 3.12122 4.55855L1.42022 3.50661C0.492449 5.00683 0.000682624 6.73572 7.48654e-08 8.49964L2 8.50042ZM3.12122 4.55855C3.85367 3.37416 4.9014 2.41709 6.14706 1.79453L5.25294 0.00552399C3.67511 0.794099 2.34798 2.00639 1.42022 3.50661L3.12122 4.55855ZM6.15085 1.79263C7.18838 1.26857 8.33503 0.996994 9.49739 1.00003L9.50261 -0.999968C8.02524 -1.00382 6.56785 -0.658649 5.24915 0.00743056L6.15085 1.79263ZM9.5 1.00003L10 1.00003L10 -0.999972L9.5 -0.999972L9.5 1.00003ZM9.94491 0.99851C11.7835 1.09994 13.52 1.87596 14.822 3.17799L16.2362 1.76378C14.5861 0.113615 12.3852 -0.869901 10.0551 -0.998453L9.94491 0.99851ZM14.822 3.17799C16.1241 4.48002 16.9001 6.21656 17.0015 8.05511L18.9985 7.94494C18.8699 5.6148 17.8864 3.41395 16.2362 1.76378L14.822 3.17799ZM17 8.00003L17 8.50003L19 8.50003L19 8.00003L17 8.00003Z",
-                    stroke: "rgba(86,101,135,1)",
-                    fillRule: "nonzero",
-                    strokeLinejoin: "round",
-                    strokeWidth: 2,
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="12.5%"
-                bottom="12.5%"
-                left="12.5%"
-                right="12.5%"
-                {...getOverrideProps(overrides, "Vector3374")}
-              ></Icon>
-            </View>
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="500"
-              color="rgba(86,101,135,1)"
-              lineHeight="24px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              grow="1"
-              shrink="1"
-              basis="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Messages"
-              {...getOverrideProps(overrides, "Messages")}
-            ></Text>
-          </Flex>
-        </Flex>
-      </View>
       <Flex
         gap="8px"
         direction="column"
@@ -1353,8 +911,35 @@ export default function Portfolio(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="About"
-          {...getOverrideProps(overrides, "About")}
+          children="Positions Available with Johnson & Johnson"
+          {...getOverrideProps(
+            overrides,
+            "Positions Available with Johnson & Johnson"
+          )}
+        ></Text>
+        <Text
+          fontFamily="Inter"
+          fontSize="24px"
+          fontWeight="400"
+          color="rgba(86,101,135,1)"
+          lineHeight="36px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="401px"
+          height="unset"
+          gap="unset"
+          alignItems="unset"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="What the Company is looking for"
+          {...getOverrideProps(
+            overrides,
+            "What the Company is looking for33629"
+          )}
         ></Text>
       </Flex>
       <Text
@@ -1377,7 +962,7 @@ export default function Portfolio(props) {
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="Acquire Recruiting"
-        {...getOverrideProps(overrides, "Acquire Recruiting3378")}
+        {...getOverrideProps(overrides, "Acquire Recruiting33630")}
       ></Text>
       <Flex
         gap="8px"
@@ -1390,7 +975,7 @@ export default function Portfolio(props) {
         top="1699.5px"
         left="55px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Social Icons3379")}
+        {...getOverrideProps(overrides, "Social Icons33631")}
       >
         <View
           width="40px"
@@ -1403,7 +988,7 @@ export default function Portfolio(props) {
           position="relative"
           borderRadius="4px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Buttons / Icon3380")}
+          {...getOverrideProps(overrides, "Buttons / Icon33632")}
         >
           <View
             width="24px"
@@ -1416,7 +1001,7 @@ export default function Portfolio(props) {
             top="8px"
             left="8px"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Icon3381")}
+            {...getOverrideProps(overrides, "Icon33633")}
           >
             <Icon
               width="20px"
@@ -1441,7 +1026,7 @@ export default function Portfolio(props) {
               position="absolute"
               top="2.04px"
               left="2px"
-              {...getOverrideProps(overrides, "Icon3382")}
+              {...getOverrideProps(overrides, "Icon33634")}
             >
               <View
                 width="24px"
@@ -1459,7 +1044,7 @@ export default function Portfolio(props) {
                 padding="0px 0px 0px 0px"
                 {...getOverrideProps(
                   overrides,
-                  "Icons / Social / facebook3383"
+                  "Icons / Social / facebook33635"
                 )}
               >
                 <Icon
@@ -1487,7 +1072,7 @@ export default function Portfolio(props) {
                   bottom="8.5%"
                   left="8.33%"
                   right="8.33%"
-                  {...getOverrideProps(overrides, "Vector3384")}
+                  {...getOverrideProps(overrides, "Vector33636")}
                 ></Icon>
               </View>
             </Icon>
@@ -1504,7 +1089,7 @@ export default function Portfolio(props) {
           position="relative"
           borderRadius="4px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Buttons / Icon3385")}
+          {...getOverrideProps(overrides, "Buttons / Icon33637")}
         >
           <View
             width="24px"
@@ -1517,7 +1102,7 @@ export default function Portfolio(props) {
             top="8px"
             left="8px"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Icon3386")}
+            {...getOverrideProps(overrides, "Icon33638")}
           >
             <Icon
               width="18px"
@@ -1537,7 +1122,7 @@ export default function Portfolio(props) {
               position="absolute"
               top="3px"
               left="3px"
-              {...getOverrideProps(overrides, "Icon3387")}
+              {...getOverrideProps(overrides, "Icon33639")}
             >
               <View
                 width="24px"
@@ -1555,7 +1140,7 @@ export default function Portfolio(props) {
                 padding="0px 0px 0px 0px"
                 {...getOverrideProps(
                   overrides,
-                  "Icons / Social / linkedin3388"
+                  "Icons / Social / linkedin33640"
                 )}
               >
                 <Icon
@@ -1578,7 +1163,7 @@ export default function Portfolio(props) {
                   bottom="12.5%"
                   left="12.5%"
                   right="12.5%"
-                  {...getOverrideProps(overrides, "Vector3389")}
+                  {...getOverrideProps(overrides, "Vector33641")}
                 ></Icon>
               </View>
             </Icon>
@@ -1595,7 +1180,7 @@ export default function Portfolio(props) {
           position="relative"
           borderRadius="4px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Buttons / Icon3390")}
+          {...getOverrideProps(overrides, "Buttons / Icon33642")}
         >
           <View
             width="24px"
@@ -1608,7 +1193,7 @@ export default function Portfolio(props) {
             top="8px"
             left="8px"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Icon3391")}
+            {...getOverrideProps(overrides, "Icon33643")}
           >
             <Icon
               width="20px"
@@ -1628,7 +1213,7 @@ export default function Portfolio(props) {
               position="absolute"
               top="5px"
               left="2px"
-              {...getOverrideProps(overrides, "Icon3392")}
+              {...getOverrideProps(overrides, "Icon33644")}
             >
               <View
                 width="24px"
@@ -1644,7 +1229,10 @@ export default function Portfolio(props) {
                 left="-8.33%"
                 right="8.33%"
                 padding="0px 0px 0px 0px"
-                {...getOverrideProps(overrides, "Icons / Social / youtube3393")}
+                {...getOverrideProps(
+                  overrides,
+                  "Icons / Social / youtube33645"
+                )}
               >
                 <Icon
                   width="20px"
@@ -1666,7 +1254,7 @@ export default function Portfolio(props) {
                   bottom="20.83%"
                   left="8.33%"
                   right="8.33%"
-                  {...getOverrideProps(overrides, "Vector3394")}
+                  {...getOverrideProps(overrides, "Vector33646")}
                 ></Icon>
               </View>
             </Icon>
@@ -1683,7 +1271,7 @@ export default function Portfolio(props) {
           position="relative"
           borderRadius="4px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Buttons / Icon3395")}
+          {...getOverrideProps(overrides, "Buttons / Icon33647")}
         >
           <View
             width="24px"
@@ -1696,7 +1284,7 @@ export default function Portfolio(props) {
             top="8px"
             left="8px"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Icon3396")}
+            {...getOverrideProps(overrides, "Icon33648")}
           >
             <Icon
               width="20px"
@@ -1716,7 +1304,7 @@ export default function Portfolio(props) {
               position="absolute"
               top="2px"
               left="2px"
-              {...getOverrideProps(overrides, "Icon3397")}
+              {...getOverrideProps(overrides, "Icon33649")}
             >
               <View
                 width="24px"
@@ -1734,7 +1322,7 @@ export default function Portfolio(props) {
                 padding="0px 0px 0px 0px"
                 {...getOverrideProps(
                   overrides,
-                  "Icons / Social / instagram3398"
+                  "Icons / Social / instagram33650"
                 )}
               >
                 <Icon
@@ -1757,7 +1345,7 @@ export default function Portfolio(props) {
                   bottom="8.33%"
                   left="8.33%"
                   right="8.33%"
-                  {...getOverrideProps(overrides, "Vector3399")}
+                  {...getOverrideProps(overrides, "Vector33651")}
                 ></Icon>
               </View>
             </Icon>
@@ -1775,10 +1363,10 @@ export default function Portfolio(props) {
         }}
         paths={[
           {
-            d: "M632 45.9999L631.964 46.4986L632 46.5012L632.035 46.4987L632 45.9999ZM-0.0362963 0.498681L631.964 46.4986L632.036 45.5013L0.0362963 -0.498681L-0.0362963 0.498681ZM632.035 46.4987L1280.04 0.498745L1279.96 -0.498745L631.965 45.5012L632.035 46.4987Z",
-            stroke: "rgba(0,72,121,1)",
+            d: "M632 45.9999L631.891 47.496L631.999 47.5038L632.106 47.4962L632 45.9999ZM-0.108889 1.49604L631.891 47.496L632.109 44.5039L0.108889 -1.49604L-0.108889 1.49604ZM632.106 47.4962L1280.11 1.49623L1279.89 -1.49623L631.894 44.5037L632.106 47.4962Z",
+            stroke: "rgba(86,101,135,1)",
             fillRule: "nonzero",
-            strokeWidth: 1,
+            strokeWidth: 3,
           },
         ]}
         display="block"
@@ -1820,7 +1408,7 @@ export default function Portfolio(props) {
           top="12px"
           left="1320px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Avatar33102")}
+          {...getOverrideProps(overrides, "Avatar33654")}
         >
           <View
             width="40px"
@@ -1835,7 +1423,7 @@ export default function Portfolio(props) {
             borderRadius="1000px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(247,247,247,1)"
-            {...getOverrideProps(overrides, "Avatar33103")}
+            {...getOverrideProps(overrides, "Avatar33655")}
           >
             <Image
               width="100%"
@@ -1889,7 +1477,7 @@ export default function Portfolio(props) {
               bottom="37.5%"
               left="25%"
               right="25%"
-              {...getOverrideProps(overrides, "Vector33106")}
+              {...getOverrideProps(overrides, "Vector33658")}
             ></Icon>
           </View>
         </Flex>
@@ -1955,7 +1543,7 @@ export default function Portfolio(props) {
                 bottom="45.83%"
                 left="45.83%"
                 right="45.83%"
-                {...getOverrideProps(overrides, "Vector33110")}
+                {...getOverrideProps(overrides, "Vector33662")}
               ></Icon>
               <Icon
                 width="2px"
@@ -1979,7 +1567,7 @@ export default function Portfolio(props) {
                 bottom="45.83%"
                 left="75%"
                 right="16.67%"
-                {...getOverrideProps(overrides, "Vector33111")}
+                {...getOverrideProps(overrides, "Vector33663")}
               ></Icon>
               <Icon
                 width="2px"
@@ -2003,7 +1591,7 @@ export default function Portfolio(props) {
                 bottom="45.83%"
                 left="16.67%"
                 right="75%"
-                {...getOverrideProps(overrides, "Vector33112")}
+                {...getOverrideProps(overrides, "Vector33664")}
               ></Icon>
             </View>
           </Flex>
@@ -2019,7 +1607,7 @@ export default function Portfolio(props) {
           top="19px"
           left="299px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "List33113")}
+          {...getOverrideProps(overrides, "List")}
         >
           <Text
             fontFamily="Inter"
@@ -2127,7 +1715,7 @@ export default function Portfolio(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Acquire Recruiting"
-          {...getOverrideProps(overrides, "Acquire Recruiting33118")}
+          {...getOverrideProps(overrides, "Acquire Recruiting33670")}
         ></Text>
       </View>
       <Image
@@ -2142,7 +1730,7 @@ export default function Portfolio(props) {
         left="11px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        {...getOverrideProps(overrides, "image 1")}
+        {...getOverrideProps(overrides, "image 133671")}
       ></Image>
       <View
         width="377px"
@@ -2184,12 +1772,17 @@ export default function Portfolio(props) {
         {...getOverrideProps(overrides, "Line 2")}
       ></Icon>
       <Icon
-        width="702px"
+        width="591px"
         height="0px"
-        viewBox={{ minX: 0, minY: 0, width: 1, height: 702 }}
+        viewBox={{
+          minX: 0,
+          minY: 0,
+          width: 3.552713678800501e-14,
+          height: 591,
+        }}
         paths={[
           {
-            d: "M0 2.22045e-16L702 2.22045e-16L702 -3L0 -3L0 2.22045e-16Z",
+            d: "M0 -2.22045e-16L591 -2.22045e-16L591 -3L0 -3L0 -2.22045e-16Z",
             stroke: "rgba(0,0,0,1)",
             fillRule: "nonzero",
             strokeWidth: 3,
@@ -2206,6 +1799,57 @@ export default function Portfolio(props) {
         transform="rotate(90deg)"
         {...getOverrideProps(overrides, "Line 3")}
       ></Icon>
+      <Flex
+        gap="8px"
+        direction="row"
+        width="600px"
+        height="112px"
+        justifyContent="center"
+        alignItems="center"
+        position="absolute"
+        top="1157px"
+        left="425px"
+        borderRadius="8px"
+        padding="0px 16px 0px 16px"
+        backgroundColor="rgba(201,151,0,1)"
+        {...getOverrideProps(overrides, "00 Primary button33708")}
+      >
+        <Text
+          fontFamily="Inter"
+          fontSize="32px"
+          fontWeight="500"
+          color="rgba(255,255,255,1)"
+          lineHeight="48px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="408px"
+          height="44px"
+          gap="unset"
+          alignItems="unset"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="REQUEST INTERVIEW"
+          {...getOverrideProps(overrides, "REQUEST INTERVIEW")}
+        ></Text>
+        <Image
+          width="92px"
+          height="89.28px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          shrink="0"
+          position="relative"
+          boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
+          padding="0px 0px 0px 0px"
+          objectFit="cover"
+          {...getOverrideProps(overrides, "image 133710")}
+        ></Image>
+      </Flex>
     </View>
   );
 }

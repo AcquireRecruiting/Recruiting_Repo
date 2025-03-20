@@ -8,7 +8,7 @@
 import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
-export default function Dashboard(props) {
+export default function EmployerMatch(props) {
   const { overrides, ...rest } = props;
   return (
     <View
@@ -22,7 +22,7 @@ export default function Dashboard(props) {
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
-      {...getOverrideProps(overrides, "Dashboard")}
+      {...getOverrideProps(overrides, "EmployerMatch")}
       {...rest}
     >
       <Flex
@@ -42,7 +42,7 @@ export default function Dashboard(props) {
         borderRadius="8px"
         padding="23px 23px 0px 23px"
         backgroundColor="rgba(255,255,255,1)"
-        {...getOverrideProps(overrides, "List164454")}
+        {...getOverrideProps(overrides, "List33164")}
       >
         <Text
           fontFamily="Inter"
@@ -83,7 +83,7 @@ export default function Dashboard(props) {
         borderRadius="8px"
         padding="23px 23px 0px 23px"
         backgroundColor="rgba(255,255,255,1)"
-        {...getOverrideProps(overrides, "List164421")}
+        {...getOverrideProps(overrides, "List33166")}
       >
         <Text
           fontFamily="Inter"
@@ -95,7 +95,6 @@ export default function Dashboard(props) {
           display="block"
           direction="column"
           justifyContent="unset"
-          textDecoration="underline"
           width="unset"
           height="unset"
           gap="unset"
@@ -132,7 +131,7 @@ export default function Dashboard(props) {
             position="relative"
             borderRadius="8px"
             padding="12px 0px 12px 0px"
-            {...getOverrideProps(overrides, "Conversation164424")}
+            {...getOverrideProps(overrides, "Conversation33169")}
           >
             <View
               width="48px"
@@ -147,7 +146,7 @@ export default function Dashboard(props) {
               borderRadius="1000px"
               padding="0px 0px 0px 0px"
               backgroundColor="rgba(247,247,247,1)"
-              {...getOverrideProps(overrides, "Avatar164425")}
+              {...getOverrideProps(overrides, "Avatar33170")}
             >
               <Image
                 width="100%"
@@ -163,7 +162,7 @@ export default function Dashboard(props) {
                 right="0%"
                 padding="0px 0px 0px 0px"
                 objectFit="cover"
-                {...getOverrideProps(overrides, "Rectangle 1164426")}
+                {...getOverrideProps(overrides, "Rectangle 133171")}
               ></Image>
             </View>
             <Flex
@@ -178,7 +177,7 @@ export default function Dashboard(props) {
               basis="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Text164427")}
+              {...getOverrideProps(overrides, "Text33172")}
             >
               <Text
                 fontFamily="Inter"
@@ -223,7 +222,7 @@ export default function Dashboard(props) {
                 children="email@figmasfakedomain.net"
                 {...getOverrideProps(
                   overrides,
-                  "email@figmasfakedomain.net164429"
+                  "email@figmasfakedomain.net33174"
                 )}
               ></Text>
             </Flex>
@@ -240,7 +239,7 @@ export default function Dashboard(props) {
             position="relative"
             borderRadius="8px"
             padding="12px 0px 12px 0px"
-            {...getOverrideProps(overrides, "Conversation164430")}
+            {...getOverrideProps(overrides, "Conversation33175")}
           >
             <View
               width="48px"
@@ -255,7 +254,7 @@ export default function Dashboard(props) {
               borderRadius="1000px"
               padding="0px 0px 0px 0px"
               backgroundColor="rgba(247,247,247,1)"
-              {...getOverrideProps(overrides, "Avatar164431")}
+              {...getOverrideProps(overrides, "Avatar33176")}
             >
               <Image
                 width="100%"
@@ -271,7 +270,7 @@ export default function Dashboard(props) {
                 right="0%"
                 padding="0px 0px 0px 0px"
                 objectFit="cover"
-                {...getOverrideProps(overrides, "Rectangle 1164432")}
+                {...getOverrideProps(overrides, "Rectangle 133177")}
               ></Image>
             </View>
             <Flex
@@ -286,7 +285,7 @@ export default function Dashboard(props) {
               basis="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Text164433")}
+              {...getOverrideProps(overrides, "Text33178")}
             >
               <Text
                 fontFamily="Inter"
@@ -331,7 +330,7 @@ export default function Dashboard(props) {
                 children="email@figmasfakedomain.net"
                 {...getOverrideProps(
                   overrides,
-                  "email@figmasfakedomain.net164435"
+                  "email@figmasfakedomain.net33180"
                 )}
               ></Text>
             </Flex>
@@ -348,7 +347,7 @@ export default function Dashboard(props) {
             position="relative"
             borderRadius="8px"
             padding="12px 0px 12px 0px"
-            {...getOverrideProps(overrides, "Conversation164436")}
+            {...getOverrideProps(overrides, "Conversation33181")}
           >
             <View
               width="48px"
@@ -363,7 +362,7 @@ export default function Dashboard(props) {
               borderRadius="1000px"
               padding="0px 0px 0px 0px"
               backgroundColor="rgba(247,247,247,1)"
-              {...getOverrideProps(overrides, "Avatar164437")}
+              {...getOverrideProps(overrides, "Avatar33182")}
             >
               <Image
                 width="100%"
@@ -379,7 +378,7 @@ export default function Dashboard(props) {
                 right="0%"
                 padding="0px 0px 0px 0px"
                 objectFit="cover"
-                {...getOverrideProps(overrides, "Rectangle 1164438")}
+                {...getOverrideProps(overrides, "Rectangle 133183")}
               ></Image>
             </View>
             <Flex
@@ -394,7 +393,7 @@ export default function Dashboard(props) {
               basis="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Text164439")}
+              {...getOverrideProps(overrides, "Text33184")}
             >
               <Text
                 fontFamily="Inter"
@@ -439,7 +438,7 @@ export default function Dashboard(props) {
                 children="email@figmasfakedomain.net"
                 {...getOverrideProps(
                   overrides,
-                  "email@figmasfakedomain.net164441"
+                  "email@figmasfakedomain.net33186"
                 )}
               ></Text>
             </Flex>
@@ -456,7 +455,7 @@ export default function Dashboard(props) {
             position="relative"
             borderRadius="8px"
             padding="12px 0px 12px 0px"
-            {...getOverrideProps(overrides, "Conversation164442")}
+            {...getOverrideProps(overrides, "Conversation33187")}
           >
             <View
               width="48px"
@@ -471,7 +470,7 @@ export default function Dashboard(props) {
               borderRadius="1000px"
               padding="0px 0px 0px 0px"
               backgroundColor="rgba(247,247,247,1)"
-              {...getOverrideProps(overrides, "Avatar164443")}
+              {...getOverrideProps(overrides, "Avatar33188")}
             >
               <Image
                 width="100%"
@@ -487,7 +486,7 @@ export default function Dashboard(props) {
                 right="0%"
                 padding="0px 0px 0px 0px"
                 objectFit="cover"
-                {...getOverrideProps(overrides, "Rectangle 1164444")}
+                {...getOverrideProps(overrides, "Rectangle 133189")}
               ></Image>
             </View>
             <Flex
@@ -502,7 +501,7 @@ export default function Dashboard(props) {
               basis="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Text164445")}
+              {...getOverrideProps(overrides, "Text33190")}
             >
               <Text
                 fontFamily="Inter"
@@ -547,7 +546,7 @@ export default function Dashboard(props) {
                 children="email@figmasfakedomain.net"
                 {...getOverrideProps(
                   overrides,
-                  "email@figmasfakedomain.net164447"
+                  "email@figmasfakedomain.net33192"
                 )}
               ></Text>
             </Flex>
@@ -564,7 +563,7 @@ export default function Dashboard(props) {
             position="relative"
             borderRadius="8px"
             padding="12px 0px 12px 0px"
-            {...getOverrideProps(overrides, "Conversation164448")}
+            {...getOverrideProps(overrides, "Conversation33193")}
           >
             <View
               width="48px"
@@ -579,7 +578,7 @@ export default function Dashboard(props) {
               borderRadius="1000px"
               padding="0px 0px 0px 0px"
               backgroundColor="rgba(247,247,247,1)"
-              {...getOverrideProps(overrides, "Avatar164449")}
+              {...getOverrideProps(overrides, "Avatar33194")}
             >
               <Image
                 width="100%"
@@ -595,7 +594,7 @@ export default function Dashboard(props) {
                 right="0%"
                 padding="0px 0px 0px 0px"
                 objectFit="cover"
-                {...getOverrideProps(overrides, "Rectangle 1164450")}
+                {...getOverrideProps(overrides, "Rectangle 133195")}
               ></Image>
             </View>
             <Flex
@@ -610,7 +609,7 @@ export default function Dashboard(props) {
               basis="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Text164451")}
+              {...getOverrideProps(overrides, "Text33196")}
             >
               <Text
                 fontFamily="Inter"
@@ -655,7 +654,7 @@ export default function Dashboard(props) {
                 children="email@figmasfakedomain.net"
                 {...getOverrideProps(
                   overrides,
-                  "email@figmasfakedomain.net164453"
+                  "email@figmasfakedomain.net33198"
                 )}
               ></Text>
             </Flex>
@@ -674,7 +673,7 @@ export default function Dashboard(props) {
         left="76px"
         right="85px"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Cards92869")}
+        {...getOverrideProps(overrides, "Cards33199")}
       >
         <Flex
           gap="32px"
@@ -686,7 +685,7 @@ export default function Dashboard(props) {
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Cards92870")}
+          {...getOverrideProps(overrides, "Cards33200")}
         >
           <Flex
             gap="16px"
@@ -705,7 +704,7 @@ export default function Dashboard(props) {
             borderRadius="8px"
             padding="23px 23px 23px 23px"
             backgroundColor="rgba(255,255,255,1)"
-            {...getOverrideProps(overrides, "Card92871")}
+            {...getOverrideProps(overrides, "Card33201")}
           >
             <Text
               fontFamily="Inter"
@@ -792,7 +791,7 @@ export default function Dashboard(props) {
             borderRadius="8px"
             padding="23px 23px 23px 23px"
             backgroundColor="rgba(255,255,255,1)"
-            {...getOverrideProps(overrides, "Card92875")}
+            {...getOverrideProps(overrides, "Card33205")}
           >
             <Text
               fontFamily="Inter"
@@ -879,7 +878,7 @@ export default function Dashboard(props) {
             borderRadius="8px"
             padding="23px 23px 23px 23px"
             backgroundColor="rgba(255,255,255,1)"
-            {...getOverrideProps(overrides, "Card92879")}
+            {...getOverrideProps(overrides, "Card33209")}
           >
             <Text
               fontFamily="Inter"
@@ -979,7 +978,7 @@ export default function Dashboard(props) {
           top="12px"
           left="1320px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Avatar92886")}
+          {...getOverrideProps(overrides, "Avatar33216")}
         >
           <View
             width="40px"
@@ -994,7 +993,7 @@ export default function Dashboard(props) {
             borderRadius="1000px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(247,247,247,1)"
-            {...getOverrideProps(overrides, "Avatar92887")}
+            {...getOverrideProps(overrides, "Avatar33217")}
           >
             <Image
               width="100%"
@@ -1010,7 +1009,7 @@ export default function Dashboard(props) {
               right="0%"
               padding="0px 0px 0px 0px"
               objectFit="cover"
-              {...getOverrideProps(overrides, "Rectangle 192888")}
+              {...getOverrideProps(overrides, "Rectangle 133218")}
             ></Image>
           </View>
           <View
@@ -1048,7 +1047,7 @@ export default function Dashboard(props) {
               bottom="37.5%"
               left="25%"
               right="25%"
-              {...getOverrideProps(overrides, "Vector92890")}
+              {...getOverrideProps(overrides, "Vector33220")}
             ></Icon>
           </View>
         </Flex>
@@ -1114,7 +1113,7 @@ export default function Dashboard(props) {
                 bottom="45.83%"
                 left="45.83%"
                 right="45.83%"
-                {...getOverrideProps(overrides, "Vector92894")}
+                {...getOverrideProps(overrides, "Vector33224")}
               ></Icon>
               <Icon
                 width="2px"
@@ -1138,7 +1137,7 @@ export default function Dashboard(props) {
                 bottom="45.83%"
                 left="75%"
                 right="16.67%"
-                {...getOverrideProps(overrides, "Vector92895")}
+                {...getOverrideProps(overrides, "Vector33225")}
               ></Icon>
               <Icon
                 width="2px"
@@ -1162,7 +1161,7 @@ export default function Dashboard(props) {
                 bottom="45.83%"
                 left="16.67%"
                 right="75%"
-                {...getOverrideProps(overrides, "Vector92896")}
+                {...getOverrideProps(overrides, "Vector33226")}
               ></Icon>
             </View>
           </Flex>
@@ -1184,25 +1183,28 @@ export default function Dashboard(props) {
           alignItems="unset"
           position="absolute"
           top="calc(50% - 15px - 1px)"
-          left="79px"
+          left="77px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Acquire Recruiting"
-          {...getOverrideProps(overrides, "Acquire Recruiting92901")}
+          {...getOverrideProps(overrides, "Acquire Recruiting33231")}
         ></Text>
       </View>
       <Flex
         gap="32px"
         direction="row"
-        width="unset"
+        width="394px"
         height="unset"
         justifyContent="flex-start"
         alignItems="flex-start"
         position="absolute"
-        top="91px"
-        left="calc(50% - 201px - 0px)"
+        top="94px"
+        left="calc(50% - 197px - 0px)"
+        border="1px SOLID rgba(0,0,0,1)"
+        boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "List92897")}
+        backgroundColor="rgba(255,255,255,1)"
+        {...getOverrideProps(overrides, "List27781079")}
       >
         <Text
           fontFamily="Inter"
@@ -1272,14 +1274,14 @@ export default function Dashboard(props) {
         ></Text>
       </Flex>
       <Image
-        width="58px"
-        height="60px"
+        width="64px"
+        height="70px"
         display="block"
         gap="unset"
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="4px"
+        top="0px"
         left="0px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
@@ -1339,7 +1341,7 @@ export default function Dashboard(props) {
           left="24px"
           right="24px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Lines92905")}
+          {...getOverrideProps(overrides, "Lines33235")}
         >
           <Icon
             width="685px"
@@ -1359,7 +1361,7 @@ export default function Dashboard(props) {
             justifyContent="unset"
             shrink="0"
             position="relative"
-            {...getOverrideProps(overrides, "Vector 192906")}
+            {...getOverrideProps(overrides, "Vector 133236")}
           ></Icon>
           <Icon
             width="685px"
@@ -1379,7 +1381,7 @@ export default function Dashboard(props) {
             justifyContent="unset"
             shrink="0"
             position="relative"
-            {...getOverrideProps(overrides, "Vector 392907")}
+            {...getOverrideProps(overrides, "Vector 333237")}
           ></Icon>
           <Icon
             width="685px"
@@ -1399,7 +1401,7 @@ export default function Dashboard(props) {
             justifyContent="unset"
             shrink="0"
             position="relative"
-            {...getOverrideProps(overrides, "Vector 492908")}
+            {...getOverrideProps(overrides, "Vector 433238")}
           ></Icon>
           <Icon
             width="685px"
@@ -1419,7 +1421,7 @@ export default function Dashboard(props) {
             justifyContent="unset"
             shrink="0"
             position="relative"
-            {...getOverrideProps(overrides, "Vector 592909")}
+            {...getOverrideProps(overrides, "Vector 533239")}
           ></Icon>
           <Icon
             width="685px"
@@ -1439,7 +1441,7 @@ export default function Dashboard(props) {
             justifyContent="unset"
             shrink="0"
             position="relative"
-            {...getOverrideProps(overrides, "Vector 692910")}
+            {...getOverrideProps(overrides, "Vector 633240")}
           ></Icon>
           <Icon
             width="685px"
@@ -1459,7 +1461,7 @@ export default function Dashboard(props) {
             justifyContent="unset"
             shrink="0"
             position="relative"
-            {...getOverrideProps(overrides, "Vector 792911")}
+            {...getOverrideProps(overrides, "Vector 733241")}
           ></Icon>
           <Icon
             width="685px"
@@ -1479,7 +1481,7 @@ export default function Dashboard(props) {
             justifyContent="unset"
             shrink="0"
             position="relative"
-            {...getOverrideProps(overrides, "Vector 292912")}
+            {...getOverrideProps(overrides, "Vector 233242")}
           ></Icon>
         </Flex>
         <Flex
@@ -1494,7 +1496,7 @@ export default function Dashboard(props) {
           left="24px"
           right="24px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "X Axis92913")}
+          {...getOverrideProps(overrides, "X Axis33243")}
         >
           <View
             width="18px"
@@ -1690,7 +1692,7 @@ export default function Dashboard(props) {
           top="71px"
           left="24.29px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Y Axis92923")}
+          {...getOverrideProps(overrides, "Y Axis33253")}
         >
           <Text
             fontFamily="Inter"
@@ -1711,7 +1713,7 @@ export default function Dashboard(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="$50,000"
-            {...getOverrideProps(overrides, "$50,00092924")}
+            {...getOverrideProps(overrides, "$50,00033254")}
           ></Text>
           <Text
             fontFamily="Inter"
@@ -1753,7 +1755,7 @@ export default function Dashboard(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="$40,000"
-            {...getOverrideProps(overrides, "$40,00092926")}
+            {...getOverrideProps(overrides, "$40,00033256")}
           ></Text>
           <Text
             fontFamily="Inter"
@@ -1795,7 +1797,7 @@ export default function Dashboard(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="$30,000"
-            {...getOverrideProps(overrides, "$30,00092928")}
+            {...getOverrideProps(overrides, "$30,00033258")}
           ></Text>
           <Text
             fontFamily="Inter"
@@ -1919,7 +1921,7 @@ export default function Dashboard(props) {
           left="24px"
           right="24px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Lines92934")}
+          {...getOverrideProps(overrides, "Lines33264")}
         >
           <Icon
             width="685px"
@@ -1939,7 +1941,7 @@ export default function Dashboard(props) {
             justifyContent="unset"
             shrink="0"
             position="relative"
-            {...getOverrideProps(overrides, "Vector 192935")}
+            {...getOverrideProps(overrides, "Vector 133265")}
           ></Icon>
           <Icon
             width="685px"
@@ -1959,7 +1961,7 @@ export default function Dashboard(props) {
             justifyContent="unset"
             shrink="0"
             position="relative"
-            {...getOverrideProps(overrides, "Vector 392936")}
+            {...getOverrideProps(overrides, "Vector 333266")}
           ></Icon>
           <Icon
             width="685px"
@@ -1979,7 +1981,7 @@ export default function Dashboard(props) {
             justifyContent="unset"
             shrink="0"
             position="relative"
-            {...getOverrideProps(overrides, "Vector 492937")}
+            {...getOverrideProps(overrides, "Vector 433267")}
           ></Icon>
           <Icon
             width="685px"
@@ -1999,7 +2001,7 @@ export default function Dashboard(props) {
             justifyContent="unset"
             shrink="0"
             position="relative"
-            {...getOverrideProps(overrides, "Vector 592938")}
+            {...getOverrideProps(overrides, "Vector 533268")}
           ></Icon>
           <Icon
             width="685px"
@@ -2019,7 +2021,7 @@ export default function Dashboard(props) {
             justifyContent="unset"
             shrink="0"
             position="relative"
-            {...getOverrideProps(overrides, "Vector 692939")}
+            {...getOverrideProps(overrides, "Vector 633269")}
           ></Icon>
           <Icon
             width="685px"
@@ -2039,7 +2041,7 @@ export default function Dashboard(props) {
             justifyContent="unset"
             shrink="0"
             position="relative"
-            {...getOverrideProps(overrides, "Vector 792940")}
+            {...getOverrideProps(overrides, "Vector 733270")}
           ></Icon>
           <Icon
             width="685px"
@@ -2059,7 +2061,7 @@ export default function Dashboard(props) {
             justifyContent="unset"
             shrink="0"
             position="relative"
-            {...getOverrideProps(overrides, "Vector 292941")}
+            {...getOverrideProps(overrides, "Vector 233271")}
           ></Icon>
         </Flex>
         <Flex
@@ -2074,7 +2076,7 @@ export default function Dashboard(props) {
           left="12.84%"
           right="3.12%"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "X Axis92942")}
+          {...getOverrideProps(overrides, "X Axis33272")}
         >
           <Text
             fontFamily="Inter"
@@ -2364,7 +2366,7 @@ export default function Dashboard(props) {
           top="71px"
           left="24.29px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Y Axis92955")}
+          {...getOverrideProps(overrides, "Y Axis33285")}
         >
           <Text
             fontFamily="Inter"
@@ -2448,7 +2450,7 @@ export default function Dashboard(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="$50,000"
-            {...getOverrideProps(overrides, "$50,00092959")}
+            {...getOverrideProps(overrides, "$50,00033289")}
           ></Text>
           <Text
             fontFamily="Inter"
@@ -2469,7 +2471,7 @@ export default function Dashboard(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="$40,000"
-            {...getOverrideProps(overrides, "$40,00092960")}
+            {...getOverrideProps(overrides, "$40,00033290")}
           ></Text>
           <Text
             fontFamily="Inter"
@@ -2490,7 +2492,7 @@ export default function Dashboard(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="$30,000"
-            {...getOverrideProps(overrides, "$30,00092961")}
+            {...getOverrideProps(overrides, "$30,00033291")}
           ></Text>
         </Flex>
         <Flex
@@ -2518,7 +2520,7 @@ export default function Dashboard(props) {
             borderRadius="4px 4px 0px 0px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(86,101,135,1)"
-            {...getOverrideProps(overrides, "Bar92963")}
+            {...getOverrideProps(overrides, "Bar33293")}
           ></View>
           <View
             width="32px"
@@ -2532,7 +2534,7 @@ export default function Dashboard(props) {
             borderRadius="4px 4px 0px 0px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(86,101,135,1)"
-            {...getOverrideProps(overrides, "Bar92964")}
+            {...getOverrideProps(overrides, "Bar33294")}
           ></View>
           <View
             width="32px"
@@ -2546,7 +2548,7 @@ export default function Dashboard(props) {
             borderRadius="4px 4px 0px 0px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(86,101,135,1)"
-            {...getOverrideProps(overrides, "Bar92965")}
+            {...getOverrideProps(overrides, "Bar33295")}
           ></View>
           <View
             width="32px"
@@ -2560,7 +2562,7 @@ export default function Dashboard(props) {
             borderRadius="4px 4px 0px 0px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(86,101,135,1)"
-            {...getOverrideProps(overrides, "Bar92966")}
+            {...getOverrideProps(overrides, "Bar33296")}
           ></View>
           <View
             width="32px"
@@ -2574,7 +2576,7 @@ export default function Dashboard(props) {
             borderRadius="4px 4px 0px 0px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(86,101,135,1)"
-            {...getOverrideProps(overrides, "Bar92967")}
+            {...getOverrideProps(overrides, "Bar33297")}
           ></View>
           <View
             width="32px"
@@ -2588,7 +2590,7 @@ export default function Dashboard(props) {
             borderRadius="4px 4px 0px 0px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(86,101,135,1)"
-            {...getOverrideProps(overrides, "Bar92968")}
+            {...getOverrideProps(overrides, "Bar33298")}
           ></View>
           <View
             width="32px"
@@ -2602,7 +2604,7 @@ export default function Dashboard(props) {
             borderRadius="4px 4px 0px 0px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(86,101,135,1)"
-            {...getOverrideProps(overrides, "Bar92969")}
+            {...getOverrideProps(overrides, "Bar33299")}
           ></View>
           <View
             width="32px"
@@ -2616,7 +2618,7 @@ export default function Dashboard(props) {
             borderRadius="4px 4px 0px 0px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(86,101,135,1)"
-            {...getOverrideProps(overrides, "Bar92970")}
+            {...getOverrideProps(overrides, "Bar33300")}
           ></View>
           <View
             width="32px"
@@ -2630,7 +2632,7 @@ export default function Dashboard(props) {
             borderRadius="4px 4px 0px 0px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(86,101,135,1)"
-            {...getOverrideProps(overrides, "Bar92971")}
+            {...getOverrideProps(overrides, "Bar33301")}
           ></View>
           <View
             width="32px"
@@ -2644,7 +2646,7 @@ export default function Dashboard(props) {
             borderRadius="4px 4px 0px 0px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(86,101,135,1)"
-            {...getOverrideProps(overrides, "Bar92972")}
+            {...getOverrideProps(overrides, "Bar33302")}
           ></View>
           <View
             width="32px"
@@ -2658,7 +2660,7 @@ export default function Dashboard(props) {
             borderRadius="4px 4px 0px 0px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(86,101,135,1)"
-            {...getOverrideProps(overrides, "Bar92973")}
+            {...getOverrideProps(overrides, "Bar33303")}
           ></View>
           <View
             width="32px"
@@ -2672,7 +2674,7 @@ export default function Dashboard(props) {
             borderRadius="4px 4px 0px 0px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(86,101,135,1)"
-            {...getOverrideProps(overrides, "Bar92974")}
+            {...getOverrideProps(overrides, "Bar33304")}
           ></View>
         </Flex>
         <Text
@@ -2718,7 +2720,7 @@ export default function Dashboard(props) {
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="Acquire Recruiting"
-        {...getOverrideProps(overrides, "Acquire Recruiting23451")}
+        {...getOverrideProps(overrides, "Acquire Recruiting33362")}
       ></Text>
       <Flex
         gap="8px"
@@ -2744,7 +2746,7 @@ export default function Dashboard(props) {
           position="relative"
           borderRadius="4px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Buttons / Icon23453")}
+          {...getOverrideProps(overrides, "Buttons / Icon33364")}
         >
           <View
             width="24px"
@@ -2757,7 +2759,7 @@ export default function Dashboard(props) {
             top="8px"
             left="8px"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Icon23454")}
+            {...getOverrideProps(overrides, "Icon33365")}
           >
             <Icon
               width="20px"
@@ -2782,7 +2784,7 @@ export default function Dashboard(props) {
               position="absolute"
               top="2.04px"
               left="2px"
-              {...getOverrideProps(overrides, "Icon23455")}
+              {...getOverrideProps(overrides, "Icon33366")}
             >
               <View
                 width="24px"
@@ -2825,7 +2827,7 @@ export default function Dashboard(props) {
                   bottom="8.5%"
                   left="8.33%"
                   right="8.33%"
-                  {...getOverrideProps(overrides, "Vector23457")}
+                  {...getOverrideProps(overrides, "Vector33368")}
                 ></Icon>
               </View>
             </Icon>
@@ -2842,7 +2844,7 @@ export default function Dashboard(props) {
           position="relative"
           borderRadius="4px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Buttons / Icon23458")}
+          {...getOverrideProps(overrides, "Buttons / Icon33369")}
         >
           <View
             width="24px"
@@ -2855,7 +2857,7 @@ export default function Dashboard(props) {
             top="8px"
             left="8px"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Icon23459")}
+            {...getOverrideProps(overrides, "Icon33370")}
           >
             <Icon
               width="18px"
@@ -2875,7 +2877,7 @@ export default function Dashboard(props) {
               position="absolute"
               top="3px"
               left="3px"
-              {...getOverrideProps(overrides, "Icon23460")}
+              {...getOverrideProps(overrides, "Icon33371")}
             >
               <View
                 width="24px"
@@ -2913,7 +2915,7 @@ export default function Dashboard(props) {
                   bottom="12.5%"
                   left="12.5%"
                   right="12.5%"
-                  {...getOverrideProps(overrides, "Vector23462")}
+                  {...getOverrideProps(overrides, "Vector33373")}
                 ></Icon>
               </View>
             </Icon>
@@ -2930,7 +2932,7 @@ export default function Dashboard(props) {
           position="relative"
           borderRadius="4px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Buttons / Icon23463")}
+          {...getOverrideProps(overrides, "Buttons / Icon33374")}
         >
           <View
             width="24px"
@@ -2943,7 +2945,7 @@ export default function Dashboard(props) {
             top="8px"
             left="8px"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Icon23464")}
+            {...getOverrideProps(overrides, "Icon33375")}
           >
             <Icon
               width="20px"
@@ -2963,7 +2965,7 @@ export default function Dashboard(props) {
               position="absolute"
               top="5px"
               left="2px"
-              {...getOverrideProps(overrides, "Icon23465")}
+              {...getOverrideProps(overrides, "Icon33376")}
             >
               <View
                 width="24px"
@@ -3001,7 +3003,7 @@ export default function Dashboard(props) {
                   bottom="20.83%"
                   left="8.33%"
                   right="8.33%"
-                  {...getOverrideProps(overrides, "Vector23467")}
+                  {...getOverrideProps(overrides, "Vector33378")}
                 ></Icon>
               </View>
             </Icon>
@@ -3018,7 +3020,7 @@ export default function Dashboard(props) {
           position="relative"
           borderRadius="4px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Buttons / Icon23468")}
+          {...getOverrideProps(overrides, "Buttons / Icon33379")}
         >
           <View
             width="24px"
@@ -3031,7 +3033,7 @@ export default function Dashboard(props) {
             top="8px"
             left="8px"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Icon23469")}
+            {...getOverrideProps(overrides, "Icon33380")}
           >
             <Icon
               width="20px"
@@ -3051,7 +3053,7 @@ export default function Dashboard(props) {
               position="absolute"
               top="2px"
               left="2px"
-              {...getOverrideProps(overrides, "Icon23470")}
+              {...getOverrideProps(overrides, "Icon33381")}
             >
               <View
                 width="24px"
@@ -3089,7 +3091,7 @@ export default function Dashboard(props) {
                   bottom="8.33%"
                   left="8.33%"
                   right="8.33%"
-                  {...getOverrideProps(overrides, "Vector23472")}
+                  {...getOverrideProps(overrides, "Vector33383")}
                 ></Icon>
               </View>
             </Icon>

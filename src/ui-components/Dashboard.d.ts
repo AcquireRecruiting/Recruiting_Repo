@@ -75,8 +75,6 @@ export declare type DashboardOverridesProps = {
     Card92879?: PrimitiveOverrideProps<FlexProps>;
     "Partial Matches"?: PrimitiveOverrideProps<TextProps>;
     "Missing over 25% of criteria"?: PrimitiveOverrideProps<TextProps>;
-    Field?: PrimitiveOverrideProps<FlexProps>;
-    Label?: PrimitiveOverrideProps<TextProps>;
     Navigation?: PrimitiveOverrideProps<ViewProps>;
     Avatar92886?: PrimitiveOverrideProps<FlexProps>;
     Avatar92887?: PrimitiveOverrideProps<ViewProps>;
@@ -89,11 +87,11 @@ export declare type DashboardOverridesProps = {
     Vector92894?: PrimitiveOverrideProps<IconProps>;
     Vector92895?: PrimitiveOverrideProps<IconProps>;
     Vector92896?: PrimitiveOverrideProps<IconProps>;
+    "Acquire Recruiting92901"?: PrimitiveOverrideProps<TextProps>;
     List92897?: PrimitiveOverrideProps<FlexProps>;
     "My Page"?: PrimitiveOverrideProps<TextProps>;
     Explore?: PrimitiveOverrideProps<TextProps>;
     Calendar?: PrimitiveOverrideProps<TextProps>;
-    "Acquire Recruiting92901"?: PrimitiveOverrideProps<TextProps>;
     "IMG-20240331-WA0000 1"?: PrimitiveOverrideProps<ImageProps>;
     "Line cart"?: PrimitiveOverrideProps<ViewProps>;
     Engagement?: PrimitiveOverrideProps<TextProps>;
