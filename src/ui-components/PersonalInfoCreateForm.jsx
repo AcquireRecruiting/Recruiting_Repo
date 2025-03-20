@@ -6,7 +6,13 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { Button, Flex, Grid, TextField } from "@aws-amplify/ui-react";
+import {
+  Button,
+  Flex,
+  Grid,
+  TextAreaField,
+  TextField,
+} from "@aws-amplify/ui-react";
 import { fetchByPath, getOverrideProps, validateField } from "./utils";
 import { generateClient } from "aws-amplify/api";
 import { createPersonalInfo } from "../graphql/mutations";
@@ -28,6 +34,7 @@ export default function PersonalInfoCreateForm(props) {
     education: "",
     currentjobtitle: "",
     fieldofinterest: "",
+    email: "",
   };
   const [name, setName] = React.useState(initialValues.name);
   const [birthdate, setBirthdate] = React.useState(initialValues.birthdate);
@@ -38,6 +45,7 @@ export default function PersonalInfoCreateForm(props) {
   const [fieldofinterest, setFieldofinterest] = React.useState(
     initialValues.fieldofinterest
   );
+  const [email, setEmail] = React.useState(initialValues.email);
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
     setName(initialValues.name);
@@ -45,14 +53,16 @@ export default function PersonalInfoCreateForm(props) {
     setEducation(initialValues.education);
     setCurrentjobtitle(initialValues.currentjobtitle);
     setFieldofinterest(initialValues.fieldofinterest);
+    setEmail(initialValues.email);
     setErrors({});
   };
   const validations = {
-    name: [{ type: "Required" }],
+    name: [{ type: "Required" }, { type: "JSON" }],
     birthdate: [],
     education: [],
     currentjobtitle: [],
     fieldofinterest: [],
+    email: [{ type: "Email" }],
   };
   const runValidationTasks = async (
     fieldName,
@@ -85,6 +95,7 @@ export default function PersonalInfoCreateForm(props) {
           education,
           currentjobtitle,
           fieldofinterest,
+          email,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -138,11 +149,10 @@ export default function PersonalInfoCreateForm(props) {
       {...getOverrideProps(overrides, "PersonalInfoCreateForm")}
       {...rest}
     >
-      <TextField
+      <TextAreaField
         label="Name"
         isRequired={true}
         isReadOnly={false}
-        value={name}
         onChange={(e) => {
           let { value } = e.target;
           if (onChange) {
@@ -152,6 +162,7 @@ export default function PersonalInfoCreateForm(props) {
               education,
               currentjobtitle,
               fieldofinterest,
+              email,
             };
             const result = onChange(modelFields);
             value = result?.name ?? value;
@@ -165,7 +176,7 @@ export default function PersonalInfoCreateForm(props) {
         errorMessage={errors.name?.errorMessage}
         hasError={errors.name?.hasError}
         {...getOverrideProps(overrides, "name")}
-      ></TextField>
+      ></TextAreaField>
       <TextField
         label="Birthdate"
         isRequired={false}
@@ -181,6 +192,7 @@ export default function PersonalInfoCreateForm(props) {
               education,
               currentjobtitle,
               fieldofinterest,
+              email,
             };
             const result = onChange(modelFields);
             value = result?.birthdate ?? value;
@@ -209,6 +221,7 @@ export default function PersonalInfoCreateForm(props) {
               education: value,
               currentjobtitle,
               fieldofinterest,
+              email,
             };
             const result = onChange(modelFields);
             value = result?.education ?? value;
@@ -237,6 +250,7 @@ export default function PersonalInfoCreateForm(props) {
               education,
               currentjobtitle: value,
               fieldofinterest,
+              email,
             };
             const result = onChange(modelFields);
             value = result?.currentjobtitle ?? value;
@@ -265,6 +279,7 @@ export default function PersonalInfoCreateForm(props) {
               education,
               currentjobtitle,
               fieldofinterest: value,
+              email,
             };
             const result = onChange(modelFields);
             value = result?.fieldofinterest ?? value;
@@ -278,6 +293,35 @@ export default function PersonalInfoCreateForm(props) {
         errorMessage={errors.fieldofinterest?.errorMessage}
         hasError={errors.fieldofinterest?.hasError}
         {...getOverrideProps(overrides, "fieldofinterest")}
+      ></TextField>
+      <TextField
+        label="Email"
+        isRequired={false}
+        isReadOnly={false}
+        value={email}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              name,
+              birthdate,
+              education,
+              currentjobtitle,
+              fieldofinterest,
+              email: value,
+            };
+            const result = onChange(modelFields);
+            value = result?.email ?? value;
+          }
+          if (errors.email?.hasError) {
+            runValidationTasks("email", value);
+          }
+          setEmail(value);
+        }}
+        onBlur={() => runValidationTasks("email", email)}
+        errorMessage={errors.email?.errorMessage}
+        hasError={errors.email?.hasError}
+        {...getOverrideProps(overrides, "email")}
       ></TextField>
       <Flex
         justifyContent="space-between"

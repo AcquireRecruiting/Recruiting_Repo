@@ -6,7 +6,13 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { Button, Flex, Grid, TextField } from "@aws-amplify/ui-react";
+import {
+  Button,
+  Flex,
+  Grid,
+  TextAreaField,
+  TextField,
+} from "@aws-amplify/ui-react";
 import { fetchByPath, getOverrideProps, validateField } from "./utils";
 import { generateClient } from "aws-amplify/api";
 import { getPersonalInfo } from "../graphql/queries";
@@ -30,6 +36,7 @@ export default function PersonalInfoUpdateForm(props) {
     education: "",
     currentjobtitle: "",
     fieldofinterest: "",
+    email: "",
   };
   const [name, setName] = React.useState(initialValues.name);
   const [birthdate, setBirthdate] = React.useState(initialValues.birthdate);
@@ -40,16 +47,22 @@ export default function PersonalInfoUpdateForm(props) {
   const [fieldofinterest, setFieldofinterest] = React.useState(
     initialValues.fieldofinterest
   );
+  const [email, setEmail] = React.useState(initialValues.email);
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
     const cleanValues = personalInfoRecord
       ? { ...initialValues, ...personalInfoRecord }
       : initialValues;
-    setName(cleanValues.name);
+    setName(
+      typeof cleanValues.name === "string" || cleanValues.name === null
+        ? cleanValues.name
+        : JSON.stringify(cleanValues.name)
+    );
     setBirthdate(cleanValues.birthdate);
     setEducation(cleanValues.education);
     setCurrentjobtitle(cleanValues.currentjobtitle);
     setFieldofinterest(cleanValues.fieldofinterest);
+    setEmail(cleanValues.email);
     setErrors({});
   };
   const [personalInfoRecord, setPersonalInfoRecord] = React.useState(
@@ -71,11 +84,12 @@ export default function PersonalInfoUpdateForm(props) {
   }, [idProp, personalInfoModelProp]);
   React.useEffect(resetStateValues, [personalInfoRecord]);
   const validations = {
-    name: [{ type: "Required" }],
+    name: [{ type: "Required" }, { type: "JSON" }],
     birthdate: [],
     education: [],
     currentjobtitle: [],
     fieldofinterest: [],
+    email: [{ type: "Email" }],
   };
   const runValidationTasks = async (
     fieldName,
@@ -108,6 +122,7 @@ export default function PersonalInfoUpdateForm(props) {
           education: education ?? null,
           currentjobtitle: currentjobtitle ?? null,
           fieldofinterest: fieldofinterest ?? null,
+          email: email ?? null,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -159,7 +174,7 @@ export default function PersonalInfoUpdateForm(props) {
       {...getOverrideProps(overrides, "PersonalInfoUpdateForm")}
       {...rest}
     >
-      <TextField
+      <TextAreaField
         label="Name"
         isRequired={true}
         isReadOnly={false}
@@ -173,6 +188,7 @@ export default function PersonalInfoUpdateForm(props) {
               education,
               currentjobtitle,
               fieldofinterest,
+              email,
             };
             const result = onChange(modelFields);
             value = result?.name ?? value;
@@ -186,7 +202,7 @@ export default function PersonalInfoUpdateForm(props) {
         errorMessage={errors.name?.errorMessage}
         hasError={errors.name?.hasError}
         {...getOverrideProps(overrides, "name")}
-      ></TextField>
+      ></TextAreaField>
       <TextField
         label="Birthdate"
         isRequired={false}
@@ -202,6 +218,7 @@ export default function PersonalInfoUpdateForm(props) {
               education,
               currentjobtitle,
               fieldofinterest,
+              email,
             };
             const result = onChange(modelFields);
             value = result?.birthdate ?? value;
@@ -230,6 +247,7 @@ export default function PersonalInfoUpdateForm(props) {
               education: value,
               currentjobtitle,
               fieldofinterest,
+              email,
             };
             const result = onChange(modelFields);
             value = result?.education ?? value;
@@ -258,6 +276,7 @@ export default function PersonalInfoUpdateForm(props) {
               education,
               currentjobtitle: value,
               fieldofinterest,
+              email,
             };
             const result = onChange(modelFields);
             value = result?.currentjobtitle ?? value;
@@ -286,6 +305,7 @@ export default function PersonalInfoUpdateForm(props) {
               education,
               currentjobtitle,
               fieldofinterest: value,
+              email,
             };
             const result = onChange(modelFields);
             value = result?.fieldofinterest ?? value;
@@ -299,6 +319,35 @@ export default function PersonalInfoUpdateForm(props) {
         errorMessage={errors.fieldofinterest?.errorMessage}
         hasError={errors.fieldofinterest?.hasError}
         {...getOverrideProps(overrides, "fieldofinterest")}
+      ></TextField>
+      <TextField
+        label="Email"
+        isRequired={false}
+        isReadOnly={false}
+        value={email}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              name,
+              birthdate,
+              education,
+              currentjobtitle,
+              fieldofinterest,
+              email: value,
+            };
+            const result = onChange(modelFields);
+            value = result?.email ?? value;
+          }
+          if (errors.email?.hasError) {
+            runValidationTasks("email", value);
+          }
+          setEmail(value);
+        }}
+        onBlur={() => runValidationTasks("email", email)}
+        errorMessage={errors.email?.errorMessage}
+        hasError={errors.email?.hasError}
+        {...getOverrideProps(overrides, "email")}
       ></TextField>
       <Flex
         justifyContent="space-between"

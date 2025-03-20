@@ -111,6 +111,19 @@ export declare type PublicProfleOverridesProps = {
     "Line 3"?: PrimitiveOverrideProps<IconProps>;
 } & EscapeHatchProps;
 export declare type PublicProfleProps = React.PropsWithChildren<Partial<ViewProps> & {
+    achievements?: String;
+    hobbies?: String;
+    workhistory?: String;
+    education?: String;
+    about?: String;
+    name?: String;
+    facebook?: String;
+    linkedin?: String;
+    youtube?: String;
+    instagram?: String;
+    resume?: String;
+    graphic?: React.ReactNode;
+} & {
     overrides?: PublicProfleOverridesProps | undefined | null;
 }>;
 export default function PublicProfle(props: PublicProfleProps): React.ReactElement;

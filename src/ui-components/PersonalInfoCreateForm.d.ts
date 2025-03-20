@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { GridProps, TextFieldProps } from "@aws-amplify/ui-react";
+import { GridProps, TextAreaFieldProps, TextFieldProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -27,6 +27,7 @@ export declare type PersonalInfoCreateFormInputValues = {
     education?: string;
     currentjobtitle?: string;
     fieldofinterest?: string;
+    email?: string;
 };
 export declare type PersonalInfoCreateFormValidationValues = {
     name?: ValidationFunction<string>;
@@ -34,15 +35,17 @@ export declare type PersonalInfoCreateFormValidationValues = {
     education?: ValidationFunction<string>;
     currentjobtitle?: ValidationFunction<string>;
     fieldofinterest?: ValidationFunction<string>;
+    email?: ValidationFunction<string>;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type PersonalInfoCreateFormOverridesProps = {
     PersonalInfoCreateFormGrid?: PrimitiveOverrideProps<GridProps>;
-    name?: PrimitiveOverrideProps<TextFieldProps>;
+    name?: PrimitiveOverrideProps<TextAreaFieldProps>;
     birthdate?: PrimitiveOverrideProps<TextFieldProps>;
     education?: PrimitiveOverrideProps<TextFieldProps>;
     currentjobtitle?: PrimitiveOverrideProps<TextFieldProps>;
     fieldofinterest?: PrimitiveOverrideProps<TextFieldProps>;
+    email?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
 export declare type PersonalInfoCreateFormProps = React.PropsWithChildren<{
     overrides?: PersonalInfoCreateFormOverridesProps | undefined | null;

@@ -6,10 +6,45 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function PublicProfle(props) {
-  const { overrides, ...rest } = props;
+  const {
+    achievements,
+    hobbies,
+    workhistory,
+    education,
+    about,
+    name,
+    facebook,
+    linkedin,
+    youtube,
+    instagram,
+    resume,
+    graphic,
+    overrides,
+    ...rest
+  } = props;
+  const iconOneFourThreeFourNineSevenOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: facebook,
+  });
+  const iconOneFourThreeFiveZeroOneOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: linkedin,
+  });
+  const iconOneFourThreeFiveZeroSevenOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: youtube,
+  });
+  const iconOneFourThreeFiveOneTwoOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: instagram,
+  });
   return (
     <View
       width="1455px"
@@ -105,7 +140,7 @@ export default function PublicProfle(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Description of your fourth endeavor"
+          children={achievements}
           {...getOverrideProps(
             overrides,
             "Professional Achievements Description"
@@ -166,7 +201,7 @@ export default function PublicProfle(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Description of your fourth endeavor"
+          children={hobbies}
           {...getOverrideProps(overrides, "Interests/Hobbies Description")}
         ></Text>
       </Flex>
@@ -224,7 +259,7 @@ export default function PublicProfle(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Description of your fourth endeavor"
+          children={workhistory}
           {...getOverrideProps(overrides, "Work History Description")}
         ></Text>
       </Flex>
@@ -308,7 +343,7 @@ export default function PublicProfle(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="List your education"
+          children={education}
           {...getOverrideProps(overrides, "Education Description")}
         ></Text>
       </Flex>
@@ -345,7 +380,7 @@ export default function PublicProfle(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Jane Doe"
+          children={name}
           {...getOverrideProps(overrides, "Name")}
         ></Text>
         <Text
@@ -367,7 +402,7 @@ export default function PublicProfle(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="A subheading with a brief description of you, your work, and what you’re all about—no biggie"
+          children={about}
           {...getOverrideProps(overrides, "Description")}
         ></Text>
       </Flex>
@@ -455,6 +490,9 @@ export default function PublicProfle(props) {
               position="absolute"
               top="2.04px"
               left="2px"
+              onClick={() => {
+                iconOneFourThreeFourNineSevenOnClick();
+              }}
               {...getOverrideProps(overrides, "Icon143497")}
             >
               <View
@@ -531,6 +569,9 @@ export default function PublicProfle(props) {
             top="8px"
             left="8px"
             padding="0px 0px 0px 0px"
+            onClick={() => {
+              iconOneFourThreeFiveZeroOneOnClick();
+            }}
             {...getOverrideProps(overrides, "Icon143501")}
           >
             <Icon
@@ -642,6 +683,9 @@ export default function PublicProfle(props) {
               position="absolute"
               top="5px"
               left="2px"
+              onClick={() => {
+                iconOneFourThreeFiveZeroSevenOnClick();
+              }}
               {...getOverrideProps(overrides, "Icon143507")}
             >
               <View
@@ -733,6 +777,9 @@ export default function PublicProfle(props) {
               position="absolute"
               top="2px"
               left="2px"
+              onClick={() => {
+                iconOneFourThreeFiveOneTwoOnClick();
+              }}
               {...getOverrideProps(overrides, "Icon143512")}
             >
               <View
@@ -1650,7 +1697,7 @@ export default function PublicProfle(props) {
       <View
         width="260px"
         height="221px"
-        display="block"
+        display={graphic}
         gap="unset"
         alignItems="unset"
         justifyContent="unset"

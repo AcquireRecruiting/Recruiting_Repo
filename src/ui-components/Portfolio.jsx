@@ -6,10 +6,30 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useAuth } from "./utils";
+import { generateClient } from "aws-amplify/api";
+import { createPersonalInfo } from "../graphql/mutations";
 import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
+const client = generateClient();
 export default function Portfolio(props) {
   const { overrides, ...rest } = props;
+  const authAttributes = useAuth().user?.attributes ?? {};
+  const fillinhereThreeThreeOneTwoOnClick = async () => {
+    await client.graphql({
+      query: createPersonalInfo.replaceAll("__typename", ""),
+      variables: { input: {} },
+    });
+  };
+  const janeDoeOnClick = async () => {
+    await client.graphql({
+      query: createPersonalInfo.replaceAll("__typename", ""),
+      variables: {
+        input: {
+          name: authAttributes["email"],
+        },
+      },
+    });
+  };
   return (
     <View
       width="1440px"
@@ -106,6 +126,9 @@ export default function Portfolio(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Fill in here"
+          onClick={() => {
+            fillinhereThreeThreeOneTwoOnClick();
+          }}
           {...getOverrideProps(overrides, "Fill in here3312")}
         ></Text>
       </Flex>
@@ -343,6 +366,9 @@ export default function Portfolio(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Jane Doe"
+          onClick={() => {
+            janeDoeOnClick();
+          }}
           {...getOverrideProps(overrides, "Jane Doe")}
         ></Text>
         <Text

@@ -9,7 +9,7 @@ import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function Dashboard(props) {
-  const { overrides, ...rest } = props;
+  const { Information, overrides, ...rest } = props;
   return (
     <View
       width="1440px"

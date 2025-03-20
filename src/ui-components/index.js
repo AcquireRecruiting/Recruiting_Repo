@@ -4,6 +4,8 @@
  * Any changes to this file will be overwritten when running amplify pull. *
  **************************************************************************/
 
+export { default as AchievementsCreateForm } from "./AchievementsCreateForm";
+export { default as AchievementsUpdateForm } from "./AchievementsUpdateForm";
 export { default as Dashboard } from "./Dashboard";
 export { default as EmployerMatch } from "./EmployerMatch";
 export { default as EmployerProfile } from "./EmployerProfile";

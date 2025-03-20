@@ -184,6 +184,8 @@ export declare type DashboardOverridesProps = {
     Divider?: PrimitiveOverrideProps<IconProps>;
 } & EscapeHatchProps;
 export declare type DashboardProps = React.PropsWithChildren<Partial<ViewProps> & {
+    Information?: any;
+} & {
     overrides?: DashboardOverridesProps | undefined | null;
 }>;
 export default function Dashboard(props: DashboardProps): React.ReactElement;
