@@ -6,6 +6,7 @@
 
 import * as React from "react";
 import { GridProps, TextFieldProps } from "@aws-amplify/ui-react";
+import { Achievements } from "../models";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -36,7 +37,7 @@ export declare type AchievementsUpdateFormProps = React.PropsWithChildren<{
     overrides?: AchievementsUpdateFormOverridesProps | undefined | null;
 } & {
     id?: string;
-    achievements?: any;
+    achievements?: Achievements;
     onSubmit?: (fields: AchievementsUpdateFormInputValues) => AchievementsUpdateFormInputValues;
     onSuccess?: (fields: AchievementsUpdateFormInputValues) => void;
     onError?: (fields: AchievementsUpdateFormInputValues, errorMessage: string) => void;

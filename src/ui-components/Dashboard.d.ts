@@ -5,6 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
+import { PersonalInfo } from "../models";
 import { FlexProps, IconProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
@@ -184,7 +185,7 @@ export declare type DashboardOverridesProps = {
     Divider?: PrimitiveOverrideProps<IconProps>;
 } & EscapeHatchProps;
 export declare type DashboardProps = React.PropsWithChildren<Partial<ViewProps> & {
-    Information?: any;
+    Information?: PersonalInfo;
 } & {
     overrides?: DashboardOverridesProps | undefined | null;
 }>;

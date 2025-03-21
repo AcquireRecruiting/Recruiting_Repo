@@ -13,11 +13,9 @@ import {
   TextAreaField,
   TextField,
 } from "@aws-amplify/ui-react";
+import { PersonalInfo } from "../models";
 import { fetchByPath, getOverrideProps, validateField } from "./utils";
-import { generateClient } from "aws-amplify/api";
-import { getPersonalInfo } from "../graphql/queries";
-import { updatePersonalInfo } from "../graphql/mutations";
-const client = generateClient();
+import { DataStore } from "aws-amplify/datastore";
 export default function PersonalInfoUpdateForm(props) {
   const {
     id: idProp,
@@ -71,12 +69,7 @@ export default function PersonalInfoUpdateForm(props) {
   React.useEffect(() => {
     const queryData = async () => {
       const record = idProp
-        ? (
-            await client.graphql({
-              query: getPersonalInfo.replaceAll("__typename", ""),
-              variables: { id: idProp },
-            })
-          )?.data?.getPersonalInfo
+        ? await DataStore.query(PersonalInfo, idProp)
         : personalInfoModelProp;
       setPersonalInfoRecord(record);
     };
@@ -118,11 +111,11 @@ export default function PersonalInfoUpdateForm(props) {
         event.preventDefault();
         let modelFields = {
           name,
-          birthdate: birthdate ?? null,
-          education: education ?? null,
-          currentjobtitle: currentjobtitle ?? null,
-          fieldofinterest: fieldofinterest ?? null,
-          email: email ?? null,
+          birthdate,
+          education,
+          currentjobtitle,
+          fieldofinterest,
+          email,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -152,22 +145,17 @@ export default function PersonalInfoUpdateForm(props) {
               modelFields[key] = null;
             }
           });
-          await client.graphql({
-            query: updatePersonalInfo.replaceAll("__typename", ""),
-            variables: {
-              input: {
-                id: personalInfoRecord.id,
-                ...modelFields,
-              },
-            },
-          });
+          await DataStore.save(
+            PersonalInfo.copyOf(personalInfoRecord, (updated) => {
+              Object.assign(updated, modelFields);
+            })
+          );
           if (onSuccess) {
             onSuccess(modelFields);
           }
         } catch (err) {
           if (onError) {
-            const messages = err.errors.map((e) => e.message).join("\n");
-            onError(modelFields, messages);
+            onError(modelFields, err.message);
           }
         }
       }}

@@ -6,30 +6,23 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps, useAuth } from "./utils";
-import { generateClient } from "aws-amplify/api";
-import { createPersonalInfo } from "../graphql/mutations";
+import { getOverrideProps, useAuth, useDataStoreCreateAction } from "./utils";
+import { PersonalInfo } from "../models";
+import { schema } from "../models/schema";
 import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
-const client = generateClient();
 export default function Portfolio(props) {
   const { overrides, ...rest } = props;
   const authAttributes = useAuth().user?.attributes ?? {};
-  const fillinhereThreeThreeOneTwoOnClick = async () => {
-    await client.graphql({
-      query: createPersonalInfo.replaceAll("__typename", ""),
-      variables: { input: {} },
-    });
-  };
-  const janeDoeOnClick = async () => {
-    await client.graphql({
-      query: createPersonalInfo.replaceAll("__typename", ""),
-      variables: {
-        input: {
-          name: authAttributes["email"],
-        },
-      },
-    });
-  };
+  const fillinhereThreeThreeOneTwoOnClick = useDataStoreCreateAction({
+    fields: {},
+    model: PersonalInfo,
+    schema: schema,
+  });
+  const janeDoeOnClick = useDataStoreCreateAction({
+    fields: { name: authAttributes["email"] },
+    model: PersonalInfo,
+    schema: schema,
+  });
   return (
     <View
       width="1440px"
