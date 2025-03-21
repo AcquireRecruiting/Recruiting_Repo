@@ -7,14 +7,13 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import Portfolio from "./Portfolio";
 import { View } from "@aws-amplify/ui-react";
 export default function EmployerProfile(props) {
   const { overrides, ...rest } = props;
   return (
     <View
-      width="1440px"
-      height="1767px"
+      width="1259px"
+      height="1807px"
       display="block"
       gap="unset"
       alignItems="unset"
@@ -24,21 +23,11 @@ export default function EmployerProfile(props) {
       {...getOverrideProps(overrides, "EmployerProfile")}
       {...rest}
     >
-      <Portfolio
-        width="1440px"
-        height="1767px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        overflow="hidden"
-        position="absolute"
-        top="0px"
-        left="0px"
-        padding="0px 0px 0px 0px"
-        backgroundColor="rgba(255,255,255,1)"
+      <View
+        width="1280px"
+        height="1762px"
         {...getOverrideProps(overrides, "Portfolio")}
-      ></Portfolio>
+      ></View>
     </View>
   );
 }

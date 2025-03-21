@@ -5,7 +5,6 @@
  **************************************************************************/
 
 import * as React from "react";
-import { PortfolioProps } from "./Portfolio";
 import { ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
@@ -20,7 +19,7 @@ export declare type Variant = {
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type EmployerProfileOverridesProps = {
     EmployerProfile?: PrimitiveOverrideProps<ViewProps>;
-    Portfolio?: PortfolioProps;
+    Portfolio?: PrimitiveOverrideProps<ViewProps>;
 } & EscapeHatchProps;
 export declare type EmployerProfileProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: EmployerProfileOverridesProps | undefined | null;

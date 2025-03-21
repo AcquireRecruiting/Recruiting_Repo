@@ -5,8 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { PortfolioProps } from "./Portfolio";
-import { FlexProps } from "@aws-amplify/ui-react";
+import { FlexProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -20,7 +19,7 @@ export declare type Variant = {
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type PrivateProfileOverridesProps = {
     PrivateProfile?: PrimitiveOverrideProps<FlexProps>;
-    Portfolio?: PortfolioProps;
+    Portfolio?: PrimitiveOverrideProps<ViewProps>;
 } & EscapeHatchProps;
 export declare type PrivateProfileProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: PrivateProfileOverridesProps | undefined | null;

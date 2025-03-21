@@ -7,15 +7,14 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import Portfolio from "./Portfolio";
-import { Flex } from "@aws-amplify/ui-react";
+import { Flex, View } from "@aws-amplify/ui-react";
 export default function PrivateProfile(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
       gap="10px"
       direction="row"
-      width="unset"
+      width="1280px"
       height="unset"
       justifyContent="flex-start"
       alignItems="flex-start"
@@ -27,20 +26,11 @@ export default function PrivateProfile(props) {
       {...getOverrideProps(overrides, "PrivateProfile")}
       {...rest}
     >
-      <Portfolio
-        width="1440px"
+      <View
+        width="1280px"
         height="1767px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        overflow="hidden"
-        shrink="0"
-        position="relative"
-        padding="0px 0px 0px 0px"
-        backgroundColor="rgba(255,255,255,1)"
         {...getOverrideProps(overrides, "Portfolio")}
-      ></Portfolio>
+      ></View>
     </Flex>
   );
 }
