@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ButtonProps, FlexProps, IconProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { ButtonProps, FlexProps, ImageProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -20,13 +20,11 @@ export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes
 export declare type NavBarHeader2OverridesProps = {
     NavBarHeader2?: PrimitiveOverrideProps<FlexProps>;
     "Frame 5"?: PrimitiveOverrideProps<FlexProps>;
-    "Amplify Mark"?: PrimitiveOverrideProps<ViewProps>;
-    Union?: PrimitiveOverrideProps<IconProps>;
     "Acquire_logo_black 1"?: PrimitiveOverrideProps<ImageProps>;
     DASHBOARD?: PrimitiveOverrideProps<TextProps>;
     "AI ASSISTANT"?: PrimitiveOverrideProps<TextProps>;
-    "USER INTERFACE"?: PrimitiveOverrideProps<TextProps>;
     SETTINGS?: PrimitiveOverrideProps<TextProps>;
+    USER?: PrimitiveOverrideProps<TextProps>;
     actions?: PrimitiveOverrideProps<FlexProps>;
     Button39493466?: PrimitiveOverrideProps<ButtonProps>;
     Button39493467?: PrimitiveOverrideProps<ButtonProps>;

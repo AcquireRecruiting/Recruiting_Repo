@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ButtonProps, FlexProps, TextProps } from "@aws-amplify/ui-react";
+import { FlexProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -17,17 +17,13 @@ export declare type Variant = {
     overrides: EscapeHatchProps;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type HeroLayout1OverridesProps = {
-    HeroLayout1?: PrimitiveOverrideProps<FlexProps>;
-    Left?: PrimitiveOverrideProps<FlexProps>;
-    HeroMessage?: PrimitiveOverrideProps<FlexProps>;
-    Message?: PrimitiveOverrideProps<FlexProps>;
-    Heading?: PrimitiveOverrideProps<TextProps>;
-    Button?: PrimitiveOverrideProps<ButtonProps>;
+export declare type HeadingOverridesProps = {
+    Heading?: PrimitiveOverrideProps<FlexProps>;
+    label?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
-export declare type HeroLayout1Props = React.PropsWithChildren<Partial<FlexProps> & {
-    mode?: "Dark" | "Light" | "Mode3";
+export declare type HeadingProps = React.PropsWithChildren<Partial<FlexProps> & {
+    level?: "1" | "2" | "3" | "4" | "5" | "6";
 } & {
-    overrides?: HeroLayout1OverridesProps | undefined | null;
+    overrides?: HeadingOverridesProps | undefined | null;
 }>;
-export default function HeroLayout1(props: HeroLayout1Props): React.ReactElement;
+export default function Heading(props: HeadingProps): React.ReactElement;

@@ -4,12 +4,10 @@ import { Amplify } from 'aws-amplify';
 import { Authenticator, withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import awsExports from './aws-exports';// Importing Components
-import Dashboard from "./ui-components/Dashboard";
-import EmployeeMatch from "./ui-components/Janedoe";
-import EmployerProfile from "./ui-components/EmployerProfile";
 import Navbar from "./ui-components/navbar";  // ✅ Import Navbar
-import studiotheme from "./ui-components/studiotheme";  // ✅ Import Studio Theme
+import studioTheme from "./ui-components/studioTheme";  // ✅ Import Studio Theme
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import NavbarHeader from "./ui-components/NavBarHeader";
 
 Amplify.configure(awsExports);
 
@@ -20,24 +18,7 @@ function App() {
         <Authenticator>
           {({ signOut }) => (
             <main className="w-full">
-              {/* Navigation Bar */}
-              <nav className="w-full bg-gray-100 p-4 text-center">
-                <ul className="flex justify-center space-x-6">
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/employer">Employer Profile</Link></li>
-                  <li><Link to="/employeematch">Employee Match</Link></li>
-                  <li><Link to="/dashboard">Dashboard</Link></li>
-                </ul>
-              </nav>
-              <navbar />  
-              {/* Page Content */}
-              <div className="max-w-screen-lg w-full mx-auto p-6">
-                <Routes>
-                  <Route path="/employer" element={<EmployerProfile />} />
-                  <Route path="/employeematch" element={<EmployeeMatch />} />
-                  <Route path="/dashboard" element={<Dashboard />} />
-                </Routes>
-              </div>
+             <NavbarHeader />
 
               {/* Sign Out Button */}
               <div className="text-center mt-4">

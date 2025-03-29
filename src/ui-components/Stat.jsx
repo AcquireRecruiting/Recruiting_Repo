@@ -20,6 +20,7 @@ export default function Stat(props) {
       alignItems="flex-start"
       overflow="hidden"
       position="relative"
+      boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
       padding="32px 32px 32px 32px"
       backgroundColor="rgba(255,255,255,1)"
       {...getOverrideProps(overrides, "Stat")}
@@ -62,7 +63,7 @@ export default function Stat(props) {
           fontFamily="Inter"
           fontSize="24px"
           fontWeight="400"
-          color="rgba(13,26,38,1)"
+          color="rgba(0,0,0,1)"
           lineHeight="29.045454025268555px"
           textAlign="center"
           display="block"

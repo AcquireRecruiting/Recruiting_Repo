@@ -31,15 +31,15 @@ export default function HeroLayout2(props) {
     },
     {
       overrides: {
-        "Full stack": { color: "rgba(249,184,249,1)" },
+        "Full stack": { color: "rgba(239,240,240,1)" },
         "Build full-stack web and mobile apps in hours. Easy to start, easy to scale":
-          { color: "rgba(233,249,252,1)" },
+          { color: "rgba(125,152,186,0.86)" },
         "AWS Amplify is a complete solution that lets frontend web and mobile developers easily build, ship, and host full-stack applications on AWS, with the flexibility to leverage the breadth of AWS services as use cases evolve. No cloud expertise needed.":
-          { color: "rgba(188,236,245,1)" },
+          { color: "rgba(108,128,147,1)" },
         "Main Body": {},
         Button: {},
         "Type Lock Up": {},
-        HeroLayout2: { backgroundColor: "rgba(0,64,77,1)" },
+        HeroLayout2: { backgroundColor: "rgba(0,0,0,1)" },
       },
       variantValues: { colorMode: "dark" },
     },
@@ -59,7 +59,7 @@ export default function HeroLayout2(props) {
       overflow="hidden"
       position="relative"
       padding="160px 240px 160px 240px"
-      backgroundColor="rgba(233,249,252,1)"
+      backgroundColor="rgba(125,152,186,0.86)"
       display="flex"
       {...getOverrideProps(overrides, "HeroLayout2")}
       {...rest}
@@ -84,7 +84,7 @@ export default function HeroLayout2(props) {
           fontFamily="Inter"
           fontSize="16px"
           fontWeight="700"
-          color="rgba(4,125,149,1)"
+          color="rgba(24,29,38,1)"
           lineHeight="24px"
           textAlign="center"
           display="block"
@@ -120,7 +120,7 @@ export default function HeroLayout2(props) {
             fontFamily="Inter"
             fontSize="24px"
             fontWeight="600"
-            color="rgba(13,26,38,1)"
+            color="rgba(0,0,0,1)"
             lineHeight="30px"
             textAlign="center"
             display="block"
@@ -145,7 +145,7 @@ export default function HeroLayout2(props) {
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
-            color="rgba(48,64,80,1)"
+            color="rgba(0,0,0,0.73)"
             lineHeight="24px"
             textAlign="center"
             display="block"

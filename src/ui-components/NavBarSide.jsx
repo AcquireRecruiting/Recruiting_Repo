@@ -7,9 +7,8 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import LogoWithText from "./LogoWithText";
-import MyIcon from "./MyIcon";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
+import MyIcon from "./MyIcon";
 export default function NavBarSide(props) {
   const { overrides, ...rest } = props;
   return (
@@ -35,7 +34,6 @@ export default function NavBarSide(props) {
         grow="1"
         shrink="1"
         basis="0"
-        alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 32129767087")}
@@ -44,20 +42,18 @@ export default function NavBarSide(props) {
           gap="32px"
           direction="column"
           width="unset"
-          height="unset"
+          height="618px"
           justifyContent="flex-start"
           alignItems="flex-start"
-          grow="1"
-          shrink="1"
-          basis="0"
+          shrink="0"
           alignSelf="stretch"
           position="relative"
           padding="0px 32px 0px 32px"
           {...getOverrideProps(overrides, "Frame 32129767088")}
         >
-          <LogoWithText
-            width="127.88px"
-            height="18.91px"
+          <Image
+            width="32px"
+            height="35px"
             display="block"
             gap="unset"
             alignItems="unset"
@@ -65,9 +61,9 @@ export default function NavBarSide(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            color="brand"
-            {...getOverrideProps(overrides, "LogoWithText")}
-          ></LogoWithText>
+            objectFit="cover"
+            {...getOverrideProps(overrides, "Acquire_logo_black 2")}
+          ></Image>
           <Flex
             gap="16px"
             direction="column"
@@ -103,7 +99,7 @@ export default function NavBarSide(props) {
                 position="relative"
                 borderRadius="4px"
                 padding="6px 6px 6px 6px"
-                backgroundColor="rgba(233,249,252,1)"
+                backgroundColor="rgba(125,152,186,0.86)"
                 {...getOverrideProps(overrides, "icon39443712")}
               >
                 <MyIcon
@@ -125,7 +121,7 @@ export default function NavBarSide(props) {
                 fontFamily="Inter"
                 fontSize="16px"
                 fontWeight="400"
-                color="rgba(4,125,149,1)"
+                color="rgba(24,29,38,1)"
                 lineHeight="24px"
                 textAlign="left"
                 display="block"
@@ -201,7 +197,7 @@ export default function NavBarSide(props) {
                 position="relative"
                 borderRadius="4px"
                 padding="6px 6px 6px 6px"
-                backgroundColor="rgba(233,249,252,1)"
+                backgroundColor="rgba(125,152,186,0.86)"
                 {...getOverrideProps(overrides, "icon39433519")}
               >
                 <MyIcon
@@ -223,7 +219,7 @@ export default function NavBarSide(props) {
                 fontFamily="Inter"
                 fontSize="16px"
                 fontWeight="400"
-                color="rgba(4,125,149,1)"
+                color="rgba(24,29,38,1)"
                 lineHeight="24px"
                 textAlign="left"
                 display="block"
@@ -265,7 +261,7 @@ export default function NavBarSide(props) {
                 position="relative"
                 borderRadius="4px"
                 padding="6px 6px 6px 6px"
-                backgroundColor="rgba(233,249,252,1)"
+                backgroundColor="rgba(125,152,186,0.86)"
                 {...getOverrideProps(overrides, "icon39433544")}
               >
                 <MyIcon
@@ -287,7 +283,7 @@ export default function NavBarSide(props) {
                 fontFamily="Inter"
                 fontSize="16px"
                 fontWeight="400"
-                color="rgba(4,125,149,1)"
+                color="rgba(24,29,38,1)"
                 lineHeight="24px"
                 textAlign="left"
                 display="block"
@@ -329,7 +325,7 @@ export default function NavBarSide(props) {
                 position="relative"
                 borderRadius="4px"
                 padding="6px 6px 6px 6px"
-                backgroundColor="rgba(233,249,252,1)"
+                backgroundColor="rgba(125,152,186,0.86)"
                 {...getOverrideProps(overrides, "icon39433565")}
               >
                 <MyIcon
@@ -351,7 +347,7 @@ export default function NavBarSide(props) {
                 fontFamily="Inter"
                 fontSize="16px"
                 fontWeight="400"
-                color="rgba(4,125,149,1)"
+                color="rgba(24,29,38,1)"
                 lineHeight="24px"
                 textAlign="left"
                 display="block"
@@ -427,7 +423,7 @@ export default function NavBarSide(props) {
                 position="relative"
                 borderRadius="4px"
                 padding="6px 6px 6px 6px"
-                backgroundColor="rgba(233,249,252,1)"
+                backgroundColor="rgba(125,152,186,0.86)"
                 {...getOverrideProps(overrides, "icon39443602")}
               >
                 <MyIcon
@@ -449,7 +445,7 @@ export default function NavBarSide(props) {
                 fontFamily="Inter"
                 fontSize="16px"
                 fontWeight="400"
-                color="rgba(4,125,149,1)"
+                color="rgba(24,29,38,1)"
                 lineHeight="24px"
                 textAlign="left"
                 display="block"
@@ -491,7 +487,7 @@ export default function NavBarSide(props) {
                 position="relative"
                 borderRadius="4px"
                 padding="6px 6px 6px 6px"
-                backgroundColor="rgba(233,249,252,1)"
+                backgroundColor="rgba(125,152,186,0.86)"
                 {...getOverrideProps(overrides, "icon39443623")}
               >
                 <MyIcon
@@ -513,7 +509,7 @@ export default function NavBarSide(props) {
                 fontFamily="Inter"
                 fontSize="16px"
                 fontWeight="400"
-                color="rgba(4,125,149,1)"
+                color="rgba(24,29,38,1)"
                 lineHeight="24px"
                 textAlign="left"
                 display="block"
@@ -555,7 +551,7 @@ export default function NavBarSide(props) {
                 position="relative"
                 borderRadius="4px"
                 padding="6px 6px 6px 6px"
-                backgroundColor="rgba(233,249,252,1)"
+                backgroundColor="rgba(125,152,186,0.86)"
                 {...getOverrideProps(overrides, "icon39443644")}
               >
                 <MyIcon
@@ -577,7 +573,7 @@ export default function NavBarSide(props) {
                 fontFamily="Inter"
                 fontSize="16px"
                 fontWeight="400"
-                color="rgba(4,125,149,1)"
+                color="rgba(24,29,38,1)"
                 lineHeight="24px"
                 textAlign="left"
                 display="block"
@@ -666,7 +662,7 @@ export default function NavBarSide(props) {
                   fontFamily="Inter"
                   fontSize="16px"
                   fontWeight="400"
-                  color="rgba(13,26,38,1)"
+                  color="rgba(0,0,0,1)"
                   lineHeight="24px"
                   textAlign="left"
                   display="block"

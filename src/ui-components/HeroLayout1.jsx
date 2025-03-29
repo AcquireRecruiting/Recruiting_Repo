@@ -11,39 +11,45 @@ import {
   getOverridesFromVariants,
   mergeVariantsAndOverrides,
 } from "./utils";
-import { Button, Flex, Image, Text } from "@aws-amplify/ui-react";
+import { Button, Flex, Text } from "@aws-amplify/ui-react";
 export default function HeroLayout1(props) {
   const { overrides: overridesProp, ...rest } = props;
   const variants = [
     {
       overrides: {
-        Eyebrow: {},
         Heading: {},
-        Body: {},
         Message: {},
         Button: {},
         HeroMessage: {},
         Left: {},
-        image: {},
-        Right: {},
         HeroLayout1: {},
       },
       variantValues: { mode: "Light" },
     },
     {
       overrides: {
-        Eyebrow: { color: "rgba(188,236,245,1)", children: "Full-stack" },
-        Heading: { color: "rgba(255,255,255,1)" },
-        Body: { color: "rgba(255,255,255,1)" },
+        Heading: { color: "rgba(255,255,255,1)", children: "BUSINESS PAGE" },
         Message: {},
         Button: {},
         HeroMessage: {},
-        Left: { backgroundColor: "rgba(13,26,38,1)" },
-        image: { width: "unset", alignSelf: "stretch" },
-        Right: {},
+        Left: { backgroundColor: "rgba(0,0,0,1)" },
         HeroLayout1: {},
       },
       variantValues: { mode: "Dark" },
+    },
+    {
+      overrides: {
+        Heading: {
+          color: "rgba(255,255,255,1)",
+          children: "RECRUITMENT / JOB BOARD",
+        },
+        Message: {},
+        Button: {},
+        HeroMessage: {},
+        Left: { backgroundColor: "rgba(0,0,0,1)" },
+        HeroLayout1: {},
+      },
+      variantValues: { mode: "Mode3" },
     },
   ];
   const overrides = mergeVariantsAndOverrides(
@@ -109,32 +115,10 @@ export default function HeroLayout1(props) {
             {...getOverrideProps(overrides, "Message")}
           >
             <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="700"
-              color="rgba(64,170,191,1)"
-              lineHeight="24px"
-              textAlign="center"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              shrink="0"
-              alignSelf="stretch"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Full stack"
-              {...getOverrideProps(overrides, "Eyebrow")}
-            ></Text>
-            <Text
-              fontFamily="Inter"
+              fontFamily="Russo One"
               fontSize="24px"
-              fontWeight="600"
-              color="rgba(13,26,38,1)"
+              fontWeight="400"
+              color="rgba(0,0,0,1)"
               lineHeight="30px"
               textAlign="center"
               display="block"
@@ -149,31 +133,8 @@ export default function HeroLayout1(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="Build full-stack web and mobile apps in hours. Easy to start, easy to scale"
+              children="AI ASSISTANT"
               {...getOverrideProps(overrides, "Heading")}
-            ></Text>
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="400"
-              color="rgba(48,64,80,1)"
-              lineHeight="24px"
-              textAlign="center"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              letterSpacing="0.01px"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              shrink="0"
-              alignSelf="stretch"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="AWS Amplify is a complete solution that lets frontend web and mobile developers easily build, ship, and host full-stack applications on AWS, with the flexibility to leverage the breadth of AWS services as use cases evolve. No cloud expertise needed."
-              {...getOverrideProps(overrides, "Body")}
             ></Text>
           </Flex>
           <Button
@@ -187,37 +148,6 @@ export default function HeroLayout1(props) {
             {...getOverrideProps(overrides, "Button")}
           ></Button>
         </Flex>
-      </Flex>
-      <Flex
-        gap="10px"
-        direction="column"
-        width="720px"
-        height="unset"
-        justifyContent="center"
-        alignItems="center"
-        overflow="hidden"
-        shrink="0"
-        alignSelf="stretch"
-        position="relative"
-        padding="0px 0px 0px 0px"
-        display="flex"
-        {...getOverrideProps(overrides, "Right")}
-      >
-        <Image
-          width="720px"
-          height="unset"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          grow="1"
-          shrink="1"
-          basis="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          objectFit="unset"
-          {...getOverrideProps(overrides, "image")}
-        ></Image>
       </Flex>
     </Flex>
   );

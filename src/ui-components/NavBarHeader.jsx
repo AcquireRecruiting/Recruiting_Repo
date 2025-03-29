@@ -6,11 +6,12 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
 export default function NavBarHeader(props) {
   const { overrides, ...rest } = props;
+  const aIASSISTANTOnClick = useNavigateAction({ type: "url", url: "" });
   return (
     <Flex
       gap="40px"
@@ -54,7 +55,7 @@ export default function NavBarHeader(props) {
         {...getOverrideProps(overrides, "Frame 32129767076")}
       >
         <Text
-          fontFamily="Inter"
+          fontFamily="Russo One"
           fontSize="16px"
           fontWeight="400"
           color="rgba(92,102,112,1)"
@@ -75,7 +76,7 @@ export default function NavBarHeader(props) {
           {...getOverrideProps(overrides, "DASHBOARD")}
         ></Text>
         <Text
-          fontFamily="Inter"
+          fontFamily="Russo One"
           fontSize="16px"
           fontWeight="400"
           color="rgba(92,102,112,1)"
@@ -92,11 +93,13 @@ export default function NavBarHeader(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="AI ASSISTANT"
+          onClick={() => {
+            aIASSISTANTOnClick();
+          }}
           {...getOverrideProps(overrides, "AI ASSISTANT")}
         ></Text>
         <Text
-          fontFamily="Inter"
+          fontFamily="Russo One"
           fontSize="16px"
           fontWeight="400"
           color="rgba(92,102,112,1)"
@@ -117,7 +120,7 @@ export default function NavBarHeader(props) {
           {...getOverrideProps(overrides, "USER INTERFACE")}
         ></Text>
         <Text
-          fontFamily="Inter"
+          fontFamily="Russo One"
           fontSize="16px"
           fontWeight="400"
           color="rgba(92,102,112,1)"

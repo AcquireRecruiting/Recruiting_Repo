@@ -20,8 +20,9 @@ export default function CTASection(props) {
       alignItems="flex-start"
       overflow="hidden"
       position="relative"
+      boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
       padding="160px 160px 160px 160px"
-      backgroundColor="rgba(255,255,255,1)"
+      backgroundColor="rgba(69,105,135,0.61)"
       {...getOverrideProps(overrides, "CTASection")}
       {...rest}
     >
@@ -54,7 +55,7 @@ export default function CTASection(props) {
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="700"
-            color="rgba(191,64,191,1)"
+            color="rgba(137,148,159,1)"
             lineHeight="24px"
             textAlign="left"
             display="block"
@@ -75,7 +76,7 @@ export default function CTASection(props) {
             fontFamily="Inter"
             fontSize="24px"
             fontWeight="600"
-            color="rgba(13,26,38,1)"
+            color="rgba(0,0,0,1)"
             lineHeight="30px"
             textAlign="left"
             display="block"
@@ -99,7 +100,7 @@ export default function CTASection(props) {
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
-            color="rgba(48,64,80,1)"
+            color="rgba(0,0,0,0.73)"
             lineHeight="20px"
             textAlign="left"
             display="block"

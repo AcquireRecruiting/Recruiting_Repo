@@ -28,6 +28,7 @@ export default function ReviewCard(props) {
       justifyContent="flex-start"
       alignItems="center"
       position="relative"
+      boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
       padding="0px 0px 0px 0px"
       {...getOverrideProps(overrides, "ReviewCard")}
       {...rest}
