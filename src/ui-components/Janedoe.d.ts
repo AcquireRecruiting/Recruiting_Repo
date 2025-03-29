@@ -66,18 +66,6 @@ export declare type JanedoeOverridesProps = {
     About?: PrimitiveOverrideProps<TextProps>;
     "Footer Company Name"?: PrimitiveOverrideProps<TextProps>;
     Divider?: PrimitiveOverrideProps<IconProps>;
-    Navigation?: PrimitiveOverrideProps<ViewProps>;
-    Avatar153766?: PrimitiveOverrideProps<FlexProps>;
-    Avatar153767?: PrimitiveOverrideProps<ViewProps>;
-    "Avatar Image"?: PrimitiveOverrideProps<ImageProps>;
-    "chevron-down"?: PrimitiveOverrideProps<ViewProps>;
-    Vector153770?: PrimitiveOverrideProps<IconProps>;
-    List?: PrimitiveOverrideProps<FlexProps>;
-    "My Page"?: PrimitiveOverrideProps<TextProps>;
-    Explore?: PrimitiveOverrideProps<TextProps>;
-    Calendar?: PrimitiveOverrideProps<TextProps>;
-    Chat?: PrimitiveOverrideProps<TextProps>;
-    "Company Name"?: PrimitiveOverrideProps<TextProps>;
     Logo?: PrimitiveOverrideProps<ImageProps>;
     Graphic?: PrimitiveOverrideProps<ViewProps>;
     "Line 2"?: PrimitiveOverrideProps<IconProps>;

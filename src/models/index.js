@@ -4,9 +4,10 @@ import { schema } from './schema';
 
 
 
-const { Achievements, PersonalInfo, JobPosts } = initSchema(schema);
+const { BusinessInfo, Achievements, PersonalInfo, JobPosts } = initSchema(schema);
 
 export {
+  BusinessInfo,
   Achievements,
   PersonalInfo,
   JobPosts

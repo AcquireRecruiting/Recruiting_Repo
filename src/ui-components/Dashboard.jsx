@@ -963,246 +963,6 @@ export default function Dashboard(props) {
           </Flex>
         </Flex>
       </Flex>
-      <View
-        width="1440px"
-        height="64px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        overflow="hidden"
-        position="absolute"
-        top="0px"
-        left="0px"
-        right="0px"
-        border="1px SOLID rgba(224,224,224,1)"
-        padding="0px 0px 0px 0px"
-        backgroundColor="rgba(255,255,255,1)"
-        {...getOverrideProps(overrides, "Navigation")}
-      >
-        <Flex
-          gap="8px"
-          direction="row"
-          width="unset"
-          height="unset"
-          justifyContent="flex-start"
-          alignItems="center"
-          position="absolute"
-          top="12px"
-          left="1320px"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Avatar92886")}
-        >
-          <View
-            width="40px"
-            height="40px"
-            display="block"
-            gap="unset"
-            alignItems="unset"
-            justifyContent="unset"
-            overflow="hidden"
-            shrink="0"
-            position="relative"
-            borderRadius="1000px"
-            padding="0px 0px 0px 0px"
-            backgroundColor="rgba(247,247,247,1)"
-            {...getOverrideProps(overrides, "Avatar92887")}
-          >
-            <Image
-              width="100%"
-              height="100%"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              position="absolute"
-              top="0%"
-              bottom="0%"
-              left="0%"
-              right="0%"
-              padding="0px 0px 0px 0px"
-              objectFit="cover"
-              {...getOverrideProps(overrides, "Rectangle 192888")}
-            ></Image>
-          </View>
-          <View
-            width="24px"
-            height="24px"
-            display="block"
-            gap="unset"
-            alignItems="unset"
-            justifyContent="unset"
-            overflow="hidden"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "chevron-down")}
-          >
-            <Icon
-              width="12px"
-              height="6px"
-              viewBox={{ minX: 0, minY: 0, width: 12, height: 6 }}
-              paths={[
-                {
-                  d: "M0.707107 -0.707107C0.316583 -1.09763 -0.316583 -1.09763 -0.707107 -0.707107C-1.09763 -0.316583 -1.09763 0.316583 -0.707107 0.707107L0.707107 -0.707107ZM6 6L5.29289 6.70711C5.68342 7.09763 6.31658 7.09763 6.70711 6.70711L6 6ZM12.7071 0.707107C13.0976 0.316583 13.0976 -0.316583 12.7071 -0.707107C12.3166 -1.09763 11.6834 -1.09763 11.2929 -0.707107L12.7071 0.707107ZM-0.707107 0.707107L5.29289 6.70711L6.70711 5.29289L0.707107 -0.707107L-0.707107 0.707107ZM6.70711 6.70711L12.7071 0.707107L11.2929 -0.707107L5.29289 5.29289L6.70711 6.70711Z",
-                  stroke: "rgba(130,130,130,1)",
-                  fillRule: "nonzero",
-                  strokeLinejoin: "round",
-                  strokeWidth: 2,
-                },
-              ]}
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              position="absolute"
-              top="37.5%"
-              bottom="37.5%"
-              left="25%"
-              right="25%"
-              {...getOverrideProps(overrides, "Vector92890")}
-            ></Icon>
-          </View>
-        </Flex>
-        <Flex
-          gap="12px"
-          direction="row"
-          width="unset"
-          height="unset"
-          justifyContent="flex-start"
-          alignItems="flex-start"
-          position="absolute"
-          top="12px"
-          right="144px"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Buttons")}
-        >
-          <Flex
-            gap="8px"
-            direction="row"
-            width="unset"
-            height="40px"
-            justifyContent="center"
-            alignItems="center"
-            shrink="0"
-            position="relative"
-            borderRadius="8px"
-            padding="0px 16px 0px 16px"
-            backgroundColor="rgba(238,238,238,1)"
-            {...getOverrideProps(overrides, "Button")}
-          >
-            <View
-              width="24px"
-              height="24px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              overflow="hidden"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "more-horizontal")}
-            >
-              <Icon
-                width="2px"
-                height="2px"
-                viewBox={{ minX: 0, minY: 0, width: 2, height: 2 }}
-                paths={[
-                  {
-                    d: "M1 1L1 3C2.10457 3 3 2.10457 3 1L1 1ZM1 1L-1 1C-1 2.10457 -0.10457 3 1 3L1 1ZM1 1L1 -1C-0.10457 -1 -1 -0.10457 -1 1L1 1ZM1 1L3 1C3 -0.10457 2.10457 -1 1 -1L1 1Z",
-                    stroke: "rgba(86,101,135,1)",
-                    fillRule: "nonzero",
-                    strokeLinejoin: "round",
-                    strokeWidth: 2,
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="45.83%"
-                bottom="45.83%"
-                left="45.83%"
-                right="45.83%"
-                {...getOverrideProps(overrides, "Vector92894")}
-              ></Icon>
-              <Icon
-                width="2px"
-                height="2px"
-                viewBox={{ minX: 0, minY: 0, width: 2, height: 2 }}
-                paths={[
-                  {
-                    d: "M1 1L1 3C2.10457 3 3 2.10457 3 1L1 1ZM1 1L-1 1C-1 2.10457 -0.10457 3 1 3L1 1ZM1 1L1 -1C-0.10457 -1 -1 -0.10457 -1 1L1 1ZM1 1L3 1C3 -0.10457 2.10457 -1 1 -1L1 1Z",
-                    stroke: "rgba(86,101,135,1)",
-                    fillRule: "nonzero",
-                    strokeLinejoin: "round",
-                    strokeWidth: 2,
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="45.83%"
-                bottom="45.83%"
-                left="75%"
-                right="16.67%"
-                {...getOverrideProps(overrides, "Vector92895")}
-              ></Icon>
-              <Icon
-                width="2px"
-                height="2px"
-                viewBox={{ minX: 0, minY: 0, width: 2, height: 2 }}
-                paths={[
-                  {
-                    d: "M1 1L1 3C2.10457 3 3 2.10457 3 1L1 1ZM1 1L-1 1C-1 2.10457 -0.10457 3 1 3L1 1ZM1 1L1 -1C-0.10457 -1 -1 -0.10457 -1 1L1 1ZM1 1L3 1C3 -0.10457 2.10457 -1 1 -1L1 1Z",
-                    stroke: "rgba(86,101,135,1)",
-                    fillRule: "nonzero",
-                    strokeLinejoin: "round",
-                    strokeWidth: 2,
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="45.83%"
-                bottom="45.83%"
-                left="16.67%"
-                right="75%"
-                {...getOverrideProps(overrides, "Vector92896")}
-              ></Icon>
-            </View>
-          </Flex>
-        </Flex>
-        <Text
-          fontFamily="Inter"
-          fontSize="20px"
-          fontWeight="600"
-          color="rgba(86,101,135,1)"
-          lineHeight="30px"
-          textAlign="left"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          letterSpacing="-0.05px"
-          width="unset"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          position="absolute"
-          top="calc(50% - 15px - 1px)"
-          left="79px"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Acquire Recruiting"
-          {...getOverrideProps(overrides, "Acquire Recruiting92901")}
-        ></Text>
-      </View>
       <Flex
         gap="32px"
         direction="row"
@@ -1283,20 +1043,6 @@ export default function Dashboard(props) {
           {...getOverrideProps(overrides, "Calendar")}
         ></Text>
       </Flex>
-      <Image
-        width="58px"
-        height="60px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        position="absolute"
-        top="4px"
-        left="0px"
-        padding="0px 0px 0px 0px"
-        objectFit="cover"
-        {...getOverrideProps(overrides, "IMG-20240331-WA0000 1")}
-      ></Image>
       <View
         width="520px"
         height="404px"
@@ -1357,7 +1103,7 @@ export default function Dashboard(props) {
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="Acquire Recruiting"
-        {...getOverrideProps(overrides, "Acquire Recruiting23451")}
+        {...getOverrideProps(overrides, "Acquire Recruiting")}
       ></Text>
       <Flex
         gap="8px"
@@ -1763,6 +1509,25 @@ export default function Dashboard(props) {
         transform="rotate(0deg)"
         {...getOverrideProps(overrides, "Divider")}
       ></Icon>
+      <Flex
+        width="1440px"
+        height="unset"
+        {...getOverrideProps(overrides, "NavBarHeader2")}
+      ></Flex>
+      <Image
+        width="58px"
+        height="60px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="4px"
+        left="399px"
+        padding="0px 0px 0px 0px"
+        objectFit="cover"
+        {...getOverrideProps(overrides, "IMG-20240331-WA0000 1")}
+      ></Image>
     </View>
   );
 }

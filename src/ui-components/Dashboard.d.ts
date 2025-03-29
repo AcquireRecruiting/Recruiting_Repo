@@ -76,24 +76,10 @@ export declare type DashboardOverridesProps = {
     Card92879?: PrimitiveOverrideProps<FlexProps>;
     "Partial Matches"?: PrimitiveOverrideProps<TextProps>;
     "Missing over 25% of criteria"?: PrimitiveOverrideProps<TextProps>;
-    Navigation?: PrimitiveOverrideProps<ViewProps>;
-    Avatar92886?: PrimitiveOverrideProps<FlexProps>;
-    Avatar92887?: PrimitiveOverrideProps<ViewProps>;
-    "Rectangle 192888"?: PrimitiveOverrideProps<ImageProps>;
-    "chevron-down"?: PrimitiveOverrideProps<ViewProps>;
-    Vector92890?: PrimitiveOverrideProps<IconProps>;
-    Buttons?: PrimitiveOverrideProps<FlexProps>;
-    Button?: PrimitiveOverrideProps<FlexProps>;
-    "more-horizontal"?: PrimitiveOverrideProps<ViewProps>;
-    Vector92894?: PrimitiveOverrideProps<IconProps>;
-    Vector92895?: PrimitiveOverrideProps<IconProps>;
-    Vector92896?: PrimitiveOverrideProps<IconProps>;
-    "Acquire Recruiting92901"?: PrimitiveOverrideProps<TextProps>;
     List92897?: PrimitiveOverrideProps<FlexProps>;
     "My Page"?: PrimitiveOverrideProps<TextProps>;
     Explore?: PrimitiveOverrideProps<TextProps>;
     Calendar?: PrimitiveOverrideProps<TextProps>;
-    "IMG-20240331-WA0000 1"?: PrimitiveOverrideProps<ImageProps>;
     "Line cart"?: PrimitiveOverrideProps<ViewProps>;
     Engagement?: PrimitiveOverrideProps<TextProps>;
     Lines92905?: PrimitiveOverrideProps<FlexProps>;
@@ -160,7 +146,7 @@ export declare type DashboardOverridesProps = {
     Bar92973?: PrimitiveOverrideProps<ViewProps>;
     Bar92974?: PrimitiveOverrideProps<ViewProps>;
     "Top 10"?: PrimitiveOverrideProps<TextProps>;
-    "Acquire Recruiting23451"?: PrimitiveOverrideProps<TextProps>;
+    "Acquire Recruiting"?: PrimitiveOverrideProps<TextProps>;
     "Social Icons"?: PrimitiveOverrideProps<FlexProps>;
     "Buttons / Icon23453"?: PrimitiveOverrideProps<ViewProps>;
     Icon23454?: PrimitiveOverrideProps<ViewProps>;
@@ -183,6 +169,8 @@ export declare type DashboardOverridesProps = {
     "Icons / Social / instagram"?: PrimitiveOverrideProps<ViewProps>;
     Vector23472?: PrimitiveOverrideProps<IconProps>;
     Divider?: PrimitiveOverrideProps<IconProps>;
+    NavBarHeader2?: PrimitiveOverrideProps<FlexProps>;
+    "IMG-20240331-WA0000 1"?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type DashboardProps = React.PropsWithChildren<Partial<ViewProps> & {
     Information?: PersonalInfo;

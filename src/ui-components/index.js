@@ -6,6 +6,8 @@
 
 export { default as AchievementsCreateForm } from "./AchievementsCreateForm";
 export { default as AchievementsUpdateForm } from "./AchievementsUpdateForm";
+export { default as BusinessInfoCreateForm } from "./BusinessInfoCreateForm";
+export { default as BusinessInfoUpdateForm } from "./BusinessInfoUpdateForm";
 export { default as Businessinfopage } from "./Businessinfopage";
 export { default as Dashboard } from "./Dashboard";
 export { default as EmployerMatch } from "./EmployerMatch";
@@ -14,6 +16,7 @@ export { default as Janedoe } from "./Janedoe";
 export { default as JobPostsCreateForm } from "./JobPostsCreateForm";
 export { default as JobPostsUpdateForm } from "./JobPostsUpdateForm";
 export { default as Landingpage01 } from "./Landingpage01";
+export { default as NewForm1 } from "./NewForm1";
 export { default as PersonalInfoCreateForm } from "./PersonalInfoCreateForm";
 export { default as PersonalInfoUpdateForm } from "./PersonalInfoUpdateForm";
 export { default as Portfolio } from "./Portfolio";

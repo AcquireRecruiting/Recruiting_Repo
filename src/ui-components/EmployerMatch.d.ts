@@ -75,24 +75,6 @@ export declare type EmployerMatchOverridesProps = {
     Card33209?: PrimitiveOverrideProps<FlexProps>;
     "Partial Matches"?: PrimitiveOverrideProps<TextProps>;
     "Missing over 25% of criteria"?: PrimitiveOverrideProps<TextProps>;
-    Navigation?: PrimitiveOverrideProps<ViewProps>;
-    Avatar33216?: PrimitiveOverrideProps<FlexProps>;
-    Avatar33217?: PrimitiveOverrideProps<ViewProps>;
-    "Rectangle 133218"?: PrimitiveOverrideProps<ImageProps>;
-    "chevron-down"?: PrimitiveOverrideProps<ViewProps>;
-    Vector33220?: PrimitiveOverrideProps<IconProps>;
-    Buttons?: PrimitiveOverrideProps<FlexProps>;
-    Button?: PrimitiveOverrideProps<FlexProps>;
-    "more-horizontal"?: PrimitiveOverrideProps<ViewProps>;
-    Vector33224?: PrimitiveOverrideProps<IconProps>;
-    Vector33225?: PrimitiveOverrideProps<IconProps>;
-    Vector33226?: PrimitiveOverrideProps<IconProps>;
-    "Acquire Recruiting33231"?: PrimitiveOverrideProps<TextProps>;
-    List27781079?: PrimitiveOverrideProps<FlexProps>;
-    "My Page"?: PrimitiveOverrideProps<TextProps>;
-    Explore?: PrimitiveOverrideProps<TextProps>;
-    Calendar?: PrimitiveOverrideProps<TextProps>;
-    "IMG-20240331-WA0000 1"?: PrimitiveOverrideProps<ImageProps>;
     "Line cart"?: PrimitiveOverrideProps<ViewProps>;
     Engagement?: PrimitiveOverrideProps<TextProps>;
     Lines33235?: PrimitiveOverrideProps<FlexProps>;
@@ -159,7 +141,7 @@ export declare type EmployerMatchOverridesProps = {
     Bar33303?: PrimitiveOverrideProps<ViewProps>;
     Bar33304?: PrimitiveOverrideProps<ViewProps>;
     "Top 10"?: PrimitiveOverrideProps<TextProps>;
-    "Acquire Recruiting33362"?: PrimitiveOverrideProps<TextProps>;
+    "Acquire Recruiting"?: PrimitiveOverrideProps<TextProps>;
     "Social Icons"?: PrimitiveOverrideProps<FlexProps>;
     "Buttons / Icon33364"?: PrimitiveOverrideProps<ViewProps>;
     Icon33365?: PrimitiveOverrideProps<ViewProps>;
@@ -182,6 +164,8 @@ export declare type EmployerMatchOverridesProps = {
     "Icons / Social / instagram"?: PrimitiveOverrideProps<ViewProps>;
     Vector33383?: PrimitiveOverrideProps<IconProps>;
     Divider?: PrimitiveOverrideProps<IconProps>;
+    NavBarHeader2?: PrimitiveOverrideProps<FlexProps>;
+    "IMG-20240331-WA0000 1"?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type EmployerMatchProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: EmployerMatchOverridesProps | undefined | null;
