@@ -3,16 +3,12 @@ import './App.css';
 import { Amplify } from 'aws-amplify';
 import { Authenticator, withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
-import awsExports from './aws-exports';
-
-
-// Importing Components
+import awsExports from './aws-exports';// Importing Components
 import Dashboard from "./ui-components/Dashboard";
 import EmployeeMatch from "./ui-components/Janedoe";
 import EmployerProfile from "./ui-components/EmployerProfile";
 import Navbar from "./ui-components/navbar";  // ✅ Import Navbar
-
-// Import React Router
+import studiotheme from "./ui-components/studiotheme";  // ✅ Import Studio Theme
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 Amplify.configure(awsExports);
