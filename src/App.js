@@ -1,61 +1,54 @@
 import React from "react";
 import "./App.css";
 import { Amplify } from "aws-amplify";
-import { Authenticator, withAuthenticator } from "@aws-amplify/ui-react";
+import { Authenticator, withAuthenticator, ThemeProvider, Button } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
 import awsExports from "./aws-exports"; 
 import AcquireRecruitingHome from "./ui-components/AcquireRecruitingHome";
-import AcquireLogoGold1 from "./ui-components/Acquirelogogold1";
 import { BrowserRouter as Router } from "react-router-dom";
 import BusinessCard from "./ui-components/Businesscard";
-import JobBoard from "./ui-components/JobBoard";
 import AIcard from "./ui-components/AIcard";
+import Navbar from "./ui-components/NavBarHeader";
 
+// Configure AWS Amplify
 Amplify.configure(awsExports);
 
-function App() {
+function App({ signOut, user }) {
   return (
-    <div className="App min-h-screen flex flex-col items-center">
-      <Router>
-        <Authenticator>
-          {({ signOut }) => (
-            <main className="w-full flex flex-col items-center justify-center">
-            
+    <Authenticator>
+      {({ signOut }) => (
+        <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-600 to-purple-500">
+          <h1 className="text-white text-4xl font-bold mb-8">Welcome, {user?.username}!</h1>
 
-               {/* Centered Content Container */}
-        <div className="w-full flex flex-col items-center justify-center space-y-10 mt-10">
+          <div className="flex flex-col space-y-6">
+            <Button 
+              className="px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-green-400 to-blue-500 rounded-lg shadow-lg hover:scale-105 transition transform"
+            >
+              Job Board
+            </Button>
+            <Button 
+              className="px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-pink-500 to-red-500 rounded-lg shadow-lg hover:scale-105 transition transform"
+            >
+              AI Card
+            </Button>
+            <Button 
+              className="px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg shadow-lg hover:scale-105 transition transform"
+            >
+              Business Card
+            </Button>
+          </div>
 
-{/* Business Page */}
-<div className="w-full max-w-4xl flex justify-center">
-  <BusinessCard />
-</div>
-
-{/* Job Board */}
-<div className="w-full max-w-4xl flex justify-center">
-  <JobBoard />
-</div>
-
-{/* Product Card */}
-<div className="w-full max-w-4xl flex justify-center">
-  <AIcard />
-</div>
-</div>
-
-              {/* Sign Out Button */}
-              <div className="text-center mt-4">
-                <button 
-                  onClick={signOut} 
-                  className="px-4 py-2 bg-red-500 text-white rounded"
-                >
-                  Sign Out
-                </button>
-              </div>
-            </main>
-          )}
-        </Authenticator>
-      </Router>
-    </div>
+          <Button 
+            onClick={signOut} 
+            className="mt-8 px-6 py-3 text-lg font-bold text-white bg-red-600 rounded-lg shadow-lg hover:scale-105 transition transform"
+          >
+            Sign Out
+          </Button>
+        </div>
+      )}
+    </Authenticator>
   );
 }
+
 
 export default withAuthenticator(App);
