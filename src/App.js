@@ -15,14 +15,8 @@ function App({ signOut, user }) {
     <Authenticator>
       {({ signOut }) => (
         <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-600 to-purple-500">
-          {/* ✅ Fix: Use regular <img> tag */}
-          <img 
-            src={Logo} 
-            alt="Company Logo" 
-            className="w-32 h-auto mb-6" // Adjust size as needed
-          />
-          
-          {/* Tech Page */}
+       <img src={Logo} alt="AcquireRecruiting" className="w-32 h-auto" />
+        {/* Tech Page */}
           <TechPage/>
 
           {/* Sign Out Button */}
