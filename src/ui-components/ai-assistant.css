@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
 
 body {
-  background: linear-gradient(135deg, #ffffff, #ffffff);
+  background: linear-gradient(135deg, #7c8599, #4e5257);
   color: white;
   font-family: "Orbitron", sans-serif;
   display: flex;
@@ -21,7 +21,7 @@ body {
 .glass-card {
   background: rgb(243, 241, 241);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(94, 109, 143, 0.719);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px;
   width: 300px;
   border-radius: 10px;
