@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { IconProps, ViewProps } from "@aws-amplify/ui-react";
+import { ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -20,12 +20,12 @@ export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes
 export declare type LogoWithTextOverridesProps = {
     LogoWithText?: PrimitiveOverrideProps<ViewProps>;
     logo?: PrimitiveOverrideProps<ViewProps>;
-    Union?: PrimitiveOverrideProps<IconProps>;
-    Vector39193044?: PrimitiveOverrideProps<IconProps>;
-    Vector39193045?: PrimitiveOverrideProps<IconProps>;
+    "Acquire_logo_black 1"?: PrimitiveOverrideProps<ImageProps>;
+    "Acquire_logo_black 2"?: PrimitiveOverrideProps<ImageProps>;
+    "Acquire Recruiting"?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type LogoWithTextProps = React.PropsWithChildren<Partial<ViewProps> & {
-    color?: "brand" | "neutral";
+    color?: "brand";
 } & {
     overrides?: LogoWithTextOverridesProps | undefined | null;
 }>;

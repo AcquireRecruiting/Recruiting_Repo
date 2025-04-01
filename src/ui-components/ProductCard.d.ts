@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { BadgeProps, DividerProps, FlexProps, IconProps, ImageProps, RatingProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { FlexProps, IconProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 import { MyIconProps } from "./MyIcon";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
@@ -25,28 +25,28 @@ export declare type ProductCardOverridesProps = {
     "Card Area"?: PrimitiveOverrideProps<FlexProps>;
     "Classic Long Sleeve T-Shirt"?: PrimitiveOverrideProps<TextProps>;
     Ratings?: PrimitiveOverrideProps<FlexProps>;
-    Rating?: PrimitiveOverrideProps<RatingProps>;
+    Rating?: PrimitiveOverrideProps<FlexProps>;
     Tags?: PrimitiveOverrideProps<FlexProps>;
-    Badge29766804?: PrimitiveOverrideProps<BadgeProps>;
-    Badge29766805?: PrimitiveOverrideProps<BadgeProps>;
-    Badge29766806?: PrimitiveOverrideProps<BadgeProps>;
+    Badge13137?: PrimitiveOverrideProps<FlexProps>;
+    Badge13138?: PrimitiveOverrideProps<FlexProps>;
+    Badge13139?: PrimitiveOverrideProps<FlexProps>;
     "Information about this product."?: PrimitiveOverrideProps<TextProps>;
     Quote?: PrimitiveOverrideProps<FlexProps>;
     MyIcon?: MyIconProps;
     "\u201CThis is a quote.\u201C"?: PrimitiveOverrideProps<TextProps>;
-    Divider?: PrimitiveOverrideProps<DividerProps>;
+    Divider?: PrimitiveOverrideProps<ViewProps>;
     Features?: PrimitiveOverrideProps<FlexProps>;
-    Feature29766813?: PrimitiveOverrideProps<FlexProps>;
-    Icon29766814?: PrimitiveOverrideProps<ViewProps>;
-    Vector29766815?: PrimitiveOverrideProps<IconProps>;
+    Feature13146?: PrimitiveOverrideProps<FlexProps>;
+    Icon13147?: PrimitiveOverrideProps<ViewProps>;
+    Vector13148?: PrimitiveOverrideProps<IconProps>;
     Fast?: PrimitiveOverrideProps<TextProps>;
-    Feature29766817?: PrimitiveOverrideProps<FlexProps>;
-    Icon29766818?: PrimitiveOverrideProps<ViewProps>;
-    Vector29766819?: PrimitiveOverrideProps<IconProps>;
+    Feature13150?: PrimitiveOverrideProps<FlexProps>;
+    Icon13151?: PrimitiveOverrideProps<ViewProps>;
+    Vector13152?: PrimitiveOverrideProps<IconProps>;
     Fun?: PrimitiveOverrideProps<TextProps>;
-    Feature29766821?: PrimitiveOverrideProps<FlexProps>;
-    Icon29766822?: PrimitiveOverrideProps<ViewProps>;
-    Vector29766823?: PrimitiveOverrideProps<IconProps>;
+    Feature13154?: PrimitiveOverrideProps<FlexProps>;
+    Icon13155?: PrimitiveOverrideProps<ViewProps>;
+    Vector13156?: PrimitiveOverrideProps<IconProps>;
     Flirty?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type ProductCardProps = React.PropsWithChildren<Partial<FlexProps> & {

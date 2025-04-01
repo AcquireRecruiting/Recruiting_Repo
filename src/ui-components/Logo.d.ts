@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { FlexProps, IconProps } from "@aws-amplify/ui-react";
+import { FlexProps, ImageProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -19,10 +19,10 @@ export declare type Variant = {
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type LogoOverridesProps = {
     Logo?: PrimitiveOverrideProps<FlexProps>;
-    Union?: PrimitiveOverrideProps<IconProps>;
+    "Acquire_logo_black 2"?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type LogoProps = React.PropsWithChildren<Partial<FlexProps> & {
-    color?: "brand" | "neutral";
+    color?: "brand";
 } & {
     overrides?: LogoOverridesProps | undefined | null;
 }>;

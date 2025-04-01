@@ -5,8 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ButtonProps, DividerProps, FlexProps, TextFieldProps, TextProps } from "@aws-amplify/ui-react";
-import { LogoWithTextProps } from "./LogoWithText";
+import { FlexProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -25,10 +24,10 @@ export declare type MarketingFooterOverridesProps = {
     "Sign up for our newsletter"?: PrimitiveOverrideProps<TextProps>;
     "No spam. We promise."?: PrimitiveOverrideProps<TextProps>;
     "Frame 435"?: PrimitiveOverrideProps<FlexProps>;
-    TextField?: PrimitiveOverrideProps<TextFieldProps>;
-    Button?: PrimitiveOverrideProps<ButtonProps>;
-    Divider39413816?: PrimitiveOverrideProps<DividerProps>;
-    "Frame 40529766988"?: PrimitiveOverrideProps<FlexProps>;
+    TextField?: PrimitiveOverrideProps<FlexProps>;
+    Button?: PrimitiveOverrideProps<FlexProps>;
+    Divider13340?: PrimitiveOverrideProps<ViewProps>;
+    "Frame 40513341"?: PrimitiveOverrideProps<FlexProps>;
     "Frame 403"?: PrimitiveOverrideProps<FlexProps>;
     Products?: PrimitiveOverrideProps<TextProps>;
     Libraries?: PrimitiveOverrideProps<TextProps>;
@@ -41,14 +40,14 @@ export declare type MarketingFooterOverridesProps = {
     Learn?: PrimitiveOverrideProps<TextProps>;
     Examples?: PrimitiveOverrideProps<TextProps>;
     Changelog?: PrimitiveOverrideProps<TextProps>;
-    "Frame 40539413972"?: PrimitiveOverrideProps<FlexProps>;
+    "Frame 40513354"?: PrimitiveOverrideProps<FlexProps>;
     Company?: PrimitiveOverrideProps<TextProps>;
     "About us"?: PrimitiveOverrideProps<TextProps>;
     Contact?: PrimitiveOverrideProps<TextProps>;
     Blog?: PrimitiveOverrideProps<TextProps>;
-    Divider39413869?: PrimitiveOverrideProps<DividerProps>;
+    Divider13359?: PrimitiveOverrideProps<ViewProps>;
     "Frame 433"?: PrimitiveOverrideProps<FlexProps>;
-    LogoWithText?: LogoWithTextProps;
+    "LogoWithText/neutral"?: PrimitiveOverrideProps<ViewProps>;
     "\u00A9 2023 AWS Amplify UI. All rights reserved."?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type MarketingFooterProps = React.PropsWithChildren<Partial<FlexProps> & {

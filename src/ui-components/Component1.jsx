@@ -7,14 +7,13 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import XRXRNavigationbar from "./XRXRNavigationbar";
-import { View } from "@aws-amplify/ui-react";
+import { Flex, Text, View } from "@aws-amplify/ui-react";
 export default function Component1(props) {
   const { overrides, ...rest } = props;
   return (
     <View
-      width="363px"
-      height="79px"
+      width="1280px"
+      height="1775px"
       display="block"
       gap="unset"
       alignItems="unset"
@@ -24,32 +23,51 @@ export default function Component1(props) {
       {...getOverrideProps(overrides, "Component1")}
       {...rest}
     >
-      <XRXRNavigationbar
-        display="flex"
-        gap="0"
-        direction="row"
-        width="363px"
-        height="79px"
-        justifyContent="flex-start"
-        alignItems="flex-start"
+      <View
+        width="1280px"
+        height="1775px"
+        {...getOverrideProps(overrides, "navbar")}
+      ></View>
+      <Text
+        fontFamily="Inter"
+        fontSize="48px"
+        fontWeight="700"
+        color="rgba(79,136,177,1)"
+        lineHeight="57.60000228881836px"
+        textAlign="left"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        letterSpacing="-0.81px"
+        width="646px"
+        height="80px"
+        gap="unset"
+        alignItems="unset"
         position="absolute"
-        top="0%"
-        bottom="0%"
-        left="0%"
-        right="0%"
+        top="5.63%"
+        bottom="89.86%"
+        left="24.77%"
+        right="24.77%"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "XR/XR Navigation bar")}
-      ></XRXRNavigationbar>
-      <View
-        width="24px"
-        height="24px"
-        {...getOverrideProps(overrides, "gmail_groups")}
-      ></View>
-      <View
-        width="24px"
-        height="24px"
-        {...getOverrideProps(overrides, "stars")}
-      ></View>
+        whiteSpace="pre-wrap"
+        children="My Professional Matches"
+        {...getOverrideProps(overrides, "My Professional Matches")}
+      ></Text>
+      <Flex
+        width="360px"
+        height="56px"
+        {...getOverrideProps(overrides, "Search bar")}
+      ></Flex>
+      <Flex
+        width="935px"
+        height="568px"
+        {...getOverrideProps(overrides, "Stacked card11898")}
+      ></Flex>
+      <Flex
+        width="935px"
+        height="663px"
+        {...getOverrideProps(overrides, "Stacked card11899")}
+      ></Flex>
     </View>
   );
 }

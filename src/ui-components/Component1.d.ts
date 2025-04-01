@@ -5,8 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { XRXRNavigationbarProps } from "./XRXRNavigationbar";
-import { ViewProps } from "@aws-amplify/ui-react";
+import { FlexProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -20,9 +19,11 @@ export declare type Variant = {
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type Component1OverridesProps = {
     Component1?: PrimitiveOverrideProps<ViewProps>;
-    "XR/XR Navigation bar"?: XRXRNavigationbarProps;
-    gmail_groups?: PrimitiveOverrideProps<ViewProps>;
-    stars?: PrimitiveOverrideProps<ViewProps>;
+    navbar?: PrimitiveOverrideProps<ViewProps>;
+    "My Professional Matches"?: PrimitiveOverrideProps<TextProps>;
+    "Search bar"?: PrimitiveOverrideProps<FlexProps>;
+    "Stacked card11898"?: PrimitiveOverrideProps<FlexProps>;
+    "Stacked card11899"?: PrimitiveOverrideProps<FlexProps>;
 } & EscapeHatchProps;
 export declare type Component1Props = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: Component1OverridesProps | undefined | null;

@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ButtonProps, DividerProps, FlexProps, ImageProps, TextFieldProps, TextProps } from "@aws-amplify/ui-react";
+import { FlexProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -19,19 +19,19 @@ export declare type Variant = {
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type CheckoutPaymentOverridesProps = {
     CheckoutPayment?: PrimitiveOverrideProps<FlexProps>;
-    "Frame 41139343305"?: PrimitiveOverrideProps<FlexProps>;
+    "Frame 41113386"?: PrimitiveOverrideProps<FlexProps>;
     "Frame 313"?: PrimitiveOverrideProps<FlexProps>;
     "Frame 406"?: PrimitiveOverrideProps<FlexProps>;
     "Payment information"?: PrimitiveOverrideProps<TextProps>;
     "Frame 409"?: PrimitiveOverrideProps<FlexProps>;
-    TextField39343313?: PrimitiveOverrideProps<TextFieldProps>;
+    TextField13391?: PrimitiveOverrideProps<FlexProps>;
     "Frame 425"?: PrimitiveOverrideProps<FlexProps>;
-    TextField39343315?: PrimitiveOverrideProps<TextFieldProps>;
-    TextField39343316?: PrimitiveOverrideProps<TextFieldProps>;
+    TextField13393?: PrimitiveOverrideProps<FlexProps>;
+    TextField13394?: PrimitiveOverrideProps<FlexProps>;
     "Frame 410"?: PrimitiveOverrideProps<FlexProps>;
-    TextField39343319?: PrimitiveOverrideProps<TextFieldProps>;
-    "Frame 41139343321"?: PrimitiveOverrideProps<FlexProps>;
-    Button?: PrimitiveOverrideProps<ButtonProps>;
+    TextField13396?: PrimitiveOverrideProps<FlexProps>;
+    "Frame 41113397"?: PrimitiveOverrideProps<FlexProps>;
+    Button?: PrimitiveOverrideProps<FlexProps>;
     "Frame 427"?: PrimitiveOverrideProps<FlexProps>;
     "Your order"?: PrimitiveOverrideProps<TextProps>;
     image?: PrimitiveOverrideProps<ImageProps>;
@@ -44,7 +44,7 @@ export declare type CheckoutPaymentOverridesProps = {
     "Frame 318"?: PrimitiveOverrideProps<FlexProps>;
     Taxes?: PrimitiveOverrideProps<TextProps>;
     "$26.80"?: PrimitiveOverrideProps<TextProps>;
-    Divider?: PrimitiveOverrideProps<DividerProps>;
+    Divider?: PrimitiveOverrideProps<ViewProps>;
     "Frame 319"?: PrimitiveOverrideProps<FlexProps>;
     Total?: PrimitiveOverrideProps<TextProps>;
     "$361.80"?: PrimitiveOverrideProps<TextProps>;

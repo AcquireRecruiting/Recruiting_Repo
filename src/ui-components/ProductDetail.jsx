@@ -7,14 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import {
-  Button,
-  Divider,
-  Flex,
-  Image,
-  Rating,
-  Text,
-} from "@aws-amplify/ui-react";
+import { Flex, Image, Text, View } from "@aws-amplify/ui-react";
 export default function ProductDetail(props) {
   const { overrides, ...rest } = props;
   return (
@@ -82,7 +75,7 @@ export default function ProductDetail(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 729766954")}
+            {...getOverrideProps(overrides, "Frame 713272")}
           >
             <Text
               fontFamily="Inter"
@@ -133,15 +126,11 @@ export default function ProductDetail(props) {
               )}
             ></Text>
           </Flex>
-          <Divider
+          <View
             width="unset"
             height="1px"
-            shrink="0"
-            alignSelf="stretch"
-            size="small"
-            orientation="horizontal"
-            {...getOverrideProps(overrides, "Divider29766957")}
-          ></Divider>
+            {...getOverrideProps(overrides, "Divider13275")}
+          ></View>
           <Flex
             gap="8px"
             direction="column"
@@ -153,7 +142,7 @@ export default function ProductDetail(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 729766958")}
+            {...getOverrideProps(overrides, "Frame 713276")}
           >
             <Text
               fontFamily="Inter"
@@ -204,15 +193,11 @@ export default function ProductDetail(props) {
               )}
             ></Text>
           </Flex>
-          <Divider
+          <View
             width="unset"
             height="1px"
-            shrink="0"
-            alignSelf="stretch"
-            size="small"
-            orientation="horizontal"
-            {...getOverrideProps(overrides, "Divider29766961")}
-          ></Divider>
+            {...getOverrideProps(overrides, "Divider13279")}
+          ></View>
           <Flex
             gap="8px"
             direction="column"
@@ -224,7 +209,7 @@ export default function ProductDetail(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 729766962")}
+            {...getOverrideProps(overrides, "Frame 713280")}
           >
             <Text
               fontFamily="Inter"
@@ -320,15 +305,13 @@ export default function ProductDetail(props) {
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 2729766968")}
+          {...getOverrideProps(overrides, "Frame 2713285")}
         >
-          <Rating
+          <Flex
             width="unset"
             height="unset"
-            shrink="0"
-            size="default"
             {...getOverrideProps(overrides, "Rating")}
-          ></Rating>
+          ></Flex>
           <Text
             fontFamily="Inter"
             fontSize="14px"
@@ -362,7 +345,7 @@ export default function ProductDetail(props) {
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 2729766971")}
+          {...getOverrideProps(overrides, "Frame 2713288")}
         >
           <Text
             fontFamily="Inter"
@@ -417,48 +400,28 @@ export default function ProductDetail(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 2829766973")}
+            {...getOverrideProps(overrides, "Frame 2813291")}
           >
-            <Button
+            <Flex
               width="85px"
               height="unset"
-              shrink="0"
-              size="default"
-              isDisabled={true}
-              variation="default"
-              children="XXS"
-              {...getOverrideProps(overrides, "Button29766974")}
-            ></Button>
-            <Button
+              {...getOverrideProps(overrides, "Button13292")}
+            ></Flex>
+            <Flex
               width="87px"
               height="unset"
-              shrink="0"
-              size="default"
-              isDisabled={false}
-              variation="default"
-              children="XS"
-              {...getOverrideProps(overrides, "Button29766975")}
-            ></Button>
-            <Button
+              {...getOverrideProps(overrides, "Button13293")}
+            ></Flex>
+            <Flex
               width="87px"
               height="unset"
-              shrink="0"
-              size="default"
-              isDisabled={false}
-              variation="default"
-              children="S"
-              {...getOverrideProps(overrides, "Button29766976")}
-            ></Button>
-            <Button
+              {...getOverrideProps(overrides, "Button13294")}
+            ></Flex>
+            <Flex
               width="87px"
               height="unset"
-              shrink="0"
-              size="default"
-              isDisabled={false}
-              variation="default"
-              children="M"
-              {...getOverrideProps(overrides, "Button29766977")}
-            ></Button>
+              {...getOverrideProps(overrides, "Button13295")}
+            ></Flex>
           </Flex>
           <Flex
             gap="24px"
@@ -470,64 +433,34 @@ export default function ProductDetail(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 2829766978")}
+            {...getOverrideProps(overrides, "Frame 2813296")}
           >
-            <Button
+            <Flex
               width="87px"
               height="unset"
-              gap="24px"
-              shrink="0"
-              size="default"
-              isDisabled={false}
-              variation="default"
-              children="L"
-              {...getOverrideProps(overrides, "Button29766979")}
-            ></Button>
-            <Button
+              {...getOverrideProps(overrides, "Button13297")}
+            ></Flex>
+            <Flex
               width="87px"
               height="unset"
-              gap="24px"
-              shrink="0"
-              size="default"
-              isDisabled={false}
-              variation="default"
-              children="XL"
-              {...getOverrideProps(overrides, "Button29766980")}
-            ></Button>
-            <Button
+              {...getOverrideProps(overrides, "Button13298")}
+            ></Flex>
+            <Flex
               width="87px"
               height="unset"
-              gap="24px"
-              shrink="0"
-              size="default"
-              isDisabled={false}
-              variation="default"
-              children="2XL"
-              {...getOverrideProps(overrides, "Button29766981")}
-            ></Button>
-            <Button
+              {...getOverrideProps(overrides, "Button13299")}
+            ></Flex>
+            <Flex
               width="87px"
               height="unset"
-              gap="24px"
-              shrink="0"
-              size="default"
-              isDisabled={false}
-              variation="default"
-              children="3XL"
-              {...getOverrideProps(overrides, "Button29766982")}
-            ></Button>
+              {...getOverrideProps(overrides, "Button13300")}
+            ></Flex>
           </Flex>
-          <Button
+          <Flex
             width="unset"
             height="unset"
-            shrink="0"
-            alignSelf="stretch"
-            size="large"
-            isDisabled={false}
-            variation="primary"
-            children="Add to cart"
-            {...getOverrideProps(overrides, "Button29766972")}
-          ></Button>
+            {...getOverrideProps(overrides, "Button13301")}
+          ></Flex>
         </Flex>
       </Flex>
     </Flex>

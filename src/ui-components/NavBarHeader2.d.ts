@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ButtonProps, FlexProps, ImageProps, TextProps } from "@aws-amplify/ui-react";
+import { FlexProps, ImageProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -26,8 +26,8 @@ export declare type NavBarHeader2OverridesProps = {
     SETTINGS?: PrimitiveOverrideProps<TextProps>;
     USER?: PrimitiveOverrideProps<TextProps>;
     actions?: PrimitiveOverrideProps<FlexProps>;
-    Button39493466?: PrimitiveOverrideProps<ButtonProps>;
-    Button39493467?: PrimitiveOverrideProps<ButtonProps>;
+    Button13434?: PrimitiveOverrideProps<FlexProps>;
+    Button13435?: PrimitiveOverrideProps<FlexProps>;
 } & EscapeHatchProps;
 export declare type NavBarHeader2Props = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: NavBarHeader2OverridesProps | undefined | null;

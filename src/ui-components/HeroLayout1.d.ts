@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ButtonProps, FlexProps, TextProps } from "@aws-amplify/ui-react";
+import { FlexProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -23,7 +23,7 @@ export declare type HeroLayout1OverridesProps = {
     HeroMessage?: PrimitiveOverrideProps<FlexProps>;
     Message?: PrimitiveOverrideProps<FlexProps>;
     Heading?: PrimitiveOverrideProps<TextProps>;
-    Button?: PrimitiveOverrideProps<ButtonProps>;
+    Button?: PrimitiveOverrideProps<FlexProps>;
 } & EscapeHatchProps;
 export declare type HeroLayout1Props = React.PropsWithChildren<Partial<FlexProps> & {
     mode?: "Dark" | "Light" | "Mode3";

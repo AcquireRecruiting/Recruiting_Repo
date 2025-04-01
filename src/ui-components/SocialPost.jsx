@@ -175,7 +175,7 @@ export default function SocialPost(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               type="arrow-right"
-              {...getOverrideProps(overrides, "MyIcon29766860")}
+              {...getOverrideProps(overrides, "MyIcon13193")}
             ></MyIcon>
             <Text
               fontFamily="Inter"
@@ -214,7 +214,7 @@ export default function SocialPost(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Share29766862")}
+            {...getOverrideProps(overrides, "Share13195")}
           >
             <Text
               fontFamily="Inter"
@@ -236,7 +236,7 @@ export default function SocialPost(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Share"
-              {...getOverrideProps(overrides, "Share29766863")}
+              {...getOverrideProps(overrides, "Share13196")}
             ></Text>
             <MyIcon
               width="24px"
@@ -250,7 +250,7 @@ export default function SocialPost(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               type="bookmark_border"
-              {...getOverrideProps(overrides, "MyIcon29766864")}
+              {...getOverrideProps(overrides, "MyIcon13197")}
             ></MyIcon>
             <MyIcon
               width="24px"
@@ -264,7 +264,7 @@ export default function SocialPost(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               type="share"
-              {...getOverrideProps(overrides, "MyIcon29766865")}
+              {...getOverrideProps(overrides, "MyIcon13198")}
             ></MyIcon>
             <MyIcon
               width="24px"
@@ -278,7 +278,7 @@ export default function SocialPost(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               type="more_vert"
-              {...getOverrideProps(overrides, "MyIcon29766866")}
+              {...getOverrideProps(overrides, "MyIcon13199")}
             ></MyIcon>
           </Flex>
         </Flex>
@@ -308,7 +308,7 @@ export default function SocialPost(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Read more29766868")}
+        {...getOverrideProps(overrides, "Read more13201")}
       >
         <MyIcon
           width="24px"
@@ -322,7 +322,7 @@ export default function SocialPost(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           type="arrow-right"
-          {...getOverrideProps(overrides, "MyIcon29766869")}
+          {...getOverrideProps(overrides, "MyIcon13202")}
         ></MyIcon>
         <Text
           fontFamily="Inter"
@@ -347,7 +347,7 @@ export default function SocialPost(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Read more"
-          {...getOverrideProps(overrides, "Read more29766870")}
+          {...getOverrideProps(overrides, "Read more13203")}
         ></Text>
       </Flex>
     </Flex>

@@ -17,7 +17,12 @@ export default function TextField(props) {
   const variants = [
     {
       overrides: {
-        label: { fontSize: "20px", lineHeight: "30px", display: "none" },
+        label: {
+          fontSize: "20px",
+          color: "rgba(48,64,80,1)",
+          lineHeight: "30px",
+          display: "none",
+        },
         descriptiveText: {},
         placeholder: { fontSize: "20px", lineHeight: "30px" },
         Input: { borderRadius: "4px", padding: "7px 15px 7px 15px" },
@@ -60,7 +65,12 @@ export default function TextField(props) {
     },
     {
       overrides: {
-        label: { fontSize: "20px", lineHeight: "30px", display: "none" },
+        label: {
+          fontSize: "20px",
+          color: "rgba(48,64,80,1)",
+          lineHeight: "30px",
+          display: "none",
+        },
         descriptiveText: {},
         placeholder: { fontSize: "20px", lineHeight: "30px" },
         Input: {
@@ -104,7 +114,12 @@ export default function TextField(props) {
     },
     {
       overrides: {
-        label: { fontSize: "20px", lineHeight: "30px", display: "none" },
+        label: {
+          fontSize: "20px",
+          color: "rgba(48,64,80,1)",
+          lineHeight: "30px",
+          display: "none",
+        },
         descriptiveText: {},
         placeholder: { fontSize: "20px", lineHeight: "30px" },
         Input: { borderRadius: "4px" },
@@ -158,7 +173,7 @@ export default function TextField(props) {
     },
     {
       overrides: {
-        label: { display: "none" },
+        label: { color: "rgba(48,64,80,1)", display: "none" },
         descriptiveText: {},
         placeholder: {},
         Input: {
@@ -196,7 +211,7 @@ export default function TextField(props) {
     },
     {
       overrides: {
-        label: { display: "none" },
+        label: { color: "rgba(48,64,80,1)", display: "none" },
         descriptiveText: {},
         placeholder: {},
         Input: {
@@ -240,7 +255,7 @@ export default function TextField(props) {
     },
     {
       overrides: {
-        label: { display: "none" },
+        label: { color: "rgba(48,64,80,1)", display: "none" },
         descriptiveText: {},
         placeholder: {},
         Input: { borderRadius: "4px" },
@@ -294,7 +309,12 @@ export default function TextField(props) {
     },
     {
       overrides: {
-        label: { fontSize: "14px", lineHeight: "21px", display: "none" },
+        label: {
+          fontSize: "14px",
+          color: "rgba(48,64,80,1)",
+          lineHeight: "21px",
+          display: "none",
+        },
         descriptiveText: {},
         placeholder: { fontSize: "14px", lineHeight: "21px" },
         Input: { borderRadius: "4px", padding: "5px 11px 5px 11px" },
@@ -328,7 +348,12 @@ export default function TextField(props) {
     },
     {
       overrides: {
-        label: { fontSize: "14px", lineHeight: "21px", display: "none" },
+        label: {
+          fontSize: "14px",
+          color: "rgba(48,64,80,1)",
+          lineHeight: "21px",
+          display: "none",
+        },
         descriptiveText: {},
         placeholder: { fontSize: "14px", lineHeight: "21px" },
         Input: {
@@ -372,7 +397,12 @@ export default function TextField(props) {
     },
     {
       overrides: {
-        label: { fontSize: "14px", lineHeight: "21px", display: "none" },
+        label: {
+          fontSize: "14px",
+          color: "rgba(48,64,80,1)",
+          lineHeight: "21px",
+          display: "none",
+        },
         descriptiveText: {},
         placeholder: { fontSize: "14px", lineHeight: "21px" },
         Input: { borderRadius: "4px", padding: "6px 12px 6px 12px" },
@@ -447,7 +477,7 @@ export default function TextField(props) {
         fontFamily="Inter"
         fontSize="16px"
         fontWeight="400"
-        color="rgba(48,64,80,1)"
+        color="rgba(0,0,0,0.73)"
         lineHeight="24px"
         textAlign="left"
         display="block"

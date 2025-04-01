@@ -1,24 +1,45 @@
-import React from 'react';
-import './App.css';
-import { Amplify } from 'aws-amplify';
-import { Authenticator, withAuthenticator } from '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css';
-import awsExports from './aws-exports';// Importing Components
-import Navbar from "./ui-components/navbar";  // ✅ Import Navbar
-import studioTheme from "./ui-components/studioTheme";  // ✅ Import Studio Theme
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import NavbarHeader from "./ui-components/NavBarHeader";
+import React from "react";
+import "./App.css";
+import { Amplify } from "aws-amplify";
+import { Authenticator, withAuthenticator } from "@aws-amplify/ui-react";
+import "@aws-amplify/ui-react/styles.css";
+import awsExports from "./aws-exports"; 
+import AcquireRecruitingHome from "./ui-components/AcquireRecruitingHome";
+import AcquireLogoGold1 from "./ui-components/Acquirelogogold1";
+import { BrowserRouter as Router } from "react-router-dom";
+import BusinessCard from "./ui-components/Businesscard";
+import JobBoard from "./ui-components/JobBoard";
+import AIcard from "./ui-components/AIcard";
 
 Amplify.configure(awsExports);
 
 function App() {
   return (
-    <div className="App min-h-screen flex flex-col">
+    <div className="App min-h-screen flex flex-col items-center">
       <Router>
         <Authenticator>
           {({ signOut }) => (
-            <main className="w-full">
-             <NavbarHeader />
+            <main className="w-full flex flex-col items-center justify-center">
+            
+
+               {/* Centered Content Container */}
+        <div className="w-full flex flex-col items-center justify-center space-y-10 mt-10">
+
+{/* Business Page */}
+<div className="w-full max-w-4xl flex justify-center">
+  <BusinessCard />
+</div>
+
+{/* Job Board */}
+<div className="w-full max-w-4xl flex justify-center">
+  <JobBoard />
+</div>
+
+{/* Product Card */}
+<div className="w-full max-w-4xl flex justify-center">
+  <AIcard />
+</div>
+</div>
 
               {/* Sign Out Button */}
               <div className="text-center mt-4">

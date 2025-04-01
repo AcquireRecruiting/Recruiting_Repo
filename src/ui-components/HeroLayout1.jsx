@@ -11,7 +11,7 @@ import {
   getOverridesFromVariants,
   mergeVariantsAndOverrides,
 } from "./utils";
-import { Button, Flex, Text } from "@aws-amplify/ui-react";
+import { Flex, Text } from "@aws-amplify/ui-react";
 export default function HeroLayout1(props) {
   const { overrides: overridesProp, ...rest } = props;
   const variants = [
@@ -137,16 +137,11 @@ export default function HeroLayout1(props) {
               {...getOverrideProps(overrides, "Heading")}
             ></Text>
           </Flex>
-          <Button
+          <Flex
             width="unset"
             height="unset"
-            shrink="0"
-            size="large"
-            isDisabled={false}
-            variation="primary"
-            children="Get started"
             {...getOverrideProps(overrides, "Button")}
-          ></Button>
+          ></Flex>
         </Flex>
       </Flex>
     </Flex>

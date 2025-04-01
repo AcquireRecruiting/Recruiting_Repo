@@ -198,7 +198,7 @@ export default function Badge(props) {
         fontFamily="Inter"
         fontSize="14px"
         fontWeight="600"
-        color="rgba(13,26,38,1)"
+        color="rgba(0,0,0,1)"
         lineHeight="14px"
         textAlign="left"
         display="block"

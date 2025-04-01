@@ -63,7 +63,7 @@ export default function CommentCard(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             type="favorite"
-            {...getOverrideProps(overrides, "MyIcon29766875")}
+            {...getOverrideProps(overrides, "MyIcon13207")}
           ></MyIcon>
           <Text
             fontFamily="Inter"
@@ -127,7 +127,7 @@ export default function CommentCard(props) {
           basis="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame29766879")}
+          {...getOverrideProps(overrides, "Frame13211")}
         >
           <Flex
             gap="16px"
@@ -140,7 +140,7 @@ export default function CommentCard(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame29766880")}
+            {...getOverrideProps(overrides, "Frame13212")}
           >
             <Flex
               gap="16px"
@@ -152,7 +152,7 @@ export default function CommentCard(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Frame29766881")}
+              {...getOverrideProps(overrides, "Frame13213")}
             >
               <Text
                 fontFamily="Inter"
@@ -189,7 +189,7 @@ export default function CommentCard(props) {
               basis="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Frame29766885")}
+              {...getOverrideProps(overrides, "Frame13215")}
             >
               <MyIcon
                 width="24px"
@@ -203,7 +203,7 @@ export default function CommentCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 type="more_horiz"
-                {...getOverrideProps(overrides, "MyIcon29766886")}
+                {...getOverrideProps(overrides, "MyIcon13216")}
               ></MyIcon>
             </Flex>
           </Flex>
@@ -246,7 +246,7 @@ export default function CommentCard(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Share29766888")}
+        {...getOverrideProps(overrides, "Share13218")}
       >
         <Flex
           gap="16px"
@@ -258,7 +258,7 @@ export default function CommentCard(props) {
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Share29766889")}
+          {...getOverrideProps(overrides, "Share13219")}
         >
           <MyIcon
             width="24px"
@@ -272,7 +272,7 @@ export default function CommentCard(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             type="reply"
-            {...getOverrideProps(overrides, "MyIcon29766890")}
+            {...getOverrideProps(overrides, "MyIcon13220")}
           ></MyIcon>
           <Text
             fontFamily="Inter"
@@ -294,7 +294,7 @@ export default function CommentCard(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="99"
-            {...getOverrideProps(overrides, "9929766891")}
+            {...getOverrideProps(overrides, "9913221")}
           ></Text>
         </Flex>
         <Flex
@@ -321,7 +321,7 @@ export default function CommentCard(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             type="shuffle"
-            {...getOverrideProps(overrides, "MyIcon29766893")}
+            {...getOverrideProps(overrides, "MyIcon13223")}
           ></MyIcon>
           <Text
             fontFamily="Inter"
@@ -343,7 +343,7 @@ export default function CommentCard(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="99"
-            {...getOverrideProps(overrides, "9929766894")}
+            {...getOverrideProps(overrides, "9913224")}
           ></Text>
         </Flex>
         <Flex
@@ -370,7 +370,7 @@ export default function CommentCard(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             type="favorite_border"
-            {...getOverrideProps(overrides, "MyIcon29766896")}
+            {...getOverrideProps(overrides, "MyIcon13226")}
           ></MyIcon>
           <Text
             fontFamily="Inter"
@@ -392,7 +392,7 @@ export default function CommentCard(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="99"
-            {...getOverrideProps(overrides, "9929766897")}
+            {...getOverrideProps(overrides, "9913227")}
           ></Text>
         </Flex>
         <MyIcon
@@ -407,7 +407,7 @@ export default function CommentCard(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           type="share"
-          {...getOverrideProps(overrides, "MyIcon29766898")}
+          {...getOverrideProps(overrides, "MyIcon13228")}
         ></MyIcon>
       </Flex>
     </Flex>

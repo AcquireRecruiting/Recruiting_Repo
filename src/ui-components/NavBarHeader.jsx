@@ -6,12 +6,11 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps, useNavigateAction } from "./utils";
+import { getOverrideProps } from "./utils";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
 export default function NavBarHeader(props) {
   const { overrides, ...rest } = props;
-  const aIASSISTANTOnClick = useNavigateAction({ type: "url", url: "" });
   return (
     <Flex
       gap="40px"
@@ -52,7 +51,7 @@ export default function NavBarHeader(props) {
         basis="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 32129767076")}
+        {...getOverrideProps(overrides, "Frame 32113418")}
       >
         <Text
           fontFamily="Russo One"
@@ -93,9 +92,7 @@ export default function NavBarHeader(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          onClick={() => {
-            aIASSISTANTOnClick();
-          }}
+          children="AI ASSISTANT"
           {...getOverrideProps(overrides, "AI ASSISTANT")}
         ></Text>
         <Text
@@ -153,7 +150,7 @@ export default function NavBarHeader(props) {
         basis="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 32129767081")}
+        {...getOverrideProps(overrides, "Frame 32113423")}
       >
         <MyIcon
           width="24px"
