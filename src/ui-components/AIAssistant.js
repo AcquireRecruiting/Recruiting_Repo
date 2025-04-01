@@ -1,9 +1,10 @@
 import React from "react";
 import { Card, useTheme, Flex, Heading, Text } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
-import "./TechPage.css";
+import "./AIAssistant.css";
 import { Link } from "react-router-dom";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 
 const BackgroundStylePropExample = () => {
@@ -32,7 +33,7 @@ const BackgroundTokenNameExample = () => {
   );
 };
 
-const TechPage = () => {
+const AIAssistant = () => {
   return (
     <div className="tech-container">
       <Flex direction="column" alignItems="center" gap="2rem">
@@ -44,4 +45,4 @@ const TechPage = () => {
   );
 };
 
-export default TechPage;
+export default AIAssistant;
