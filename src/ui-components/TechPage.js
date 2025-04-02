@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const BackgroundStylePropExample = () => {
     return (
-      <Link to="/ai-assistant" className="no-underline">
+      <Link to="/AIAssistant" className="no-underline">
         <Card className="glass-card cursor-pointer hover:scale-105 transition-transform">
           <Heading level={3}>AI Assistant</Heading>
         </Card>
