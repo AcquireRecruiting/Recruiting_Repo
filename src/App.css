@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
 
 :root {
   --prim: #53e3a6;
@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Orbitron", sans-serif;
   color: white;
   font-weight: 300;
   background: linear-gradient(to bottom right, #ffffff, #ffffff);

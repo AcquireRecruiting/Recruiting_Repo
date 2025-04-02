@@ -5,8 +5,9 @@ import { Authenticator, withAuthenticator, Button } from "@aws-amplify/ui-react"
 import "@aws-amplify/ui-react/styles.css";
 import awsExports from "./aws-exports";
 import TechPage from "./ui-components/TechPage";
-import AIAssistant from "./ui-components/AIAssistant";
+import Actions from "./ui-components/Actions";
 import Logo from "./ui-components/Logo.jpg";
+import Dashboard from "./ui-components/Dashboard";
 import "./App.css";
 
 // Configure AWS Amplify
@@ -23,9 +24,9 @@ function App({ signOut }) {
           {/* Page Routes */}
           <Routes>
             <Route path="/" element={<TechPage />} /> {/* Home Page */}
-            <Route path="/ai-assistant" element={<AIAssistant />} /> {/* AI Assistant Page */}
+            <Route path="/Actions" element={<Actions />} /> 
+            <Route path="/JobBoard" element={<Dashboard />} />
           </Routes>
-
           {/* Sign Out Button */}
           <Button
             onClick={signOut}
