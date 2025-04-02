@@ -5,6 +5,7 @@ import { Amplify } from "aws-amplify";
 import "./TechPage.css";
 import { Link } from "react-router-dom";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { OpenAIAssistant } from "./OpenAI/OpenAIAssistant";
 
 const BackgroundStylePropExample = () => {
     return (
@@ -45,5 +46,7 @@ const TechPage = () => {
     </div>
   );
 };
+
+
 
 export default TechPage;
