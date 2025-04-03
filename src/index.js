@@ -5,18 +5,23 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom"; // ✅ Make sure this is imported
 import "./App.css";
+import { ThemeProvider } from '@aws-amplify/ui-react';
+import { Amplify } from 'aws-amplify';
+import outputs from './amplify_outputs.json';
+
+Amplify.configure(outputs);
 
 // Find the root element
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // Wrap App inside BrowserRouter
 root.render(
+  <ThemeProvider>
   <BrowserRouter>
     <App />
   </BrowserRouter>
+  </ThemeProvider>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();

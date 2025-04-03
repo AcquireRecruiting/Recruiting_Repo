@@ -29,9 +29,11 @@ const BackgroundThemeTokenExample = () => {
 
 const BackgroundTokenNameExample = () => {
   return (
+    <Link to="/" className="no-underline">
     <Card className="glass-card">
       <Heading level={3}>Business Page</Heading>
     </Card>
+    </Link>
   );
 };
 

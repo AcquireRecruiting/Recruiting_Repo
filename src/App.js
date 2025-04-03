@@ -9,6 +9,9 @@ import Actions from "./ui-components/Actions";
 import Logo from "./ui-components/Logo.jpg";
 import Dashboard from "./ui-components/Dashboard";
 import "./App.css";
+import BusinessPage from "./ui-components/Businesspagecont";
+import { TodoCreateForm } from './ui-components';
+
 
 // Configure AWS Amplify
 Amplify.configure(awsExports);
@@ -25,8 +28,8 @@ function App({ signOut }) {
           <Routes>
             <Route path="/" element={<TechPage />} /> {/* Home Page */}
             <Route path="/Actions" element={<Actions />} /> 
-            <Route path="/JobBoard" element={<Dashboard />} />
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/Dashboard" element={<Dashboard />} />
+            <Route path="/BusinessPagecont" element={<BusinessPage />} />
           </Routes>
           {/* Sign Out Button */}
           <Button
