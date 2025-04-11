@@ -9,7 +9,7 @@ import Actions from "./ui-components/Actions";
 import Logo from "./ui-components/Logo.jpg";
 import Dashboard from "./ui-components/Dashboard";
 import "./App.css";
-import BusinessPage from "./ui-components/Businesspagecont";
+import JobBoard from "./ui-components/JobBoard";
 import { TodoCreateForm } from './ui-components';
 
 
@@ -29,7 +29,7 @@ function App({ signOut }) {
             <Route path="/" element={<TechPage />} /> {/* Home Page */}
             <Route path="/Actions" element={<Actions />} /> 
             <Route path="/Dashboard" element={<Dashboard />} />
-            <Route path="/BusinessPagecont" element={<BusinessPage />} />
+            <Route path="/JobBoard" element={<JobBoard />} />
           </Routes>
           {/* Sign Out Button */}
           <Button

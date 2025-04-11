@@ -7,9 +7,8 @@ import { BrowserRouter } from "react-router-dom"; // ✅ Make sure this is impor
 import "./App.css";
 import { ThemeProvider } from '@aws-amplify/ui-react';
 import { Amplify } from 'aws-amplify';
-import outputs from './amplify_outputs.json';
-
-Amplify.configure(outputs);
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
 
 // Find the root element
 const root = ReactDOM.createRoot(document.getElementById("root"));
