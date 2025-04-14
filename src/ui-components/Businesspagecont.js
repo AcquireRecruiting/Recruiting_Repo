@@ -1,6 +1,7 @@
 import React from "react";
 import { Flex } from "@aws-amplify/ui-react";
 import "./Businesspagecont.css";
+import EmployerProfile from '/ui-components/EmployerProfile'
 
 const BusinessPage = () => {
     return (
@@ -8,7 +9,7 @@ const BusinessPage = () => {
         <div className="dashboard-container">
           <Flex direction="column" alignItems="center" gap="2rem">
             {/* Load Dashboard Component */}
-            <BusinessPage />
+            <EmployerProfile />
           </Flex>
         </div>
       </div>

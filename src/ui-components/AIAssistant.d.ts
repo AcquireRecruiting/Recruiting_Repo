@@ -5,9 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { FlexProps, ImageProps, TextProps } from "@aws-amplify/ui-react";
-import StandardCard from './StandardCard';
-import {DefaultDropZoneExample} from "./DefaultDropZoneExample"
+import { FlexProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -19,15 +17,14 @@ export declare type Variant = {
     overrides: EscapeHatchProps;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type StandardCardOverridesProps = {
-    StandardCard?: PrimitiveOverrideProps<FlexProps>;
-    image?: PrimitiveOverrideProps<ImageProps>;
-    "Job Title: Engineer"?: PrimitiveOverrideProps<FlexProps>;
-    ""?: PrimitiveOverrideProps<FlexProps>;
-    "$99 USD"?: PrimitiveOverrideProps<TextProps>;
-    "4bds 3 ba 2,530 sqft - Active"?: PrimitiveOverrideProps<TextProps>;
+export declare type AIAssistantOverridesProps = {
+    AIAssistant?: PrimitiveOverrideProps<FlexProps>;
+    HeroMessage?: PrimitiveOverrideProps<FlexProps>;
+    Message?: PrimitiveOverrideProps<FlexProps>;
+    Heading?: PrimitiveOverrideProps<TextProps>;
+    Button?: PrimitiveOverrideProps<FlexProps>;
 } & EscapeHatchProps;
-export declare type StandardCardProps = React.PropsWithChildren<Partial<FlexProps> & {
-    overrides?: StandardCardOverridesProps | undefined | null;
+export declare type AIAssistantProps = React.PropsWithChildren<Partial<FlexProps> & {
+    overrides?: AIAssistantOverridesProps | undefined | null;
 }>;
-export default function StandardCard(props: StandardCardProps): React.ReactElement;
+export default function AIAssistant(props: AIAssistantProps): React.ReactElement;
