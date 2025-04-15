@@ -61,6 +61,7 @@ export declare type NavBarSideOverridesProps = {
     "Frame 415"?: PrimitiveOverrideProps<FlexProps>;
     "Rectangle 1163"?: PrimitiveOverrideProps<ImageProps>;
     "Frame 32113478"?: PrimitiveOverrideProps<FlexProps>;
+    "Wesley Peck"?: PrimitiveOverrideProps<TextProps>;
     MyIcon13480?: MyIconProps;
 } & EscapeHatchProps;
 export declare type NavBarSideProps = React.PropsWithChildren<Partial<FlexProps> & {
