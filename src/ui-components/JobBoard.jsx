@@ -1,7 +1,7 @@
-/* eslint-disable */
+//* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Flex } from "@aws-amplify/ui-react";
+import { Flex, Heading } from "@aws-amplify/ui-react"; // ✅ import Heading
 import NavBarSide from "./NavBarSide";
 import StandardCard from "./StandardCard";
 import MarketingFooter from "./MarketingFooter";
@@ -30,7 +30,7 @@ export default function JobBoard(props) {
           width="240px"
           minWidth="200px"
           padding="2rem 1rem"
-          backgroundColor="#f5f5f5"
+          backgroundColor="#ffffff"
           borderRight="1px solid #ddd"
         >
           <NavBarSide />
@@ -38,27 +38,35 @@ export default function JobBoard(props) {
 
         {/* Main Content */}
         <Flex
-          direction="row"
+          direction="column" // 📦 wrap cards and heading together
           flex="1"
-          flexWrap="wrap" // enables the cards to wrap
-          gap="2rem"
+          gap="1.5rem"
           padding="2rem"
           overflow="auto"
-          backgroundColor="#f9f9f9"
+          backgroundColor="#ffffff"
           borderRadius="16px"
           boxShadow="0 4px 12px rgba(0, 0, 0, 0.1)"
           margin="2rem"
-          justifyContent="flex-start" // aligns cards to the left
         >
-          {/* Ensure the cards have a height */}
-          <StandardCard width="calc(50% - 1rem)" height="300px" />
-          <StandardCard width="calc(50% - 1rem)" height="300px" />
-          <StandardCard width="calc(50% - 1rem)" height="300px" />
-          <StandardCard width="calc(50% - 1rem)" height="300px" />
+          {/* Heading */}
+          <Heading level={3}>Job Board</Heading>
+
+          {/* Card Grid */}
+          <Flex
+            direction="row"
+            flexWrap="wrap"
+            gap="2rem"
+            justifyContent="flex-start"
+          >
+            <StandardCard width="calc(50% - 1rem)" height="300px" />
+            <StandardCard width="calc(50% - 1rem)" height="300px" />
+            <StandardCard width="calc(50% - 1rem)" height="300px" />
+            <StandardCard width="calc(50% - 1rem)" height="300px" />
+          </Flex>
         </Flex>
       </Flex>
 
-      {/* Footer (outside scroll area) */}
+      {/* Footer */}
       <Flex justifyContent="center" width="100%" padding="2rem 0">
         <MarketingFooter />
       </Flex>

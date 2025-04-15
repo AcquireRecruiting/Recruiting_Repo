@@ -54,19 +54,6 @@ export default function NavBarSide(props) {
           backgroundColor="#ffffff" 
           {...getOverrideProps(overrides, "Frame 32113439")}
         >
-          <Image
-            width="32px"
-            height="35px"
-            display="block"
-            gap="unset"
-            alignItems="unset"
-            justifyContent="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            objectFit="cover"
-            {...getOverrideProps(overrides, "Acquire_logo_black 2")}
-          ></Image>
           <Flex
             gap="16px"
             direction="column"
