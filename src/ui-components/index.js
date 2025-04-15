@@ -38,6 +38,7 @@ export { default as ItemCard } from "./ItemCard";
 export { default as JobBoard } from "./JobBoard";
 export { default as JobPostsCreateForm } from "./JobPostsCreateForm";
 export { default as JobPostsUpdateForm } from "./JobPostsUpdateForm";
+export { default as Jobboard } from "./JobBoard";
 export { default as Logo } from "./Logo";
 export { default as LogoWithText } from "./LogoWithText";
 export { default as MarketingFooter } from "./MarketingFooter";

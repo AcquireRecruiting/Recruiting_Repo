@@ -21,6 +21,7 @@ export default function NavBarSide(props) {
       alignItems="flex-start"
       position="relative"
       padding="32px 0px 32px 0px"
+      backgroundColor="#ffffff" 
       {...getOverrideProps(overrides, "NavBarSide")}
       {...rest}
     >
@@ -36,6 +37,7 @@ export default function NavBarSide(props) {
         basis="0"
         position="relative"
         padding="0px 0px 0px 0px"
+        backgroundColor="#ffffff" 
         {...getOverrideProps(overrides, "Frame 32113438")}
       >
         <Flex
@@ -49,6 +51,7 @@ export default function NavBarSide(props) {
           alignSelf="stretch"
           position="relative"
           padding="0px 32px 0px 32px"
+          backgroundColor="#ffffff" 
           {...getOverrideProps(overrides, "Frame 32113439")}
         >
           <Image
@@ -74,6 +77,7 @@ export default function NavBarSide(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            backgroundColor="#ffffff" 
             {...getOverrideProps(overrides, "Frame 414")}
           >
             <Flex
@@ -85,6 +89,7 @@ export default function NavBarSide(props) {
               alignItems="center"
               shrink="0"
               position="relative"
+              backgroundColor="#ffffff" 
               padding="0px 0px 0px 0px"
               {...getOverrideProps(overrides, "Frame 322")}
             >
@@ -150,6 +155,7 @@ export default function NavBarSide(props) {
             alignItems="flex-start"
             shrink="0"
             position="relative"
+            backgroundColor="#ffffff" 
             padding="0px 0px 0px 0px"
             {...getOverrideProps(overrides, "Section13446")}
           >
@@ -183,6 +189,7 @@ export default function NavBarSide(props) {
               alignItems="center"
               shrink="0"
               position="relative"
+              backgroundColor="#ffffff" 
               padding="0px 0px 0px 0px"
               {...getOverrideProps(overrides, "link13448")}
             >
@@ -377,6 +384,7 @@ export default function NavBarSide(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+
             {...getOverrideProps(overrides, "Section13460")}
           >
             <Text
@@ -658,29 +666,6 @@ export default function NavBarSide(props) {
                 padding="0px 0px 0px 0px"
                 {...getOverrideProps(overrides, "Frame 32113478")}
               >
-                <Text
-                  fontFamily="Inter"
-                  fontSize="16px"
-                  fontWeight="400"
-                  color="rgba(0,0,0,1)"
-                  lineHeight="24px"
-                  textAlign="left"
-                  display="block"
-                  direction="column"
-                  justifyContent="unset"
-                  letterSpacing="0.01px"
-                  width="unset"
-                  height="unset"
-                  gap="unset"
-                  alignItems="unset"
-                  shrink="0"
-                  alignSelf="stretch"
-                  position="relative"
-                  padding="0px 0px 0px 0px"
-                  whiteSpace="pre-wrap"
-                  children="Wesley Peck"
-                  {...getOverrideProps(overrides, "Wesley Peck")}
-                ></Text>
               </Flex>
             </Flex>
             <MyIcon

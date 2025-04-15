@@ -84,8 +84,8 @@ export default function StandardCard(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="$99 USD"
-            {...getOverrideProps(overrides, "$99 USD")}
+            children="APPLE INC."
+            {...getOverrideProps(overrides, "APPLE INC.")}
           ></Text>
           <Text
             fontFamily="Inter"
@@ -107,8 +107,8 @@ export default function StandardCard(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="4bds 3 ba 2,530 sqft - Active"
-            {...getOverrideProps(overrides, "4bds 3 ba 2,530 sqft - Active")}
+            children="Job Title: Engineer"
+            {...getOverrideProps(overrides, "Job Title: Engineer")}
           ></Text>
           <Text
             fontFamily="Inter"
