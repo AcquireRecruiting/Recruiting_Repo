@@ -20,7 +20,7 @@ export default function MarketingFooter(props) {
       alignItems="center"
       position="relative"
       padding="40px 40px 40px 40px"
-      backgroundColor="rgba(250,250,250,1)"
+      backgroundColor="rgba(72, 83, 119, 0.53)"
       {...getOverrideProps(overrides, "MarketingFooter")}
       {...rest}
     >
@@ -49,48 +49,6 @@ export default function MarketingFooter(props) {
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Frame 434")}
         >
-          <Text
-            fontFamily="Inter"
-            fontSize="20px"
-            fontWeight="600"
-            color="rgba(0,0,0,0.73)"
-            lineHeight="30px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="471px"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Sign up for our newsletter"
-            {...getOverrideProps(overrides, "Sign up for our newsletter")}
-          ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(0,0,0,0.73)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="471px"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="No spam. We promise."
-            {...getOverrideProps(overrides, "No spam. We promise.")}
-          ></Text>
         </Flex>
         <Flex
           gap="10px"
