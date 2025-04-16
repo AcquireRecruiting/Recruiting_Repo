@@ -148,7 +148,7 @@ export default function NavBarHeader2(props) {
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "actions")}
+        {...getOverrideProps(overrides, "AIPage")}
       >
         <Flex
           width="unset"

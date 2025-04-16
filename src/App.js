@@ -1,11 +1,11 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom"; // ✅ Use only Routes, NOT BrowserRouter
+import { Routes, Route } from "react-router-dom"; 
 import { Amplify } from "aws-amplify";
 import { Authenticator, withAuthenticator, Button } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
 import awsExports from "./aws-exports";
 import TechPage from "./ui-components/TechPage";
-import Actions from "./ui-components/Actions";
+import AIPage from "./ui-components/AIPage";
 import Logo from "./ui-components/Logo.jpg";
 import Dashboard from "./ui-components/Dashboard";
 import "./App.css";
@@ -27,7 +27,7 @@ function App({ signOut }) {
           {/* Page Routes */}
           <Routes>
             <Route path="/" element={<TechPage />} /> {/* Home Page */}
-            <Route path="/Actions" element={<Actions />} /> 
+            <Route path="/AIPage" element={<AIPage />} /> 
             <Route path="/Dashboard" element={<Dashboard />} />
             <Route path="/JobBoard" element={<JobBoard />} />
           </Routes>

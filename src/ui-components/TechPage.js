@@ -8,21 +8,22 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { OpenAIAssistant } from "./OpenAI/OpenAIAssistant";
 
 const BackgroundStylePropExample = () => {
-    return (
-      <Link to="/Actions" className="no-underline">
-        <Card className="glass-card cursor-pointer hover:scale-105 transition-transform">
-          <Heading level={3}>Actions</Heading>
-        </Card>
-      </Link>
-    );
-  };
+  return (
+    <Link to="/AIPage" className="no-underline">
+      <Card className="glass-card cursor-pointer hover:scale-105 transition-transform">
+        <Heading level={3}>AI Page</Heading>
+      </Card>
+    </Link>
+  );
+};
+
 const BackgroundThemeTokenExample = () => {
   const { tokens } = useTheme();
   return (
     <Link to="/JobBoard" className="no-underline">
-    <Card className="glass-card" style={{ backgroundColor: tokens.colors.primary[40] }}>
-      <Heading level={3}>Job Board</Heading>
-    </Card>
+      <Card className="glass-card" style={{ backgroundColor: tokens.colors.primary[40] }}>
+        <Heading level={3}>Job Board</Heading>
+      </Card>
     </Link>
   );
 };
@@ -30,9 +31,9 @@ const BackgroundThemeTokenExample = () => {
 const BackgroundTokenNameExample = () => {
   return (
     <Link to="/" className="no-underline">
-    <Card className="glass-card">
-      <Heading level={3}>Business Page</Heading>
-    </Card>
+      <Card className="glass-card">
+        <Heading level={3}>Business Page</Heading>
+      </Card>
     </Link>
   );
 };
@@ -48,7 +49,5 @@ const TechPage = () => {
     </div>
   );
 };
-
-
 
 export default TechPage;
