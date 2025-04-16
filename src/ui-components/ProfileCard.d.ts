@@ -5,6 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
+import { JobPosts } from "../models";
 import { FlexProps, ImageProps, TextProps } from "@aws-amplify/ui-react";
 import { MyIconProps } from "./MyIcon";
 export declare type EscapeHatchProps = {
@@ -30,6 +31,8 @@ export declare type ProfileCardOverridesProps = {
     Button?: PrimitiveOverrideProps<FlexProps>;
 } & EscapeHatchProps;
 export declare type ProfileCardProps = React.PropsWithChildren<Partial<FlexProps> & {
+    jobPosts?: JobPosts;
+} & {
     overrides?: ProfileCardOverridesProps | undefined | null;
 }>;
 export default function ProfileCard(props: ProfileCardProps): React.ReactElement;

@@ -8,7 +8,7 @@ import {
   Button,
 } from "@aws-amplify/ui-react";
 import NavBarSide from "./NavBarSide";
-import StandardCard from "./StandardCard";
+import ProfileCard from "./ProfileCard";
 import MarketingFooter from "./MarketingFooter";
 import { DataStore } from "@aws-amplify/datastore";
 import { JobPosts } from "../models"; // ✅ make sure this path is correct
@@ -109,7 +109,7 @@ export default function JobBoard(props) {
           {/* Card Grid */}
           <Flex direction="row" flexWrap="wrap" gap="2rem" justifyContent="flex-start">
             {currentJobs.map((job) => (
-              <StandardCard
+              <ProfileCard
                 key={job.id}
                 width="calc(50% - 1rem)"
                 height="300px"

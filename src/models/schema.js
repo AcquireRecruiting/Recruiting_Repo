@@ -137,8 +137,8 @@ export const schema = {
                 }
             ]
         },
-        "PersonalInfo": {
-            "name": "PersonalInfo",
+        "Info": {
+            "name": "Info",
             "fields": {
                 "id": {
                     "name": "id",
@@ -150,7 +150,7 @@ export const schema = {
                 "name": {
                     "name": "name",
                     "isArray": false,
-                    "type": "AWSJSON",
+                    "type": "String",
                     "isRequired": true,
                     "attributes": []
                 },
@@ -207,7 +207,7 @@ export const schema = {
                 }
             },
             "syncable": true,
-            "pluralName": "PersonalInfos",
+            "pluralName": "Infos",
             "attributes": [
                 {
                     "type": "model",
@@ -320,5 +320,5 @@ export const schema = {
     "enums": {},
     "nonModels": {},
     "codegenVersion": "3.4.4",
-    "version": "0aab5aad0817b760f2d28611aaffef2e"
+    "version": "95dc3464ef0c76ccbaa2c4a30cf7fc20"
 };

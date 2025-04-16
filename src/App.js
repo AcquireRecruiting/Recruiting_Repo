@@ -28,9 +28,10 @@ function App({ signOut }) {
           <Routes>
             <Route path="/" element={<TechPage />} /> {/* Home Page */}
             <Route path="/AIPage" element={<AIPage />} /> 
-            <Route path="/Dashboard" element={<Dashboard />} />
             <Route path="/JobBoard" element={<JobBoard />} />
+            <Route path="/Dashboard" element={<Dashboard />} />
           </Routes>
+          
           {/* Sign Out Button */}
           <Button
             onClick={signOut}

@@ -4,7 +4,6 @@
  * Any changes to this file will be overwritten when running amplify pull. *
  **************************************************************************/
 
-export { default as AIAssistant } from "./AIAssistant";
 export { default as AIcard } from "./AIcard";
 export { default as AchievementsCreateForm } from "./AchievementsCreateForm";
 export { default as AchievementsUpdateForm } from "./AchievementsUpdateForm";
@@ -16,7 +15,6 @@ export { default as Ampligram } from "./Ampligram";
 export { default as Badge } from "./Badge";
 export { default as BusinessInfoCreateForm } from "./BusinessInfoCreateForm";
 export { default as BusinessInfoUpdateForm } from "./BusinessInfoUpdateForm";
-export { default as BusinessPage } from "./BusinessPage";
 export { default as Businesscard } from "./Businesscard";
 export { default as CTASection } from "./CTASection";
 export { default as Card } from "./Card";
@@ -34,11 +32,11 @@ export { default as HeroLayout1 } from "./HeroLayout1";
 export { default as HeroLayout2 } from "./HeroLayout2";
 export { default as HeroMessage } from "./HeroMessage";
 export { default as HomePage } from "./HomePage";
+export { default as InfoCreateForm } from "./InfoCreateForm";
+export { default as InfoUpdateForm } from "./InfoUpdateForm";
 export { default as ItemCard } from "./ItemCard";
-export { default as JobBoard } from "./JobBoard";
 export { default as JobPostsCreateForm } from "./JobPostsCreateForm";
 export { default as JobPostsUpdateForm } from "./JobPostsUpdateForm";
-export { default as Jobboard } from "./JobBoard";
 export { default as Logo } from "./Logo";
 export { default as LogoWithText } from "./LogoWithText";
 export { default as MarketingFooter } from "./MarketingFooter";
@@ -47,8 +45,6 @@ export { default as MyIcon } from "./MyIcon";
 export { default as NavBarHeader } from "./NavBarHeader";
 export { default as NavBarHeader2 } from "./NavBarHeader2";
 export { default as NavBarSide } from "./NavBarSide";
-export { default as PersonalInfoCreateForm } from "./PersonalInfoCreateForm";
-export { default as PersonalInfoUpdateForm } from "./PersonalInfoUpdateForm";
 export { default as Placeholder } from "./Placeholder";
 export { default as ProductCard } from "./ProductCard";
 export { default as ProductDetail } from "./ProductDetail";

@@ -64,9 +64,9 @@ export declare const Achievements: (new (init: ModelInit<Achievements>) => Achie
   copyOf(source: Achievements, mutator: (draft: MutableModel<Achievements>) => MutableModel<Achievements> | void): Achievements;
 }
 
-type EagerPersonalInfo = {
+type EagerInfo = {
   readonly [__modelMeta__]: {
-    identifier: ManagedIdentifier<PersonalInfo, 'id'>;
+    identifier: ManagedIdentifier<Info, 'id'>;
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
@@ -80,9 +80,9 @@ type EagerPersonalInfo = {
   readonly updatedAt?: string | null;
 }
 
-type LazyPersonalInfo = {
+type LazyInfo = {
   readonly [__modelMeta__]: {
-    identifier: ManagedIdentifier<PersonalInfo, 'id'>;
+    identifier: ManagedIdentifier<Info, 'id'>;
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
@@ -96,10 +96,10 @@ type LazyPersonalInfo = {
   readonly updatedAt?: string | null;
 }
 
-export declare type PersonalInfo = LazyLoading extends LazyLoadingDisabled ? EagerPersonalInfo : LazyPersonalInfo
+export declare type Info = LazyLoading extends LazyLoadingDisabled ? EagerInfo : LazyInfo
 
-export declare const PersonalInfo: (new (init: ModelInit<PersonalInfo>) => PersonalInfo) & {
-  copyOf(source: PersonalInfo, mutator: (draft: MutableModel<PersonalInfo>) => MutableModel<PersonalInfo> | void): PersonalInfo;
+export declare const Info: (new (init: ModelInit<Info>) => Info) & {
+  copyOf(source: Info, mutator: (draft: MutableModel<Info>) => MutableModel<Info> | void): Info;
 }
 
 type EagerJobPosts = {
