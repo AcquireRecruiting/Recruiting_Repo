@@ -51,19 +51,7 @@ export default function NavBarSide(props) {
           padding="0px 32px 0px 32px"
           {...getOverrideProps(overrides, "Frame 32113439")}
         >
-          <Image
-            width="32px"
-            height="35px"
-            display="block"
-            gap="unset"
-            alignItems="unset"
-            justifyContent="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            objectFit="cover"
-            {...getOverrideProps(overrides, "Acquire_logo_black 2")}
-          ></Image>
+    
           <Flex
             gap="16px"
             direction="column"
@@ -153,27 +141,6 @@ export default function NavBarSide(props) {
             padding="0px 0px 0px 0px"
             {...getOverrideProps(overrides, "Section13446")}
           >
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="600"
-              color="rgba(92,102,112,1)"
-              lineHeight="24px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Manage"
-              {...getOverrideProps(overrides, "label13447")}
-            ></Text>
             <Flex
               gap="8px"
               direction="row"
@@ -234,7 +201,7 @@ export default function NavBarSide(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Content"
+                children="Dashboard"
                 {...getOverrideProps(overrides, "label13451")}
               ></Text>
             </Flex>
@@ -379,27 +346,6 @@ export default function NavBarSide(props) {
             padding="0px 0px 0px 0px"
             {...getOverrideProps(overrides, "Section13460")}
           >
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="600"
-              color="rgba(92,102,112,1)"
-              lineHeight="24px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
-              width="unset"
-              height="unset"
-              gap="unset"
-              alignItems="unset"
-              shrink="0"
-              position="relative"
-              padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Set up"
-              {...getOverrideProps(overrides, "label13461")}
-            ></Text>
             <Flex
               gap="8px"
               direction="row"
@@ -524,7 +470,7 @@ export default function NavBarSide(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Storage"
+                children="Settings"
                 {...getOverrideProps(overrides, "label13469")}
               ></Text>
             </Flex>
@@ -540,57 +486,7 @@ export default function NavBarSide(props) {
               padding="0px 0px 0px 0px"
               {...getOverrideProps(overrides, "link13470")}
             >
-              <Flex
-                gap="0"
-                direction="row"
-                width="unset"
-                height="unset"
-                justifyContent="flex-start"
-                alignItems="flex-start"
-                shrink="0"
-                position="relative"
-                borderRadius="4px"
-                padding="6px 6px 6px 6px"
-                backgroundColor="rgba(125,152,186,0.86)"
-                {...getOverrideProps(overrides, "icon13471")}
-              >
-                <MyIcon
-                  width="18px"
-                  height="18px"
-                  display="block"
-                  gap="unset"
-                  alignItems="unset"
-                  justifyContent="unset"
-                  overflow="hidden"
-                  shrink="0"
-                  position="relative"
-                  padding="0px 0px 0px 0px"
-                  type="authentication"
-                  {...getOverrideProps(overrides, "MyIcon13472")}
-                ></MyIcon>
               </Flex>
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(24,29,38,1)"
-                lineHeight="24px"
-                textAlign="left"
-                display="block"
-                direction="column"
-                justifyContent="unset"
-                letterSpacing="0.01px"
-                width="unset"
-                height="unset"
-                gap="unset"
-                alignItems="unset"
-                shrink="0"
-                position="relative"
-                padding="0px 0px 0px 0px"
-                whiteSpace="pre-wrap"
-                children="Authentication"
-                {...getOverrideProps(overrides, "label13473")}
-              ></Text>
             </Flex>
           </Flex>
         </Flex>
@@ -677,6 +573,5 @@ export default function NavBarSide(props) {
           </Flex>
         </Flex>
       </Flex>
-    </Flex>
   );
 }
