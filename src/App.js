@@ -7,7 +7,7 @@ import awsExports from "./aws-exports";
 import TechPage from "./ui-components/TechPage";
 import AIPage from "./ui-components/AIPage";
 import Logo from "./ui-components/Logo.jpg";
-import Dashboard from "./ui-components/Dashboard";
+import Data from "./ui-components/Data";
 import "./App.css";
 import JobBoard from "./ui-components/JobBoard";
 import Settings from "./ui-components/Settings";
@@ -30,7 +30,7 @@ function App({ signOut }) {
             <Route path="/" element={<TechPage />} /> {/* Home Page */}
             <Route path="/AIPage" element={<AIPage />} /> 
             <Route path="/JobBoard" element={<JobBoard />} />
-            <Route path="/Dashboard" element={<Dashboard />} />
+            <Route path="/Data" element={<Data />} />
             <Route path="/Settings" element={<Settings />} />
           </Routes>
           
