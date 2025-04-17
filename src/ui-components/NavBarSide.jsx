@@ -102,8 +102,9 @@ export default function NavBarSide(props) {
 {/* Section: Data, Settings */}
 <Flex direction="column" gap="16px" {...getOverrideProps(overrides, "Section13460")}>
   <NavItem label="Data" iconType="data" to="/data" overrides={overrides} overridePrefix="data" />
-  <NavItem label="Settings" iconType="storage" to="/settings" overrides={overrides} overridePrefix="settings" />
+  <NavItem label="Settings" iconType="settings" to="/Settings" overrides={overrides} overridePrefix="settings" />
 </Flex>
+
         </Flex>
 
         {/* Footer / Profile Section */}

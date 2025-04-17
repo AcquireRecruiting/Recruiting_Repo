@@ -1,94 +1,129 @@
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { Flex, Heading } from "@aws-amplify/ui-react";
+import { Bar, Pie } from "react-chartjs-2";
 import {
-  Flex,
-  Heading,
-  TextField,
-  Button,
-} from "@aws-amplify/ui-react";
-import NavBarSide from "./NavBarSide";
-import ProfileCard from "./ProfileCard";
-import MarketingFooter from "./MarketingFooter";
-import { DataStore } from "@aws-amplify/datastore";
-import { JobPosts } from "../models"; // ✅ make sure this path is correct
-import { useEffect, useState } from "react";
+  Chart as ChartJS,
+  BarElement,
+  ArcElement,
+  CategoryScale,
+  LinearScale,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import ChartDataLabels from "chartjs-plugin-datalabels";
+import NavBarSide from "../ui-components/NavBarSide";
 
-export default function JobBoard(props) {
-  const { overrides, ...rest } = props;
+ChartJS.register(
+  BarElement,
+  ArcElement,
+  CategoryScale,
+  LinearScale,
+  Tooltip,
+  Legend,
+  ChartDataLabels
+);
 
-  const [searchQuery, setSearchQuery] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const jobsPerPage = 4;
-
-  const [jobs, setJobs] = useState([]);
-
-  useEffect(() => {
-    const fetchJobs = async () => {
-      try {
-        const jobData = await DataStore.query(JobPosts);
-        setJobs(jobData);
-      } catch (err) {
-        console.error("Error fetching jobs:", err);
-      }
-    };
-
-    fetchJobs();
-
-    const subscription = DataStore.observe(JobPosts).subscribe(() => fetchJobs());
-    return () => subscription.unsubscribe();
-  }, []);
-
-  // 🔍 Filter based on search query
-  const filteredJobs = jobs.filter((job) =>
-    job.title?.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
-  // 🧮 Pagination
-  const indexOfLastJob = currentPage * jobsPerPage;
-  const indexOfFirstJob = indexOfLastJob - jobsPerPage;
-  const currentJobs = filteredJobs.slice(indexOfFirstJob, indexOfLastJob);
-
-  const handleNext = () => {
-    if (indexOfLastJob < filteredJobs.length) {
-      setCurrentPage((prev) => prev + 1);
-    }
+export default function Dashboard() {
+  // Bar Chart Data: Active Connections
+  const barData = {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    datasets: [
+      {
+        label: "Professional Connections",
+        data: [100, 120, 90, 150, 130, 170],
+        backgroundColor: "#3182CE",
+      },
+    ],
   };
 
-  const handlePrev = () => {
-    if (currentPage > 1) {
-      setCurrentPage((prev) => prev - 1);
-    }
+  const barOptions = {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      datalabels: {
+        anchor: "end",
+        align: "top",
+        color: "#333",
+        font: { weight: "bold" },
+        formatter: (value) => value,
+      },
+    },
+    scales: {
+      y: { beginAtZero: true },
+    },
+  };
+
+  // Pie Chart 1: Active Users
+  const pieDataActiveUsers = {
+    labels: ["Active", "Inactive", "Pending"],
+    datasets: [
+      {
+        label: "Users",
+        data: [180, 60, 30],
+        backgroundColor: ["#38A169", "#CBD5E0", "#ED8936"],
+        borderWidth: 1,
+      },
+    ],
+  };
+
+  // Pie Chart 2: Users in Training
+  const pieDataTraining = {
+    labels: ["Completed", "In Progress", "Not Started"],
+    datasets: [
+      {
+        label: "Training Status",
+        data: [80, 50, 40],
+        backgroundColor: ["#4FD1C5", "#F6AD55", "#E53E3E"],
+        borderWidth: 1,
+      },
+    ],
+  };
+
+  const pieOptions = {
+    responsive: true,
+    plugins: {
+      legend: { position: "right" },
+      datalabels: {
+        color: "#fff",
+        formatter: (value, context) => {
+          const label = context.chart.data.labels[context.dataIndex];
+          return `${label}: ${value}`;
+        },
+      },
+    },
   };
 
   return (
-    <Flex
-      direction="column"
-      width="100%"
-      minHeight="100vh"
-      backgroundColor="#ffffff"
-      {...getOverrideProps(overrides, "JobBoard")}
-      {...rest}
-    >
-      {/* Main Row: Sidebar + Content */}
-      <Flex direction="row" flex="1" overflow="hidden">
-        {/* Sidebar */}
-        <Flex
-          direction="column"
-          width="240px"
-          minWidth="200px"
-          padding="2rem 1rem"
-          backgroundColor="#ffffff"
-          borderRight="1px solid #ddd"
-        >
-          <NavBarSide />
+    <Flex direction="row" height="100vh">
+      {/* Sidebar */}
+      <Flex
+        direction="column"
+        width="240px"
+        backgroundColor="#f4f4f4"
+        padding="1rem"
+        borderRight="1px solid #ccc"
+      >
+        <NavBarSide />
+      </Flex>
+
+      {/* Main Content */}
+      <Flex gap="2rem" flexWrap="wrap" padding="2rem">
+        <Flex direction="column" width="100%" maxWidth="600px">
+          <Heading level={4} marginBottom="1rem">Active Connections</Heading>
+          <Bar data={barData} options={barOptions} plugins={[ChartDataLabels]} />
         </Flex>
 
-      {/* Footer */}
-      <Flex justifyContent="center" width="100%" padding="2rem 0">
-        <MarketingFooter />
+        <Flex direction="column" width="100%" maxWidth="400px">
+          <Heading level={4} marginBottom="1rem">Active Users</Heading>
+          <Pie data={pieDataActiveUsers} options={pieOptions} plugins={[ChartDataLabels]} />
+        </Flex>
+
+        <Flex direction="column" width="100%" maxWidth="400px">
+          <Heading level={4} marginBottom="1rem">Users in Training</Heading>
+          <Pie data={pieDataTraining} options={pieOptions} plugins={[ChartDataLabels]} />
+        </Flex>
       </Flex>
     </Flex>
-  </Flex>
   );
 }

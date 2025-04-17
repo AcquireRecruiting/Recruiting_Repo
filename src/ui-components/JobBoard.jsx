@@ -1,5 +1,4 @@
-/* eslint-disable */
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import { getOverrideProps } from "./utils";
 import {
   Flex,
@@ -11,8 +10,7 @@ import NavBarSide from "./NavBarSide";
 import ProfileCard from "./ProfileCard";
 import MarketingFooter from "./MarketingFooter";
 import { DataStore } from "@aws-amplify/datastore";
-import { JobPosts } from "../models"; // ✅ make sure this path is correct
-import { useEffect, useState } from "react";
+import { JobPosts } from "../models"; // ✅ Make sure this is the correct path
 
 export default function JobBoard(props) {
   const { overrides, ...rest } = props;
@@ -44,7 +42,7 @@ export default function JobBoard(props) {
     job.title?.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  // 🧮 Pagination
+  // 🧮 Pagination logic
   const indexOfLastJob = currentPage * jobsPerPage;
   const indexOfFirstJob = indexOfLastJob - jobsPerPage;
   const currentJobs = filteredJobs.slice(indexOfFirstJob, indexOfLastJob);
@@ -99,6 +97,9 @@ export default function JobBoard(props) {
           {/* Heading */}
           <Heading level={3}>Job Board</Heading>
 
+          {/* Optional: Static profile card */}
+          <ProfileCard />
+
           {/* Search Bar */}
           <TextField
             placeholder="Search jobs..."
@@ -106,7 +107,7 @@ export default function JobBoard(props) {
             onChange={(e) => setSearchQuery(e.target.value)}
           />
 
-          {/* Card Grid */}
+          {/* Job Cards */}
           <Flex direction="row" flexWrap="wrap" gap="2rem" justifyContent="flex-start">
             {currentJobs.map((job) => (
               <ProfileCard
@@ -115,7 +116,35 @@ export default function JobBoard(props) {
                 height="300px"
                 title={job.title}
                 description={job.description}
-                image={job.image} // make sure this field exists in your model
+                image={job.image || undefined}
+              />
+            ))}
+          </Flex>
+
+           {/* Job Cards */}
+           <Flex direction="row" flexWrap="wrap" gap="2rem" justifyContent="flex-start">
+            {currentJobs.map((job) => (
+              <ProfileCard
+                key={job.id}
+                width="calc(50% - 1rem)"
+                height="300px"
+                title={job.title}
+                description={job.description}
+                image={job.image || undefined}
+              />
+            ))}
+          </Flex>
+
+           {/* Job Cards */}
+           <Flex direction="row" flexWrap="wrap" gap="2rem" justifyContent="flex-start">
+            {currentJobs.map((job) => (
+              <ProfileCard
+                key={job.id}
+                width="calc(50% - 1rem)"
+                height="300px"
+                title={job.title}
+                description={job.description}
+                image={job.image || undefined}
               />
             ))}
           </Flex>

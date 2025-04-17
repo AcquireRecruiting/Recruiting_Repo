@@ -10,7 +10,8 @@ import Logo from "./ui-components/Logo.jpg";
 import Dashboard from "./ui-components/Dashboard";
 import "./App.css";
 import JobBoard from "./ui-components/JobBoard";
-import { TodoCreateForm } from './ui-components';
+import Settings from "./ui-components/Settings";
+
 
 
 // Configure AWS Amplify
@@ -30,6 +31,7 @@ function App({ signOut }) {
             <Route path="/AIPage" element={<AIPage />} /> 
             <Route path="/JobBoard" element={<JobBoard />} />
             <Route path="/Dashboard" element={<Dashboard />} />
+            <Route path="/Settings" element={<Settings />} />
           </Routes>
           
           {/* Sign Out Button */}
