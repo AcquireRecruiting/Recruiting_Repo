@@ -6,11 +6,12 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
 export default function ProfileCard(props) {
-  const { jobPosts, overrides, ...rest } = props;
+  const { jobPosts, info, overrides, ...rest } = props;
+  const buttonOnClick = useNavigateAction({ type: "url", url: "" });
   return (
     <Flex
       gap="24px"
@@ -69,7 +70,7 @@ export default function ProfileCard(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Melinda Marcus"
+          children={info?.name}
           {...getOverrideProps(overrides, "Melinda Marcus")}
         ></Text>
         <Text
@@ -140,13 +141,16 @@ export default function ProfileCard(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="99 Followers"
+          children={info?.email}
           {...getOverrideProps(overrides, "99 Followers")}
         ></Text>
       </Flex>
       <Flex
         width="unset"
         height="unset"
+        onClick={() => {
+          buttonOnClick();
+        }}
         {...getOverrideProps(overrides, "Button")}
       ></Flex>
     </Flex>

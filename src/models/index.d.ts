@@ -133,3 +133,35 @@ export declare type JobPosts = LazyLoading extends LazyLoadingDisabled ? EagerJo
 export declare const JobPosts: (new (init: ModelInit<JobPosts>) => JobPosts) & {
   copyOf(source: JobPosts, mutator: (draft: MutableModel<JobPosts>) => MutableModel<JobPosts> | void): JobPosts;
 }
+
+type EagerTraining = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Training, 'id'>;
+    readOnlyFields: 'updatedAt';
+  };
+  readonly id: string;
+  readonly title: string;
+  readonly description?: string | null;
+  readonly videoUrl?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+type LazyTraining = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Training, 'id'>;
+    readOnlyFields: 'updatedAt';
+  };
+  readonly id: string;
+  readonly title: string;
+  readonly description?: string | null;
+  readonly videoUrl?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+export declare type Training = LazyLoading extends LazyLoadingDisabled ? EagerTraining : LazyTraining
+
+export declare const Training: (new (init: ModelInit<Training>) => Training) & {
+  copyOf(source: Training, mutator: (draft: MutableModel<Training>) => MutableModel<Training> | void): Training;
+}

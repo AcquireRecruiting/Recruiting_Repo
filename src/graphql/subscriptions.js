@@ -1,6 +1,105 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const onCreateTraining = /* GraphQL */ `
+  subscription OnCreateTraining($filter: ModelSubscriptionTrainingFilterInput) {
+    onCreateTraining(filter: $filter) {
+      id
+      title
+      description
+      videoUrl
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const onUpdateTraining = /* GraphQL */ `
+  subscription OnUpdateTraining($filter: ModelSubscriptionTrainingFilterInput) {
+    onUpdateTraining(filter: $filter) {
+      id
+      title
+      description
+      videoUrl
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const onDeleteTraining = /* GraphQL */ `
+  subscription OnDeleteTraining($filter: ModelSubscriptionTrainingFilterInput) {
+    onDeleteTraining(filter: $filter) {
+      id
+      title
+      description
+      videoUrl
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const onCreateBusinessInfo = /* GraphQL */ `
+  subscription OnCreateBusinessInfo(
+    $filter: ModelSubscriptionBusinessInfoFilterInput
+  ) {
+    onCreateBusinessInfo(filter: $filter) {
+      id
+      BusinessName
+      BusinessCategory
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const onUpdateBusinessInfo = /* GraphQL */ `
+  subscription OnUpdateBusinessInfo(
+    $filter: ModelSubscriptionBusinessInfoFilterInput
+  ) {
+    onUpdateBusinessInfo(filter: $filter) {
+      id
+      BusinessName
+      BusinessCategory
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const onDeleteBusinessInfo = /* GraphQL */ `
+  subscription OnDeleteBusinessInfo(
+    $filter: ModelSubscriptionBusinessInfoFilterInput
+  ) {
+    onDeleteBusinessInfo(filter: $filter) {
+      id
+      BusinessName
+      BusinessCategory
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
 export const onCreateAchievements = /* GraphQL */ `
   subscription OnCreateAchievements(
     $filter: ModelSubscriptionAchievementsFilterInput
@@ -55,11 +154,9 @@ export const onDeleteAchievements = /* GraphQL */ `
     }
   }
 `;
-export const onCreatePersonalInfo = /* GraphQL */ `
-  subscription OnCreatePersonalInfo(
-    $filter: ModelSubscriptionPersonalInfoFilterInput
-  ) {
-    onCreatePersonalInfo(filter: $filter) {
+export const onCreateInfo = /* GraphQL */ `
+  subscription OnCreateInfo($filter: ModelSubscriptionInfoFilterInput) {
+    onCreateInfo(filter: $filter) {
       id
       name
       birthdate
@@ -76,11 +173,9 @@ export const onCreatePersonalInfo = /* GraphQL */ `
     }
   }
 `;
-export const onUpdatePersonalInfo = /* GraphQL */ `
-  subscription OnUpdatePersonalInfo(
-    $filter: ModelSubscriptionPersonalInfoFilterInput
-  ) {
-    onUpdatePersonalInfo(filter: $filter) {
+export const onUpdateInfo = /* GraphQL */ `
+  subscription OnUpdateInfo($filter: ModelSubscriptionInfoFilterInput) {
+    onUpdateInfo(filter: $filter) {
       id
       name
       birthdate
@@ -97,11 +192,9 @@ export const onUpdatePersonalInfo = /* GraphQL */ `
     }
   }
 `;
-export const onDeletePersonalInfo = /* GraphQL */ `
-  subscription OnDeletePersonalInfo(
-    $filter: ModelSubscriptionPersonalInfoFilterInput
-  ) {
-    onDeletePersonalInfo(filter: $filter) {
+export const onDeleteInfo = /* GraphQL */ `
+  subscription OnDeleteInfo($filter: ModelSubscriptionInfoFilterInput) {
+    onDeleteInfo(filter: $filter) {
       id
       name
       birthdate

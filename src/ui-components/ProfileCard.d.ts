@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { JobPosts } from "../models";
+import { JobPosts, Info } from "../models";
 import { FlexProps, ImageProps, TextProps } from "@aws-amplify/ui-react";
 import { MyIconProps } from "./MyIcon";
 export declare type EscapeHatchProps = {
@@ -32,6 +32,7 @@ export declare type ProfileCardOverridesProps = {
 } & EscapeHatchProps;
 export declare type ProfileCardProps = React.PropsWithChildren<Partial<FlexProps> & {
     jobPosts?: JobPosts;
+    info?: Info;
 } & {
     overrides?: ProfileCardOverridesProps | undefined | null;
 }>;

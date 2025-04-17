@@ -1,6 +1,147 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const getTraining = /* GraphQL */ `
+  query GetTraining($id: ID!) {
+    getTraining(id: $id) {
+      id
+      title
+      description
+      videoUrl
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const listTrainings = /* GraphQL */ `
+  query ListTrainings(
+    $filter: ModelTrainingFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listTrainings(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        title
+        description
+        videoUrl
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+  }
+`;
+export const syncTrainings = /* GraphQL */ `
+  query SyncTrainings(
+    $filter: ModelTrainingFilterInput
+    $limit: Int
+    $nextToken: String
+    $lastSync: AWSTimestamp
+  ) {
+    syncTrainings(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+      lastSync: $lastSync
+    ) {
+      items {
+        id
+        title
+        description
+        videoUrl
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+  }
+`;
+export const getBusinessInfo = /* GraphQL */ `
+  query GetBusinessInfo($id: ID!) {
+    getBusinessInfo(id: $id) {
+      id
+      BusinessName
+      BusinessCategory
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const listBusinessInfos = /* GraphQL */ `
+  query ListBusinessInfos(
+    $filter: ModelBusinessInfoFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listBusinessInfos(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        BusinessName
+        BusinessCategory
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+  }
+`;
+export const syncBusinessInfos = /* GraphQL */ `
+  query SyncBusinessInfos(
+    $filter: ModelBusinessInfoFilterInput
+    $limit: Int
+    $nextToken: String
+    $lastSync: AWSTimestamp
+  ) {
+    syncBusinessInfos(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+      lastSync: $lastSync
+    ) {
+      items {
+        id
+        BusinessName
+        BusinessCategory
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+  }
+`;
 export const getAchievements = /* GraphQL */ `
   query GetAchievements($id: ID!) {
     getAchievements(id: $id) {
@@ -70,9 +211,9 @@ export const syncAchievements = /* GraphQL */ `
     }
   }
 `;
-export const getPersonalInfo = /* GraphQL */ `
-  query GetPersonalInfo($id: ID!) {
-    getPersonalInfo(id: $id) {
+export const getInfo = /* GraphQL */ `
+  query GetInfo($id: ID!) {
+    getInfo(id: $id) {
       id
       name
       birthdate
@@ -89,13 +230,13 @@ export const getPersonalInfo = /* GraphQL */ `
     }
   }
 `;
-export const listPersonalInfos = /* GraphQL */ `
-  query ListPersonalInfos(
-    $filter: ModelPersonalInfoFilterInput
+export const listInfos = /* GraphQL */ `
+  query ListInfos(
+    $filter: ModelInfoFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listPersonalInfos(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listInfos(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         name
@@ -117,14 +258,14 @@ export const listPersonalInfos = /* GraphQL */ `
     }
   }
 `;
-export const syncPersonalInfos = /* GraphQL */ `
-  query SyncPersonalInfos(
-    $filter: ModelPersonalInfoFilterInput
+export const syncInfos = /* GraphQL */ `
+  query SyncInfos(
+    $filter: ModelInfoFilterInput
     $limit: Int
     $nextToken: String
     $lastSync: AWSTimestamp
   ) {
-    syncPersonalInfos(
+    syncInfos(
       filter: $filter
       limit: $limit
       nextToken: $nextToken

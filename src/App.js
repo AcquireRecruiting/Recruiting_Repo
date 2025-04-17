@@ -11,6 +11,7 @@ import Data from "./ui-components/Data";
 import "./App.css";
 import JobBoard from "./ui-components/JobBoard";
 import Settings from "./ui-components/Settings";
+import Trainings from "./ui-components/Trainings";
 
 
 
